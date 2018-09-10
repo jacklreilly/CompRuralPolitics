@@ -514,6 +514,46 @@ D5055       >>> NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
 
          | VARIABLE NOTES: D5055
 
+**D5058 Electoral Systems**
+
+D5058       >>> ELECTORAL FORMULA IN ALL ELECTORAL SEGMENTS
+                         (TIERS)
+
+         This is a variable indicating whether the country uses (i) a
+         majoritarian formula in all of its electoral segments (tiers),
+         (ii) a proportional formula in all of its electoral segments
+         (tiers), or (iii) a mixed formula.
+
+         The definition of this variable is taken from Matt Golder's
+         database about Democratic Electoral Systems Around the World,
+         1946-2000 (http://mattgolder.com/elections, Date accessed: May 17,
+         2018).
+
+         MAJORITARIAN systems require successful candidates to win either
+         a plurality or majority of the vote. As a result, they are
+         considered majoritarian.
+         PROPORTIONAL systems can be divided into two types: those that use
+         party lists and those like the single transferable vote that do
+         not. Those systems employing lists can themselves be divided into
+         two further categories: quota systems (with allocation of
+         remainders) and highest average systems.
+         MIXED systems use a mixture of majoritarian and proportional
+         electoral rules. A country can be classified as having a mixed
+         system whether it uses one or more electoral segments (tiers); in
+         practice, most mixed systems have more than one segment (tier).
+         Mixed electoral systems can be divided into those in which the
+         two electoral formulas are dependent and those in which they are
+         independent.
+
+             1. MAJORITARIAN
+             2. PROPORTIONAL
+             3. MIXED
+
+             9. MISSING
+
+
+         | VARIABLE NOTES: D5058
+
 ## *Cases to Consider*
 
 A sample of cases that are available fore each of the elections and in the CSES dataset
