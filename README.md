@@ -1,12 +1,14 @@
 # TD_Research
 
-\title: **Project ideas**
+**Project ideas**
+
 CSES Data Modules 1 - 4
 
 *Guiding Question*
+
 How does place based identity (rural-urban) influence policy preferences in countries based on the country’s style of government? Does place attachments influence conservative or liberal stances in the context of the country in which the individual lives?
 
-Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables
+**Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables**
 
 *Code Key Independent Variables*
 D29. Rural/Urban Residence.
@@ -50,7 +52,8 @@ D29. Rural/Urban Residence.
              9. MISSING
 
 *Key Dependent Variables*
-- Satisfaction with Democracy D3017 >>>Q15 (UNAVAILABLE FOR ARGENTINA 2015)
+
+**Satisfaction with Democracy D3017 >>>Q15** (UNAVAILABLE FOR ARGENTINA 2015)
  Q15. On the whole, are you very satisfied, fairly satisfied, not
               very satisfied, or not at all satisfied with the way
               democracy works in [COUNTRY]?
@@ -69,7 +72,7 @@ D29. Rural/Urban Residence.
              9. MISSING
 
 
-- Are you close to any political party D3018_1 >>>Q16 (also consider D3018_2, D3018_3 and D3018_4 which addresses feelings of closeness to one party, party closest to respondent, and degree of closeness)
+**Are you close to any political party D3018_1 >>>Q16** (also consider D3018_2, D3018_3 and D3018_4 which addresses feelings of closeness to one party, party closest to respondent, and degree of closeness)
  Q16. Do you usually think of yourself as close to any particular
               party?
          ..................................................................
@@ -118,7 +121,8 @@ Q16b. Which party do you feel closest to?
 
              9. MISSING
 
-- D3005_PR_2 >>>Q05P2 - Did respondent cast a ballot in recent presidential election (or see most recent election if PRES is not possible - or remove the case entirely)
+**D3005_PR_2 >>>Q05P2 - Did respondent cast a ballot in recent presidential election** (or see most recent election if PRES is not possible - or remove the case entirely)
+
 D3005_PR_1  >>> Q05P1a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
                         A BALLOT - 1ST ROUND 
 D3005_PR_2  >>> Q05P2a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
@@ -155,6 +159,7 @@ D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
 
 
          | VARIABLE NOTES: D3005_
+
 
 D3006_PR_1  >>> Q05P1b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE - 
                         1ST ROUND 
@@ -193,6 +198,7 @@ D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
 
          | VARIABLE NOTES: D3006_PR_1 & PR_2
 
+
 D3006_LH_PL >>> Q05LHb. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
                         PARTY LIST
 D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
@@ -226,7 +232,7 @@ D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
 
          | VARIABLE NOTES: D3006_LH
 
-- Respondent preferences on policy issues - D3001_1 -> D3001_8 Issues center around public expenditure on health, education, unemployment, defense, old age pensions, business and industry, police and law enforcement, nd welfare benefits.
+**Respondent preferences on policy issues - D3001_1 -> D3001_8** Issues center around public expenditure on health, education, unemployment, defense, old age pensions, business and industry, police and law enforcement, nd welfare benefits.
 
 D3001_1     >>> Q01a. PUBLIC EXPENDITURE: HEALTH
 D3001_2     >>> Q01b. PUBLIC EXPENDITURE: EDUCATION
@@ -325,7 +331,9 @@ D3001_8     >>> Q01h. PUBLIC EXPENDITURE: WELFARE BENEFITS
 DARA UNAVAILABLE FOR ARGENTINA 2015
 
 *Key Macro Level Data to consider*
-- D5051_1 Time T (Democracy-Autocracy) to DD5051_3 (Democracy-Autocracy) at T-2
+
+**D5051_1 Time T (Democracy-Autocracy) to DD5051_3 (Democracy-Autocracy) at T-2**
+
 D5051_1     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T
 D5051_2     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-1
 D5051_3     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-2
@@ -387,7 +395,8 @@ D5051_3     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-2
          | http://www.systemicpeace.org/inscrdata.html
          | (Date accessed: May 17, 2018).
 
-- D5052 Age of the current regime
+**D5052 Age of the current regime**
+
 D5052       >>> AGE OF THE CURRENT REGIME
 ---------------------------------------------------------------------------
 
@@ -420,7 +429,8 @@ D5052       >>> AGE OF THE CURRENT REGIME
          | http://www.systemicpeace.org/inscrdata.html
          | (Date accessed: May 17, 2018).
 
-- D5054 Regime: Type of Executive
+**D5054 Regime: Type of Executive**
+
 D5054       >>> REGIME: TYPE OF EXECUTIVE
 ---------------------------------------------------------------------------
 
@@ -460,7 +470,8 @@ D5054       >>> REGIME: TYPE OF EXECUTIVE
          | "Presidentialism, Parliamentarian, and Democracy". New York.
          | Cambridge University Press.
 
-- D5056 Number of years since last presidential election
+**D5056 Number of years since last presidential election**
+
 D5056       >>> NUMBER OF MONTHS SINCE LAST PRESIDENTIAL ELECTION
 ---------------------------------------------------------------------------
 
@@ -503,7 +514,8 @@ D5055       >>> NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
 
 *Cases to Consider* (Identifier is Polity code and election year)
 
-2015 Election
+**2015 Election**
+
 - 03202015. ARGENTINA (2015)
 - 12402015. CANADA (2015)
 - 24602015. FINLAND (2015)
@@ -511,7 +523,8 @@ D5055       >>> NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
 - 48402015. MEXICO (2015)
 - 62002015. PORTUGAL (2015)
 
-2012 Election
+**2012 Election**
+
 - 25002012. FRANCE (2012)
 - 30002012. GREECE (2012)
 - 48402012. MEXICO (2012)
