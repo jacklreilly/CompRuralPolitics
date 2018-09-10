@@ -12,9 +12,22 @@ How does place of residence (urban neighborhood versus rural neighborhood) influ
 
 I am interested in understanding the influence of place of residence on individual ideology. If the electoral system is a factor to mitigate the relationship between place and ideology, I am interested in understanding the role that said system plays on the relationnship.
 
+Furthermore, does the age of the democracy influence the relationship (if any) observed between neighborhood context and ideology? If so, how? Is this relationship more salient with countries that have long established their democracy or can this relationship establish once the democracy establishes?
+
+Additionally, is this more pronounced in a first-past-the-post electoral system or in a proportional electoral system? How does the number of representatives influence vote choice and ideology?
+
 **Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables**
 
 The data for this project will come from CSES Module 4 survey data. I an leaning towards using STATA for data analysis but it is also likely that I may use R or SAS to conduct the analysis.
+
+## *Key Variables for Analysis*
+
+In the analysis the key independent variable is Rural/Urban place of residence and individual's country of residence (and its electoral system, age of democracy)
+
+For the dependent variable we are interested in
+- Party the indivdual affiliates with
+- Party the individual voted for
+- Individual stance on issues (whether they took a consistant conservative stance or conissitantly liberal stance or in between)
 
 ## *Code Key Independent Variables*
 
