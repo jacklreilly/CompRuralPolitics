@@ -25,9 +25,10 @@ The data for this project will come from CSES Module 4 survey data. I an leaning
 In the analysis the key independent variable is Rural/Urban place of residence and individual's country of residence (and its electoral system, age of democracy)
 
 For the dependent variable we are interested in
-- Party the indivdual affiliates with
+- Party the individual affiliates with
 - Party the individual voted for
-- Individual stance on issues (whether they took a consistant conservative stance or conissitantly liberal stance or in between)
+- Individual stance on issues (whether they took a consistent conservative stance or consistently liberal stance or in between)
+- Individual self-placement on the left-right scale.
 
 ## *Code Key Independent Variables*
 
@@ -69,6 +70,36 @@ D29. Rural/Urban Residence.
              9. MISSING
 
 ## *Key Dependent Variables*
+
+**Left-Right-Self**
+
+D3014       >>> Q12. LEFT-RIGHT - SELF
+
+         Q12. Where would you place yourself on this scale?
+
+             00. LEFT
+             01.
+             02.
+             03.
+             04.
+             05.
+             06.
+             07.
+             08.
+             09.
+             10. RIGHT
+
+             95. VOLUNTEERED: HAVEN'T HEARD OF LEFT-RIGHT
+
+             97. VOLUNTEERED: REFUSED
+             98. VOLUNTEERED: DON'T KNOW WHERE TO PLACE
+
+             99. MISSING
+
+
+         | VARIABLE NOTES: D3014
+         |
+         | Data are unavailable for TAIWAN (2012), THAILAND (2011).
 
 **Satisfaction with Democracy D3017 >>>Q15**
 
