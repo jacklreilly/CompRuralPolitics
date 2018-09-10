@@ -1,20 +1,21 @@
 # TD_Research
 
-**Project ideas**
-————————————————————————————————————————————————————
+# **Project ideas**
+
 
 CSES Data Modules 1 - 4
 
-*Guiding Question*
+## *Guiding Question*
 
 How does place based identity (rural-urban) influence policy preferences in countries based on the country’s style of government? Does place attachments influence conservative or liberal stances in the context of the country in which the individual lives?
 
 **Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables**
 
-*Code Key Independent Variables*
+## *Code Key Independent Variables*
+
 D29. Rural/Urban Residence.
 
-            1. RURAL AREA OR VILLAGE
+             1. RURAL AREA OR VILLAGE
              2. SMALL OR MIDDLE-SIZED TOWN
              3. SUBURBS OF LARGE TOWN OR CITY
              4. LARGE TOWN OR CITY
@@ -49,9 +50,12 @@ D29. Rural/Urban Residence.
 
              9. MISSING
 
-*Key Dependent Variables*
+## *Key Dependent Variables*
 
-**Satisfaction with Democracy D3017 >>>Q15** (UNAVAILABLE FOR ARGENTINA 2015)
+**Satisfaction with Democracy D3017 >>>Q15**
+
+(UNAVAILABLE FOR ARGENTINA 2015)
+
  Q15. On the whole, are you very satisfied, fairly satisfied, not
               very satisfied, or not at all satisfied with the way
               democracy works in [COUNTRY]?
@@ -69,7 +73,11 @@ D29. Rural/Urban Residence.
              9. MISSING
 
 
-**Are you close to any political party D3018_1 >>>Q16** (also consider D3018_2, D3018_3 and D3018_4 which addresses feelings of closeness to one party, party closest to respondent, and degree of closeness)
+**Are you close to any political party D3018_1 >>>Q16**
+
+(also consider D3018_2, D3018_3 and D3018_4 which addresses feelings of closeness to one party, party closest to respondent, and degree of closeness)
+
+
  Q16. Do you usually think of yourself as close to any particular
               party?
 
@@ -80,6 +88,7 @@ D29. Rural/Urban Residence.
              8. VOLUNTEERED: DON'T KNOW
 
              9. MISSING
+
  Q16a. Do you feel yourself a little closer to one of the
                political parties than the others?
 
@@ -114,16 +123,18 @@ Q16b. Which party do you feel closest to?
 
              9. MISSING
 
-**D3005_PR_2 >>>Q05P2 - Did respondent cast a ballot in recent presidential election** (or see most recent election if PRES is not possible - or remove the case entirely)
+**D3005_PR_2 >>>Q05P2 - Did respondent cast a ballot in recent presidential election**
+
+(or see most recent election if PRES is not possible - or remove the case entirely)
 
 D3005_PR_1  >>> Q05P1a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
-                        A BALLOT - 1ST ROUND 
+                        A BALLOT - 1ST ROUND
 
 D3005_PR_2  >>> Q05P2a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
-                        A BALLOT - 2ND ROUND 
+                        A BALLOT - 2ND ROUND
 
 D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
-                        CAST A BALLOT 
+                        CAST A BALLOT
 
          The wording of this item, which is to record voting in the
          national election, follows national standards.
@@ -154,11 +165,11 @@ D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
          | VARIABLE NOTES: D3005_
 
 
-D3006_PR_1  >>> Q05P1b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE - 
-                        1ST ROUND 
+D3006_PR_1  >>> Q05P1b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
+                        1ST ROUND
 
-D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE - 
-                        2ND ROUND 
+D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
+                        2ND ROUND
 
         If applicable and respondent cast a ballot in the presidential
          election:
@@ -173,7 +184,7 @@ D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
          two round election, this item should report the respondent's
          vote choice for president in the second round.
 
-             01-88. [SEE CODEBOOK PART 3 FOR PARTY AND LEADER NUMERIC 
+             01-88. [SEE CODEBOOK PART 3 FOR PARTY AND LEADER NUMERIC
                     CODES]
 
              89.    INDEPENDENT CANDIDATE (NOT FURTHER SPECIFIED)
@@ -223,7 +234,9 @@ D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
 
          | VARIABLE NOTES: D3006_LH
 
-**Respondent preferences on policy issues - D3001_1 -> D3001_8** Issues center around public expenditure on health, education, unemployment, defense, old age pensions, business and industry, police and law enforcement, nd welfare benefits.
+**Respondent preferences on policy issues - D3001_1 -> D3001_8**
+
+Issues center around public expenditure on health, education, unemployment, defense, old age pensions, business and industry, police and law enforcement, nd welfare benefits.
 
 D3001_1     >>> Q01a. PUBLIC EXPENDITURE: HEALTH
 
@@ -326,7 +339,7 @@ D3001_8     >>> Q01h. PUBLIC EXPENDITURE: WELFARE BENEFITS
          | VARIABLE NOTES: D3001_
 DARA UNAVAILABLE FOR ARGENTINA 2015
 
-*Key Macro Level Data to consider*
+## *Key Macro Level Data to Consider*
 
 **D5051_1 Time T (Democracy-Autocracy) to DD5051_3 (Democracy-Autocracy) at T-2**
 
@@ -411,7 +424,7 @@ D5052       >>> AGE OF THE CURRENT REGIME
          |
          | Source: POLITY IV Project: Political Regime Characteristics
          | and Transitions, 1800-2007, Monty G. Marshall and Keith Jaggers,
-         | George Mason University and Colorado State University. 
+         | George Mason University and Colorado State University.
          | Available at: http://www.systemicpeace.org/polity/polity4.htm
          | (Date accessed: May 17, 2018).
          |
@@ -447,7 +460,7 @@ D5054       >>> REGIME: TYPE OF EXECUTIVE
          executive depends directly on legislature (i.e. vote of
          confidence).
 
-            1. PARLIAMENTARY REGIME
+             1. PARLIAMENTARY REGIME
              2. MIXED REGIME
              3. PRESIDENTIAL REGIME
 
@@ -500,18 +513,20 @@ D5055       >>> NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
 
          | VARIABLE NOTES: D5055
 
-*Cases to Consider* (Identifier is Polity code and election year)
+## *Cases to Consider*
 
-**2015 Election**
+(Identifier is Polity code and election year)
+
+### **2015 Election**
 
 - 03202015. ARGENTINA (2015)
 - 12402015. CANADA (2015)
 - 24602015. FINLAND (2015)
 - 82602015. GREAT BRITAIN (2015)
-- 48402015. MEXICO (2015)
+- 8402015. MEXICO (2015)
 - 62002015. PORTUGAL (2015)
 
-**2012 Election**
+### **2012 Election**
 
 - 25002012. FRANCE (2012)
 - 30002012. GREECE (2012)
