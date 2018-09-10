@@ -1,13 +1,16 @@
 # **Project ideas**
 
+Jennifer Lin
 
-CSES Data Modules 1 - 4
+Transitions to Democracy
 
 ## *Guiding Question*
 
 How does place based identity (rural-urban) influence policy preferences in countries based on the country’s style of government? Does place attachments influence conservative or liberal stances in the context of the country in which the individual lives?
 
 **Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables**
+
+The data for this project will come from CSES Module 4 survey data. I an leaning towards using STATA for data analysis but it is also likely that I may use R or SAS to conduct the analysis.
 
 ## *Code Key Independent Variables*
 
@@ -525,6 +528,8 @@ A sample of cases that are available fore each of the elections and in the CSES 
 - PORTUGAL (2015)
 
 ### **2012 Election**
+
+I am leaning more towards selecting from this set of cases
 
 - FRANCE (2012)
 - GREECE (2012)
