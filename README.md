@@ -1,6 +1,7 @@
 # TD_Research
 
 **Project ideas**
+————————————————————————————————————————————————————
 
 CSES Data Modules 1 - 4
 
@@ -12,9 +13,8 @@ How does place based identity (rural-urban) influence policy preferences in coun
 
 *Code Key Independent Variables*
 D29. Rural/Urban Residence.
-         ..................................................................
 
-             1. RURAL AREA OR VILLAGE
+            1. RURAL AREA OR VILLAGE
              2. SMALL OR MIDDLE-SIZED TOWN
              3. SUBURBS OF LARGE TOWN OR CITY
              4. LARGE TOWN OR CITY
@@ -25,7 +25,6 @@ D29. Rural/Urban Residence.
              9. MISSING
 
  D12. Respondent's socio economic status.
-         ..................................................................
 
              1. WHITE COLLAR
              2. WORKER
@@ -41,7 +40,6 @@ D29. Rural/Urban Residence.
              9. MISSING
 
  D08. Respondent is a member of a farmers' association.
-         ..................................................................
 
              1. R IS A MEMBER OF A FARMERS' ASSOCIATION
              2. R IS NOT A MEMBER OF A FARMERS' ASSOCIATION
@@ -57,7 +55,6 @@ D29. Rural/Urban Residence.
  Q15. On the whole, are you very satisfied, fairly satisfied, not
               very satisfied, or not at all satisfied with the way
               democracy works in [COUNTRY]?
-         ..................................................................
 
              1. VERY SATISFIED
              2. FAIRLY SATISFIED
@@ -75,7 +72,6 @@ D29. Rural/Urban Residence.
 **Are you close to any political party D3018_1 >>>Q16** (also consider D3018_2, D3018_3 and D3018_4 which addresses feelings of closeness to one party, party closest to respondent, and degree of closeness)
  Q16. Do you usually think of yourself as close to any particular
               party?
-         ..................................................................
 
              1. YES                         -> GO TO Q16b
              5. NO
@@ -86,7 +82,6 @@ D29. Rural/Urban Residence.
              9. MISSING
  Q16a. Do you feel yourself a little closer to one of the
                political parties than the others?
-         ..................................................................
 
              1. YES
              5. NO                          -> GO TO Q17
@@ -96,7 +91,6 @@ D29. Rural/Urban Residence.
 
              9. MISSING
 Q16b. Which party do you feel closest to?
-         ..................................................................
 
              01-88. [SEE CODEBOOK PART 3 FOR PARTY AND LEADER CODES]
 
@@ -110,7 +104,6 @@ Q16b. Which party do you feel closest to?
              99.    MISSING
  Q16c. Do you feel very close to this party, somewhat close, or
                not very close?
-         ..................................................................
 
              1. VERY CLOSE
              2. SOMEWHAT CLOSE
@@ -125,11 +118,12 @@ Q16b. Which party do you feel closest to?
 
 D3005_PR_1  >>> Q05P1a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
                         A BALLOT - 1ST ROUND 
+
 D3005_PR_2  >>> Q05P2a. CURRENT PRESIDENTIAL ELECTION: DID RESPONDENT CAST
                         A BALLOT - 2ND ROUND 
+
 D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
                         CAST A BALLOT 
----------------------------------------------------------------------------
 
          The wording of this item, which is to record voting in the
          national election, follows national standards.
@@ -144,7 +138,6 @@ D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
          after the second round in a two round election, this item should
          ascertain whether or not the respondent cast a ballot in the
          second round, regardless of whether or not it was valid.
-         ..................................................................
 
              1. RESPONDENT CAST A BALLOT/WILL CAST A BALLOT
              5. RESPONDENT DID NOT CAST A BALLOT/WILL NOT CAST A BALLOT
@@ -163,11 +156,11 @@ D3005_LH    >>> Q05LHa. CURRENT LOWER HOUSE ELECTION: DID RESPONDENT
 
 D3006_PR_1  >>> Q05P1b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE - 
                         1ST ROUND 
+
 D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE - 
                         2ND ROUND 
----------------------------------------------------------------------------
 
-         If applicable and respondent cast a ballot in the presidential
+        If applicable and respondent cast a ballot in the presidential
          election:
 
          These variables report the respondent's vote choice for
@@ -179,7 +172,6 @@ D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
          If the data collection occurs after the second round in a
          two round election, this item should report the respondent's
          vote choice for president in the second round.
-         ..................................................................
 
              01-88. [SEE CODEBOOK PART 3 FOR PARTY AND LEADER NUMERIC 
                     CODES]
@@ -201,9 +193,9 @@ D3006_PR_2  >>> Q05P2b. CURRENT PRESIDENTIAL ELECTION: VOTE CHOICE -
 
 D3006_LH_PL >>> Q05LHb. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
                         PARTY LIST
+
 D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
                         DISTRICT CANDIDATE
----------------------------------------------------------------------------
 
          If applicable and respondent cast a ballot in the Lower
          House legislative election:
@@ -214,7 +206,6 @@ D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
 
          For preferential STV voting systems, please provide the first two
          preferences (Q5LH-c1 and Q5LH-c2).
-         ..................................................................
 
              01-88. [SEE CODEBOOK PART 3 FOR PARTY AND LEADER CODES]
 
@@ -235,14 +226,20 @@ D3006_LH_DC >>> Q05LHc. CURRENT LOWER HOUSE ELECTION: VOTE CHOICE -
 **Respondent preferences on policy issues - D3001_1 -> D3001_8** Issues center around public expenditure on health, education, unemployment, defense, old age pensions, business and industry, police and law enforcement, nd welfare benefits.
 
 D3001_1     >>> Q01a. PUBLIC EXPENDITURE: HEALTH
+
 D3001_2     >>> Q01b. PUBLIC EXPENDITURE: EDUCATION
+
 D3001_3     >>> Q01c. PUBLIC EXPENDITURE: UNEMPLOYMENT BENEFITS
+
 D3001_4     >>> Q01d. PUBLIC EXPENDITURE: DEFENSE
+
 D3001_5     >>> Q01e. PUBLIC EXPENDITURE: OLD-AGE PENSIONS
+
 D3001_6     >>> Q01f. PUBLIC EXPENDITURE: BUSINESS AND INDUSTRY
+
 D3001_7     >>> Q01g. PUBLIC EXPENDITURE: POLICE AND LAW ENFORCEMENT
+
 D3001_8     >>> Q01h. PUBLIC EXPENDITURE: WELFARE BENEFITS
----------------------------------------------------------------------------
 
          For the next questions, please say whether there should be more or
          less public expenditure in each of the following areas. Remember
@@ -313,7 +310,6 @@ D3001_8     >>> Q01h. PUBLIC EXPENDITURE: WELFARE BENEFITS
               now?
          HELP: The phrase "welfare benefits" is intended to refer to public
                expenditure on welfare programs or social benefit programs.
-         ..................................................................
 
              1. MUCH MORE THAN NOW
              2. SOMEWHAT MORE THAN NOW
@@ -335,9 +331,10 @@ DARA UNAVAILABLE FOR ARGENTINA 2015
 **D5051_1 Time T (Democracy-Autocracy) to DD5051_3 (Democracy-Autocracy) at T-2**
 
 D5051_1     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T
+
 D5051_2     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-1
+
 D5051_3     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-2
----------------------------------------------------------------------------
 
          These variables report POLITY IV ratings of institutionalized
          democracy versus autocracy in a country, at three time periods:
@@ -348,7 +345,6 @@ D5051_3     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-2
          The variable is constructed by subtracting the autocracy score
          from the democracy score; the resulting scale ranges from +10
          (strongly democratic) to -10 (strongly autocratic).
-         ..................................................................
 
              10. DEMOCRATIC
              09.
@@ -398,7 +394,6 @@ D5051_3     >>> DEMOCRACY-AUTOCRACY - POLITY IV RATING - TIME T-2
 **D5052 Age of the current regime**
 
 D5052       >>> AGE OF THE CURRENT REGIME
----------------------------------------------------------------------------
 
          The number of years since the most recent regime change (defined
          by a three-point change in the POLITY score over a period of three
@@ -406,7 +401,6 @@ D5052       >>> AGE OF THE CURRENT REGIME
          of stable political institutions (denoted by a standardized
          authority score) [Variable "Durable" from Polity IV Project
          Dataset Users' Manual].
-         ..................................................................
 
              000-500. AGE OF THE REGIME (YEARS)
 
@@ -432,7 +426,6 @@ D5052       >>> AGE OF THE CURRENT REGIME
 **D5054 Regime: Type of Executive**
 
 D5054       >>> REGIME: TYPE OF EXECUTIVE
----------------------------------------------------------------------------
 
          Classification of political regimes in which democracies are
          distinguished by the type of executive (0 Dictatorship,
@@ -453,9 +446,8 @@ D5054       >>> REGIME: TYPE OF EXECUTIVE
          NOTE: Responsibility refers to whether the survival of the
          executive depends directly on legislature (i.e. vote of
          confidence).
-         ..................................................................
 
-             1. PARLIAMENTARY REGIME
+            1. PARLIAMENTARY REGIME
              2. MIXED REGIME
              3. PRESIDENTIAL REGIME
 
@@ -473,12 +465,10 @@ D5054       >>> REGIME: TYPE OF EXECUTIVE
 **D5056 Number of years since last presidential election**
 
 D5056       >>> NUMBER OF MONTHS SINCE LAST PRESIDENTIAL ELECTION
----------------------------------------------------------------------------
 
          Indicates the number of months between the current and previous
          presidential election. This variable does not signify that the
          election chose either the nominal or effective head of government.
-         ..................................................................
 
              1-200. NUMBER OF MONTHS SINCE LAST PRESIDENTIAL ELECTION
 
@@ -496,14 +486,12 @@ D5056       >>> NUMBER OF MONTHS SINCE LAST PRESIDENTIAL ELECTION
          | Source: Publicly Available Sources.
 
 D5055       >>> NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
----------------------------------------------------------------------------
 
          Indicates the number of months between the current election and
          the previous national lower chamber election (if current election
          renews the national lower chamber), or the most recent
          national lower chamber election (if current election does not
          renew the national lower chamber).
-         ..................................................................
 
              1-200. NUMBER OF MONTHS SINCE LAST LOWER HOUSE ELECTION
 
