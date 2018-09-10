@@ -8,6 +8,10 @@ Transitions to Democracy
 
 How does place based identity (rural-urban) influence policy preferences in countries based on the country’s style of government? Does place attachments influence conservative or liberal stances in the context of the country in which the individual lives?
 
+How does place of residence (urban neighborhood versus rural neighborhood) influence individual vote choice? In what ways does the electoral system in the country influence this relationship?
+
+I am interested in understanding the influence of place of residence on individual ideology. If the electoral system is a factor to mitigate the relationship between place and ideology, I am interested in understanding the role that said system plays on the relationnship.
+
 **Research on the effects of place based identity (rural v urban - D2031), SES (D2012-D12), Farmers’ Association Membership (D2008) on a number of key variables**
 
 The data for this project will come from CSES Module 4 survey data. I an leaning towards using STATA for data analysis but it is also likely that I may use R or SAS to conduct the analysis.
