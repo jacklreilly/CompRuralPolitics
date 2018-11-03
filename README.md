@@ -5,9 +5,13 @@
 **Transitions to Democracy**
 
 09/10/2018 - Project Idea File has all of the variables of interest from CSES Module 4 codebook
+
 10/22/2018 - Research Prospectus submitted
+
 11/11/2018 - Point Based outline due
+
 11/25/2018 - First Draft due and Presentation
+
 12/12/2018 - Final Paper due
 
 **Quantitative Political Analysis II**
