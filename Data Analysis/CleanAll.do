@@ -2,7 +2,7 @@
 *Author: Jennifer Lin
 *Data: CSES Module 4 <http://www.cses.org/datacenter/module4/module4.htm>
 *Analyzed with Stata 15.1 using MacOSX 10.13.6
-*Management File: Clean data
+*Management File: Clean data while keeping all other variables intact
 
 *For this project, I am interested in the following variables
 *D1006 Polity Identifier
@@ -19,13 +19,10 @@
 *D5056 Number of Months since last presidential election
 *D5058 Electoral Formula
 
-*Reload data using specified variables
-use D1006 D1008 D1010_1 D1010_2 D1010_3 D1015 D2031 D3014 D5051_1 D5052 D5054 D5056 D5058 using "/Users/pebl/Desktop/Working/cses4.dta", clear
+*RLoad data using specified variables
+use "/Users/pebl/Desktop/Working/cses4.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
-
-*Save Working copy of data
-save "CSES4Select.dta", replace
 
 ****************************
 *****Clean Data*************
@@ -53,4 +50,4 @@ recode timesince (999 =.), gen (timeclean)
 recode electformula (9 =.), gen (formulaclean)
 
 *Save clean data
-save "CSES4clean.dta", replace
+save "CSES4cleanall.dta", replace

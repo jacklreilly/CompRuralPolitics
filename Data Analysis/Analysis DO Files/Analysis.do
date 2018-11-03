@@ -9,3 +9,9 @@ use "/Users/pebl/Desktop/Working/CSES4clean.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
+*************************************
+***********REGRESSIONS***************
+*************************************
+
+*Regression: Ideology as the dependent variable with 
+
