@@ -4,10 +4,6 @@
 *Analyzed with Stata 15.1 using MacOSX 10.13.6
 *Management File: Clean data
 
-*Read in all Data and change working Directory to somewhere conveinent to store files
-*use "/Users/pebl/Downloads/cses4 2.dta", clear
-
-*cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
 *For this project, I am interested in the following variables
 *D1006 Polity Identifier
@@ -25,7 +21,7 @@
 *D5058 Electoral Formula
 
 *Reload data using specified variables
-use D1006 D1008 D1010_1 D1010_2 D1010_3 D1015 D2031 D3014 D5051_1 D5052 D5054 D5056 D5058 using "/Users/pebl/Downloads/cses4 2.dta", clear
+use D1006 D1008 D1010_1 D1010_2 D1010_3 D1015 D2031 D3014 D5051_1 D5052 D5054 D5056 D5058 using "/Users/pebl/Desktop/Working/cses4.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
