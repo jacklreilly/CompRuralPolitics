@@ -33,3 +33,6 @@ The RuralAB.bib contains the annotations for the AB and is complied via the Rese
 ### *Data Analysis*
 
 This is the file for the materials used in the data analysis.
+* Analysis DO Files - Folder contains all the DO files used to generate the data analysis in Stata
+* Results - Folder contains text files for the printout of results in Stata
+* Graphs - Folder contains PDF versions of the graphs that are generated from Stata using the code available in the Analysis.do file.
