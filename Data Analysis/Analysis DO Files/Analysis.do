@@ -99,3 +99,8 @@ sum polityds
 
 *Margins!
 margins i.placeclean##i.polityds
+
+*Regression with all the variables 
+reg ideoclean i.placeclean democlean regageclean formulaclean
+rvfplot
+ 
