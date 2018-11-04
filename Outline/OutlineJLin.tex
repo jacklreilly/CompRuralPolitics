@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage} %full page typesetting
+\usepackage{setspace} %allows for non-singlespacing
+\usepackage{graphicx} %graphics capabilities
+\usepackage{latexsym} %extra symbols
+\usepackage{rotating} %rotation for figures
+\usepackage{longtable} %tables that fill more than a single page
+\usepackage{hyperref} %hypertext links in the document
+\usepackage{natbib} %better bibliographies
+\usepackage{authblk} %author and affiliation in opening
+\usepackage{mathpazo} %use palatino font, rather than times
+
+\title{\tb{Place of Residence and Political Attitudes in Democracies Worldwide \\ {\large Point-Based Outline} }}
+
+\author{Jennifer Lin}
+\affil{Transitions to Democracy}
+
+\newcommand\e{\emph}
+\newcommand\tb{\textbf}
+\newcommand\un{\underline}
+\newcommand\txt{\texttt}
+
+\begin{document}
+
+\maketitle 
+
+\section{Point-Based Outline}
+
+\begin{enumerate}
+\item Introduction to the Paper: The Intersection between Place of Residence and Political Attitudes\footnote{The materials used in this research project can all be found in this Git Repository \url{https://github.com/lin-jennifer/CompRuralPolitics.git} Which also includes the backstage files used to generate this document along with the Annotated Bibliography and detailed breakdown of analysis results}
+\begin{enumerate}
+	\item The Big Picture: The United States and the 2016 Election: Rural voters have helped the Republican secure their victory and these voters are core to Trump's base \citep{walsh_putting_2012}. Can we observe these effects elsewhere?
+	\item Guiding Question: Does place of residence influence political attitudes and ideology? How do certain factors of the regime, including its age and electoral formula, influence these results?
+	\item Brief summary of key conclusions from Literature Review and Data Analysis
+\end{enumerate}
+\item Literature Review
+\begin{enumerate}
+	\item Analysis of the Rural Consciousness in the United States
+	\item Analysis of the Rural Consciousness in other countries in brief
+	\item Discern what the literature has to say about the ties between Rurality and political attitudes - As of now, it says that people who live in rural areas tend to be more religious and more conservative on social issues. However, they can also be liberal when it comes to the economy since that is where their own economic interests lie.
+\end{enumerate}
+\item Research Design: Methods and Variables 
+\begin{enumerate}
+	\item Data: CSES Module 4 \url{http://www.cses.org/datacenter/module4/module4.htm}
+	\item Cases: The cases that are considered in this study are based on those available in the CSES dataset.\footnote{The CSES provides a brief synopsis of the elections that were used for the data collection here" \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part5_election_summaries.txt}.}
+	\item Methodology: See Section 2 for detailed breakdown
+\end{enumerate}
+\item Results: Broken down by Regression Model
+\begin{enumerate}
+	\item Regression: Across all polities: Place on ideology on ideology
+	\item Regression: Interaction of place of residence and level of democracy on ideology
+	\item Regression: Interaction of place of residence and regime electoral formula on ideology
+	\item Regression: Interaction of place of residence and age of regime on ideology
+	\item Regression: Consideration of place of residence, level of democracy, regime electoral formula, and age of regime on political ideology
+\end{enumerate}
+\item Conclusion: Place of residence matters.
+\begin{enumerate}
+	\item When regressed on itself with regime variables, rural residents are significantly more conservative than urban residents
+	\item Directions for future research
+	\begin{enumerate}
+		\item Consdier any other possible variables that influence the interaction since research in American politics concludes that there are other favtors such as education and income that matter in the relationship observed \citep{gimpel_rural_2006}
+	\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\section{Breakdown of Methodology}
+
+\begin{enumerate}
+\item Variables: The following variables were integrated into the analysis\footnote{The Codebook used as a reference to determine which variables to use is located here: \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part2_variables.txt}}:
+\begin{enumerate}
+	\item D1006 Polity Identifier
+	\item D1008 Election year
+	\item D1010\_1 Weights Sample
+	\item D1010\_2 Weights Demographic
+	\item D1010\_3 Weights Political 
+	\item D1015 Election Type
+	\item D2031 Urban/Rural place of Residence
+	\item D3014 Self Ideology
+	\item D5051\_1 Democracy to Autocracy scale at the time of the election
+	\item D5052 Age of Current Regime
+	\item D5054 Type of Executive
+	\item D5056 Number of Months since last presidential election
+	\item D5058 Electoral Formula
+\end{enumerate} 
+\item Researcher recode of data: Missing data identified in the codebook as (99 = MISSING) or some other value that reflects that the respondent does not know the response to the question is replaced with a "." to represent missing data
+\item Analysis: Stata 15.1 was used to analyze the results
+\item Independent Variables:
+\begin{enumerate}
+	\item Place of Residence - Treated as a categorical variable
+	\item Regime Age - Treated as a continuous variable
+	\item Level of Democracy - Treated as a categorical variable
+	\item Electoral Formula - Treated as a categorical variable
+\end{enumerate}
+\item Dependent Variable:
+\begin{enumerate}
+	\item Self Ideology - An individual's self placement on the ideological scale with 00 being most left and 10 being most right
+\end{enumerate}
+\end{enumerate}
+
+\clearpage
+\nocite{*}
+\bibliographystyle{chicago}
+\bibliography{RuralPolitics}
+
+\end{document}
