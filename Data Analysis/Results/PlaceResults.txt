@@ -75,7 +75,7 @@ placeclean#c.democlean |
                  _cons |   7.675911   .1953132    39.30   0.000     7.293094    8.058728
 ----------------------------------------------------------------------------------------
 
-Margins Printout
+Margins Printout - Marginsplot saved as PlaceAtDem.pdf in Graphs Folder
 
  margins, dydx(placeclean) at(democlean=(-10(1)10))
 
