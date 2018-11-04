@@ -16,13 +16,13 @@
 
 **Quantitative Political Analysis II**
 
-Something is due at some point I think...
+11/14/2018 - Research Pre-Registration 1 Due
 
 ## Description of Repository Contents
 
 ### *Prospectus*
 
-The Prospectus file consists of files that were used to compile the research prospectus that was submitted on 10/22/2018 - This includes the original TeX file, its PDF and the preliminary bibliography as a BibTeX file (RuralPolitics.bib)
+The Prospectus file consists of files that were used to compile the research prospectus that was submitted on 10/22/2018 for Transitions to Democracy - This includes the original TeX file, its PDF and the preliminary bibliography as a BibTeX file (RuralPolitics.bib)
 
 ### *Annotated Bibliography (AB)*
 
@@ -36,3 +36,7 @@ This is the file for the materials used in the data analysis.
 * Analysis DO Files - Folder contains all the DO files used to generate the data analysis in Stata
 * Results - Folder contains text files for the printout of results in Stata
 * Graphs - Folder contains PDF versions of the graphs that are generated from Stata using the code available in the Analysis.do file.
+
+### *Outline*
+
+This folder contains the materials used to create the Point-Based Outline due on 11/11/2018 for Transitions to Democracy.
