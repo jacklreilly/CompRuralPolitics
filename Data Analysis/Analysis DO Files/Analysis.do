@@ -5,7 +5,7 @@
 *Analysis File
 
 *Read in Cleaned data generated from the Management DO File
-use "/Users/pebl/Desktop/Working/CSES Data stages/CSES4clean.dta", clean
+use "/Users/pebl/Desktop/Working/CSES Data stages/CSES4cleanall.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
@@ -51,3 +51,51 @@ marginsplot
 
 margins, dydx(placeclean) at(democlean=(-10(1)10))
 marginsplot
+
+********************************
+*********SORT BY POLITY*********
+********************************
+
+*Run Regression of Polity
+bys polity: reg ideoclean i.placeclean
+
+*By Each level of Democracy, Regress place on ideology
+bys democlean: reg ideoclean i.placeclean
+
+*By Electoral Formula, regress place on ideology
+bys formulaclean: reg ideoclean i.placeclean
+
+*By Regime Age, regress place on ideology
+bys regageclean: reg ideoclean i.placeclean
+
+*if bys polity and reg ideoclean placeclean democlean/regageclean, stata will omit the latter variables due to colinearity.
+*Treat Regime Age as part of the regression: Does place interact with regime age in influencing ideology?
+
+*I looked at place and democracy rating to show its interaction - Since most regimes are democracies, does the length of democracy influence people's ideology based on where they live?
+regress ideoclean i.placeclean regageclean
+rvfplot
+
+*Examine the interaction between the variables
+reg ideoclean i.placeclean##c.regageclean
+rvfplot
+
+*margins plot
+margins, at(regageclean=(0(10)300))
+marginsplot
+
+margins, dydx(placeclean) at(regageclean=(0(10)300))
+marginsplot
+
+*Use polity as a variable in the regression just like how I used regime age and level of democracy
+destring polity, generate (polityds)
+reg ideoclean i.placeclean i.polityds
+rvfplot
+
+*How about the Interaction
+reg ideoclean i.placeclean##i.polityds
+rvfplot
+
+sum polityds
+
+*Margins!
+margins i.placeclean##i.polityds
