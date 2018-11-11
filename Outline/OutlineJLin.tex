@@ -33,15 +33,28 @@
 	\item The Big Picture: The United States and the 2016 Election: Rural voters have helped the Republican secure their victory and these voters are core to Trump's base \citep{walsh_putting_2012}. Can we observe these effects elsewhere?
 	\item Guiding Question: Does place of residence influence political attitudes and ideology? How do certain factors of the regime, including its age and electoral formula, influence these results?
 	\item Brief summary of key conclusions from Literature Review and Data Analysis
+	\begin{enumerate}
+		\item Place of residence matters for voters' political ideology but it varies depending on the regime electoral conditions where the voter cast their ballot.
+		\item In more developed and longstanding democracies, place differences are more pronounced than democracies in earlier stages of development.
+	\end{enumerate}
 \end{enumerate}
 \item Literature Review
 \begin{enumerate}
 	\item Analysis of the Rural Consciousness in the United States and around the world with considerations of the country's political culture.
+	\begin{enumerate}
+		\item In \cite{walsh_putting_2012} and \cite{gimpel_rural_2006}, evidence suggests that living in a rural town versus an urban city would lead people to vote more Republican in elections.
+		\item Furthermore, in \cite{walks_city-suburban_2005}, the same pattern is visible in Canadian Federal Elections when suburban and rural residents are more likely to vote for the conservative wing rather than the New Democratic Party, which is favored by those who reside in urban areas.
+	\end{enumerate}
 	\item Discern what the literature has to say about the ties between rurality and political attitudes - people who live in rural areas tend to be more religious and more conservative on social issues. However, they can also be liberal when it comes to the economy since that is where their own economic interests lie.
 	\begin{enumerate}
 		\item \cite{williamson_sprawl_2008} argues that people who live in rural/suburbia tend to not mingle with other people as much, so they are less likely to be influenced by appeals to diversity and view the world based on their faith. These patterns are observed in the US and in Canada.
 	\end{enumerate}
-	\item Overview of the elections that are considered in the CSES, including countries reported, actors involved and other key characteristics of the election. 
+	\item Overview of the elections that are considered in the CSES, including countries reported, actors involved and other key characteristics of the elections across the board. 
+	\begin{enumerate}
+		\item Graph showing the distribution of levels of democracies represented by the CSES Module 4 - the majority of the states here are democracies. While they vary in their level of democracy, most guarantee basic freedoms to its people and hold elections
+		\item Graph displaying voter turnout as a function of the registered voters AND voting age population.
+		\item Graph displaying voter turnout percentage based on place of residence characteristics by country
+	\end{enumerate}
 \end{enumerate}
 \item Research Design: Methods and Variables 
 \begin{enumerate}
@@ -51,18 +64,34 @@
 \end{enumerate}
 \item Results: Broken down by Regression Model
 \begin{enumerate}
-	\item Regression: Across all polities: Place on ideology on ideology
-	\item Regression: Interaction of place of residence and level of democracy on ideology
-	\item Regression: Interaction of place of residence and regime electoral formula on ideology
-	\item Regression: Interaction of place of residence and age of regime on ideology
-	\item Regression: Consideration of place of residence, level of democracy, regime electoral formula, and age of regime on political ideology
+	\item Regression: Across all polities: Place on ideology - The results suggest that there is a difference between place of residence and ideology of voters. Compared to rural voters, small village and suburban residents are significantly more likely to see themselves as more liberal, but this cannot be said about urban residents 
+	\item Regression: Interaction of place of residence and level of democracy on ideology - effects of place of residence at every level of democracy - The effect of place is more pronounced with lower levels of democracy. As democracies get more free (up to 10), the place of residence is not dependent on democracy, but may be on some other factors.
+	\item Regression: By electoral formula - regress place of residence on ideology
+	\begin{enumerate}
+		\item In Majoritarian elections, place matters. As people live in more urban places, they are more likely to be more liberal than rural residents. While the $R^2$ is 1\%, the significance suggests that place matters but ideology may be governed more by other factors in countries with this type of electoral formula
+		\item In PR elections, place is not as significant. This may be due to the nature of the electoral system itself. When all voices get some form of representation in proportion to the percentage of votes, it may be enough to mitigate any possible polarization resulting from competitions for representation in government.
+		\item In Mixed systems, place only matters when you live in an urban city. In this system, living in a large city actually makes people more conservative, which is different from the pattern we see from before.
+	\end{enumerate}
+	\item Regression: Interaction of place of residence and age of regime on ideology - effects of place on each increasing year of the regime
+	\begin{enumerate}
+		\item More of the older regimes are at the highest levels of democracy. As the regime gets older, the democracy becomes freer
+		\item The effect of place will be more pronounced when the regime gets older than 100 years. When the regime is relatively young, nearing its foundation, there is a difference between place of residence and its effect on ideology. As the regime stabilizes and nears 100 years, place does not matter so much on the ideology than when the regime gets over 100 years. At that point, place begins to matter again as a predictor of ideology, and drastically more so than the foundation of the current regime.
+	\end{enumerate}
+	\item Regression: Consideration of place of residence, level of democracy, regime electoral formula, and age of regime on political ideology - When we control for regime variables such as level of democracy, regime electoral formula, and age of regime, we see that small towns and suburban area voters are significantly more likely to self identify as more liberal, but this is not the case for urban center voters.
+	\item Regression: Place of Residence on Liberalism scale - how place influences vision on issues
 \end{enumerate}
 \item Conclusion: Place of residence matters, but there is still a lot of noise in the model.
 \begin{enumerate}
-	\item When regressed on itself with regime variables, rural residents are significantly more conservative than urban residents
+	\item When regressed on itself with regime variables, rural residents are significantly more conservative than urban residents - Yet, these points of conservatism are relatively small. 
 	\item Directions for future research
 	\begin{enumerate}
 		\item Consider any other possible variables that influence the interaction since research in American politics concludes that there are other factors such as education and income that matter in the relationship observed \citep{gimpel_rural_2006}
+	\end{enumerate}
+	\item Limitations of Present study
+	\begin{enumerate}
+		\item Data on transitioning regimes were not available for the CSES and there are not data points available for authoritarian regimes. This may be due to data collection limitations for those regimes. 
+		\item Each of the countries represented here are relatively liberal democracies, though there are some outliers in the mix. 
+		\item Urban residents are slightly more over-represented than rural residents in the sample.
 	\end{enumerate}
 \end{enumerate}
 \end{enumerate}
@@ -72,6 +101,7 @@
 \begin{enumerate}
 \item Variables: The following variables were integrated into the analysis\footnote{The Codebook used as a reference to determine which variables to use is located here: \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part2_variables.txt}}:
 \begin{enumerate}
+	\item D1004 Election
 	\item D1006 Polity Identifier
 	\item D1008 Election year
 	\item D1010\_1 Weights Sample
@@ -86,6 +116,14 @@
 	\item D5056 Number of Months since last presidential election
 	\item D5058 Electoral Formula
 \end{enumerate} 
+\item Generate alternative measure of ideology based on views of social and economic issues
+\begin{enumerate}
+	\item Recode the following variables on a scale of 0 = conservative and 1 = liberal with all other points scaled in between. Generates a 9-point scale on liberal views titled {\txt{liberalism}}\footnote{The determination for conservatism and liberalism is based on visions on spending where liberals will be more likely to approve government expenditures and support government social services to people in lieu of the more conservative vision of small government and government staying out of people's lives}
+	\begin{enumerate}
+		\item D3001 Public Expenditure - Should the government spend more on health, education, unemployment benefits, defense, old age pensions, business and industry, police, welfare benefits
+		\item D3004 Income Inequality - Should the government do more to curtail the effects of income inequality
+	\end{enumerate}
+\end{enumerate}
 \item Researcher recode of data: Missing data identified in the codebook as (99 = MISSING) or some other value that reflects that the respondent does not know the response to the question is replaced with a "." to represent missing data
 \item Analysis: Stata 15.1 was used to analyze the results
 \item Independent Variables:
@@ -98,12 +136,14 @@
 \item Dependent Variable:
 \begin{enumerate}
 	\item Self Ideology - An individual's self placement on the ideological scale with 00 being most left and 10 being most right
+	\item Liberalism - One's stance on the social issues
+\end{enumerate}
+\item Models 
+\begin{enumerate}
+	\item Model 1 -- Place of Residence on self-identified ideology
+	\item Model 2 -- Place of Residence on objective liberalism scale
 \end{enumerate}
 \end{enumerate}
 
-\clearpage
-\nocite{*}
-\bibliographystyle{chicago}
-\bibliography{RuralPolitics}
 
 \end{document}
