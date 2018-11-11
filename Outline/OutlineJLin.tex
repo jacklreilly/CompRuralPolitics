@@ -31,6 +31,7 @@
 \item Introduction to the Paper: The Intersection between Place of Residence and Political Attitudes\footnote{The materials used in this research project can all be found in this Git Repository \url{https://github.com/lin-jennifer/CompRuralPolitics.git} Which also includes the backstage files used to generate this document along with the Annotated Bibliography and detailed breakdown of analysis results}
 \begin{enumerate}
 	\item The Big Picture: The United States and the 2016 Election: Rural voters have helped the Republican secure their victory and these voters are core to Trump's base \citep{walsh_putting_2012}. Can we observe these effects elsewhere?
+	\item Popular press gives us a conceptualization of rural and urban dwellers in their places of residences \citep{holloway_burning_2007}. They live relatively different lives that may not be understood by each other. Can this lead to differences between their political behavior and attitudes?
 	\item Guiding Question: Does place of residence influence political attitudes and ideology? How do certain factors of the regime, including its age and electoral formula, influence these results?
 	\item Brief summary of key conclusions from Literature Review and Data Analysis
 	\begin{enumerate}
@@ -52,9 +53,15 @@
 	\item Overview of the elections that are considered in the CSES, including countries reported, actors involved and other key characteristics of the elections across the board. 
 	\begin{enumerate}
 		\item Graph showing the distribution of levels of democracies represented by the CSES Module 4 - the majority of the states here are democracies. While they vary in their level of democracy, most guarantee basic freedoms to its people and hold elections
-		\item Graph displaying voter turnout as a function of the registered voters AND voting age population.
-		\item Graph displaying voter turnout percentage based on place of residence characteristics by country
+		\item Graph showing the distribution of residence - There are more people interviewed for this survey who live in urban centers than rural villages.
 	\end{enumerate}
+	\item As \cite{holloway_burning_2007} warns, rural residents cannot be treated as a full voting bloc especially if the analyses do not consider the specific differences between the demographics of the residents withing each place of residence itself. For this paper, I will heed to the warning and not overgeneralize in the results. The goal for the analyses is to see if being in a different place compared to your neighbors would influence your voting habits. I do not aim to make predictions of votes based on the results here.
+\end{enumerate}
+\item Hypotheses
+\begin{enumerate}
+	\item H1: Place of residence matters in one's self-identified political ideology
+	\item H2: Place of residence influences how one conceptualizes the issues and states their stances on them
+	\item H3: Regime factors such as age, level of democracy, and electoral formula matter to influence how place of residence influences one's stance on the issues
 \end{enumerate}
 \item Research Design: Methods and Variables 
 \begin{enumerate}
@@ -78,20 +85,35 @@
 		\item The effect of place will be more pronounced when the regime gets older than 100 years. When the regime is relatively young, nearing its foundation, there is a difference between place of residence and its effect on ideology. As the regime stabilizes and nears 100 years, place does not matter so much on the ideology than when the regime gets over 100 years. At that point, place begins to matter again as a predictor of ideology, and drastically more so than the foundation of the current regime.
 	\end{enumerate}
 	\item Regression: Consideration of place of residence, level of democracy, regime electoral formula, and age of regime on political ideology - When we control for regime variables such as level of democracy, regime electoral formula, and age of regime, we see that small towns and suburban area voters are significantly more likely to self identify as more liberal, but this is not the case for urban center voters.
-	\item Regression: Place of Residence on Liberalism scale - how place influences vision on issues
+	\item Regression: Place of Residence on Liberalism scale - how place influences vision on issues - the results suggest similar findings to self ideology but the difference is relatively small. When people live in more urban areas, they are more likely to think liberally but that difference does not vary considerably. 
+	\begin{enumerate}
+		\item A major caveat for this is that the regime types here are all relatively established democracies and are relatively free based on the "Level of Democracy" measure. Therefore, it may be hard to say that electoral formula, regime age, or level of democracy does not matter. These variables are statistically significant in the regression. Their influence is just not as salient in this particular situation
+		\item We see these same patterns for the objectively defined liberalism scale. Yet, in liberalism, the divide is only between urban centers and every-place else. Suburban and small towns do not differ significantly from rural places in terms of their interests. \cite{walks_city-suburban_2005} discusses general differences in interests between urban and rural dwellers that cause their divide in politicians that they favor.
+	\end{enumerate}
 \end{enumerate}
 \item Conclusion: Place of residence matters, but there is still a lot of noise in the model.
 \begin{enumerate}
 	\item When regressed on itself with regime variables, rural residents are significantly more conservative than urban residents - Yet, these points of conservatism are relatively small. 
+	\item Self-identified position on ideology scale and objective ratings based on stance of issues are influenced by place of residence, but the variation is rather large depending on the country where the individual came from. 
+	\item The Literature (most notably \cite{walks_city-suburban_2005} for Canada) notes that the differences between place and voting patters or political ideology is rooted in differences of interests. However, if we look at the breakdown for the interests that compose the liberalism variable, we see that there is nothing in the data that can confirm this suggestion. 
+	\item Reflection on the hypotheses
+	\begin{enumerate}
+		\item H1: Yes
+		\item H2: Yes
+		\item H3: Yes, but limited to suburban and small town residents when it comes to self-placement on ideology. For the objective liberalism scale, there is a difference between urban and rural, but not between suburban/small town and rural
+	\end{enumerate}
 	\item Directions for future research
 	\begin{enumerate}
 		\item Consider any other possible variables that influence the interaction since research in American politics concludes that there are other factors such as education and income that matter in the relationship observed \citep{gimpel_rural_2006}
+		\item If the data reflects minimal differences in interests as the root of the differences in political behavior, what else constitutes the difference in voting patterns?
 	\end{enumerate}
 	\item Limitations of Present study
 	\begin{enumerate}
 		\item Data on transitioning regimes were not available for the CSES and there are not data points available for authoritarian regimes. This may be due to data collection limitations for those regimes. 
 		\item Each of the countries represented here are relatively liberal democracies, though there are some outliers in the mix. 
 		\item Urban residents are slightly more over-represented than rural residents in the sample.
+		\item In some elections/polities, the presence of suburban and/or small town residents are also not recorded, therefore the effect between these regions and the observed results may be influenced by the limitations in data availability. 
+		\item The analyses in this study also run on the assumption (similar to the coders'), that the rural to urban categorization is universal across political boundaries.
 	\end{enumerate}
 \end{enumerate}
 \end{enumerate}
@@ -110,6 +132,7 @@
 	\item D1015 Election Type
 	\item D2031 Urban/Rural place of Residence
 	\item D3014 Self Ideology
+	\item D3005\_LH Voters who cast a ballot in the lower house elections
 	\item D5051\_1 Democracy to Autocracy scale at the time of the election
 	\item D5052 Age of Current Regime
 	\item D5054 Type of Executive
@@ -145,5 +168,9 @@
 \end{enumerate}
 \end{enumerate}
 
+\clearpage
+\nocite{*}
+\bibliography{RuralPolitics}
+\bibliographystyle{chicago}
 
 \end{document}
