@@ -40,7 +40,14 @@ R. Allen Wlaks | January 2005
 * The differences in rural-urban voting happened in the 1970s.
 * Therefore, there are differences between urban and rural residents in their voting patterns, and these differences have increasingly diverged when suburban residents increasingly vote for right winged parties and urban residents vote for the left winged parties.
 
-
 ## <a name="barkan2006"></a> Space Matters: Designing Better Electoral Systems for Emerging Democracies
 Joel D. Barkan, Paul J. Densham, and Gerard Rushton | October 2006
+
+* In transitioning regimes, the choice of electoral systems is based upon what is familiar for the leaders and not necessarily what is most likely to sustain the regime.
+	* Most British colonies used the FPTP system while French lands used the runoff 
+	* States in Latin America use the PR
+* Toe goal of this paper is to consider how space matters - how voter distribution across a geographical and political space matters in the consolidation of a democracy. Additionally, the researchers aim to test how spatial distribution interacts with the electoral system.
+* Space Decision Support Systems uses geographical data based on a GIS model to plot spatial distribution.
+* Results suggest that where one person lives influences their party support, even in PR systems.
+* Voters identify their political stance based on their place of residence, which makes this factor important in rising democracies where there are divides between agrarian districts and urban ones.
 
