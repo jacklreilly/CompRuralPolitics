@@ -6,11 +6,16 @@
 \usepackage{latexsym} %extra symbols
 \usepackage{rotating} %rotation for figures
 \usepackage{longtable} %tables that fill more than a single page
-\usepackage{hyperref} %hypertext links in the document
+%\usepackage{hyperref} %hypertext links in the document
 \usepackage{natbib} %better bibliographies
 \usepackage{authblk} %author and affiliation in opening
 \usepackage{mathpazo} %use palatino font, rather than times
 \usepackage{appendix}
+\usepackage{lscape}
+\usepackage{tabulary}
+\usepackage[nottoc]{tocbibind}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{ifthen}
 
 \title{\tb{Place of Residence and Political Attitudes in Democracies Worldwide }}
 
@@ -42,6 +47,14 @@ After the 2016 election, many major new pundits pointed at Rural America as the 
 \clearpage
 
 \tableofcontents
+%\addcontentsline{toc}{section}{\listfigurename}
+%\addcontentsline{toc}{section}{\listtablename}
+\clearpage
+
+\listoftables
+\clearpage
+
+\listoffigures
 \clearpage
 
 \section{Introduction}
@@ -106,7 +119,7 @@ Through the research, we will be able to see whether there is a relationship acr
 
 \subsection{Data}
 
-To understand the divide between rural and urban residents in different countries of the world, I will consider cases analyzed in the Comparative Study of Electoral Systems (CSES) Module IV dataset for the analysis of these trends. In this specific module, the CSES considers elections that occurred between 2011 and 2016 in various democracies around the world. 
+To understand the divide between rural and urban residents in different countries of the world, I will consider cases analyzed in the Comparative Study of Electoral Systems (CSES) Module IV dataset for the analysis of these trends. In this specific module, the CSES considers elections that occurred between 2011 and 2016 in various democracies around the world. In the following sections, I will describe the variables used in this project in more detail. Each of the variable names and descriptions are also located in Appendix \ref{AppendixA}, which contains the variable code referenced in the CSES dataset.
 
 \subsection{Key Independent Variables}
 
@@ -116,7 +129,7 @@ Each individual's country of residence is also classified based on the year of t
 
 \subsection{Key Dependent Variables and Measures}
 
-To understand where individuals see their own political values, the dependent variable reflects their self-identified ideology, a variable coded by the CSES that ranges from 0 to 10 with 0 being the most left leaning and 10 as the most right leaning ideological stance.. Since this can be rather subjective, i also created a liberalism scale that reflects individual values on government spending with a more liberal vision being those who value spending for social benefits and a more conservative view for those who do not with for such spending or for those who wish to spend more to boost defense as a means to secure their country's identity and values. This 9-point scale was generated from questions relating to public expenditure used in the survey. Topics for these questions include health, education, unemployment benefits, defense, old age pensions, business and industry investments, police and law enforcement and welfare benefits. Additionally, I add a value of economic equality to the measure as a means of understanding how each person values equality as part of their ideological outlook. This scale ranges from 0 to 9, with 0 being the most conservative and 9 being the most liberal. In the broadest context, respondents who score at the extreme ends of the scale are seen to be most conservative or liberal in terms of their outlook on spending, which can speak to their views on social values given their willingness to allocate government money to these groups.
+To understand where individuals see their own political values, the dependent variable reflects their self-identified ideology, a variable coded by the CSES that ranges from 0 to 10 with 0 being the most left leaning and 10 as the most right leaning ideological stance.. Since this can be rather subjective, i also created a liberalism scale that reflects individual values on government spending with a more liberal vision being those who value spending for social benefits and a more conservative view for those who do not with for such spending or for those who wish to spend more to boost defence as a means to secure their country's identity and values. (See Appendix \ref{AppendixB} for a more detailed description of this scale creation) This 9-point scale was generated from questions relating to public expenditure used in the survey. Topics for these questions include health, education, unemployment benefits, defense, old age pensions, business and industry investments, police and law enforcement and welfare benefits. Additionally, I add a value of economic equality to the measure as a means of understanding how each person values equality as part of their ideological outlook. This scale ranges from 0 to 9, with 0 being the most conservative and 9 being the most liberal. In the broadest context, respondents who score at the extreme ends of the scale are seen to be most conservative or liberal in terms of their outlook on spending, which can speak to their views on social values given their willingness to allocate government money to these groups.
 
 \subsection{Models for Analysis}
 
@@ -135,20 +148,85 @@ In the following section, I discuss the results for the regressions and comment 
 
 \subsection{Self-Placement Ideology as a Dependent Measure}
 
+
+
 \subsection{Objective Issue Stances as a Dependent Measure}
+
+
 
 \section{General Discussion and Conclusion}
 
+\subsection{Summary of Findings}
+
+
+\subsection{Limitations and Future Directions}
 
 \clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\let\svaddcontentsline\addcontentsline
+%\renewcommand\addcontentsline[3]{%
+%	\ifthenelse{\equal{#1}{lof}}{}%
+%	{\ifthenelse{\equal{#1}{lot}}{}{\svaddcontentsline{#1}{#2}{#3}}}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
 \appendixtitleon
+\appendixtitletocon
 
 \begin{appendices}
 
+\begin{landscape}
 \section{Descriptions of Variables }
 \label{AppendixA}
 
+~~~\\\\
+
+\begin{table}[h!]
+	\centering
+	\def\arraystretch{1.5}
+	\caption{\tb{Variables Used in Analyses}}
+	\begin{tabulary}{\linewidth}{l c c c}
+		\\
+		\hline
+		\tb{Variable Name}& \tb{Variable Number} & \tb{Description}&\tb{Outside Source} \\
+		\hline
+		Election ID Variable &D1004&Polity and Election Year&-\\
+		Place of Residence&D2031&Rural or Urban Residence&-\\
+		Left-Right Self&D3014&Self-rate ideology &-\\
+		Level of Democracy&D5051\_1&Democracy-Autocracy at Election&Polity IV Project\\
+		Age of Current Regime&D5052&Age of Regime in Years& Polity IV Project\\
+		Electoral Formula&D5058&Method of Election&CSES Macro Report\\
+		\hline
+	\end{tabulary}\\
+	\e{Source:} Comparative Study of Electoral Systems Module IV Codebook available at \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part2_variables.txt}
+	\label{table1}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\def\arraystretch{1.5}
+	\caption{\tb{Issue Stances/Liberalism Scale Variables}}
+	\begin{tabulary}{\linewidth}{l c c c}
+		\\
+		\hline
+		\tb{Variable Name}& \tb{Variable Number} & \tb{Description}\\
+		\hline
+		Health&D3001\_1&More or Less Public Expenditure on Health\\
+		Education&D3001\_2&More or Less Public Expenditure on Education\\
+		Unemployment Benefits&D3001\_3&More or Less Public Expenditure on Unemployment\\
+		Defense&D3001\_4&More or Less Public Expenditure on Defense\\
+		Old-Age Pensions&D3001\_5&More or Less Public Expenditure on Pensions\\
+		Business and Industry&D3001\_6&More or Less Public Expenditure on Businesses\\
+		Police&D3001\_7&More or Less Public Expenditure on Law-Enforcement\\
+		Welfare Benefits&D3001\_8&More or Less Public Expenditure on Welfare\\
+		Income Inequality&D3004&Should Government do more for Income Inequality?\\
+		\hline
+	\end{tabulary}\\
+	\e{Source:} Comparative Study of Electoral Systems Module IV Codebook available at \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part2_variables.txt}
+	\label{table2}
+\end{table}
+
+\end{landscape}
 \clearpage
 
 \section{Creation of the Issue Stances/Liberalism Scale}
