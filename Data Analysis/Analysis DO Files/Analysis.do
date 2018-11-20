@@ -113,3 +113,5 @@ rvfplot
 bys electlab: reg income i.placeclean
 reg income i.placeclean
 rvfplot
+
+logistic ideoclean i.placeclean
