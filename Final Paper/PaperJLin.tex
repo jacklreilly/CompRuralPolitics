@@ -276,30 +276,113 @@ In the following section, I discuss the results for the regressions and comment 
 \subsection{Self-Placement Ideology as a Dependent Measure}
 
 \begin{table}
-\centering
-\def\arraystretch{1.5}
-\caption{\tb{Self-Placement Ideology - Latin America}}
-	\begin{tabulary}{\linewidth}{l c c}
-	\\
-	\hline
-	\tb{Place of Residence}&\tb{Worldwide}&\tb{Argentina} \\
-	\hline
-	Small Town                    &-.1338***         & - \\      
-	                                        & (.0336)           & - \\
-	Suburban                       & -.2591***        & - \\
-	                                       & (.0358)            & -  \\
-	Urban                             & -.0482            & -.9521*** \\
-	                                       & (.0300)            & (.2150) \\
-	Constant                       & 5.597                & 6.495 \\
-	N 									 & 47,821              & 1,241  \\
-	$R^2$							& 0.0011               & 0.0156 \\
-	\hline                                       
-	\end{tabulary} 
+	\centering
+	\def\arraystretch{1.5}
+	\caption{\tb{Self-Placement Ideology - Worldwide}}
+	\begin{tabulary}{\linewidth}{l c}
+		\\
+		\hline
+		\tb{Place of Residence}&\tb{Worldwide} \\
+		\hline
+		Small Town                &-.1338***  \\    
+		                                            & (.0336)           \\
+		Suburban                & -.2591***          \\ 
+		                                  & (.0358)               \\
+		Urban                             & -.0482             \\
+		                                      & (.0300)               \\
+		Constant                       & 5.597                   \\
+		N 									 & 47,821               \\
+		$R^2$							& 0.0011                \\
+		\hline                                       
+    \end{tabulary}
 \\
 \e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
 \e{Reference:} A rural place of residence serves as the baseline for comparison
 \label{table3}
 \end{table}
+
+\begin{table}
+\centering
+\def\arraystretch{1.5}
+\caption{\tb{Self-Placement Ideology - Central/Latin America}}
+	\begin{tabulary}{\linewidth}{l c c c c}
+	\\
+	\hline
+	\tb{Place of Residence}&\tb{Argentina}&\tb{Mexico (2012)}&\tb{Mexico (2015)} &\tb{Peru}\\
+	\hline
+	Small Town                          & -                                  & .6408***                    &-.4734                          & -   \\      
+	                                               & -                                          & (.2394)                      & (.3113)                         & -    \\
+	Suburban                            & -                                     & -                                      & -                                     & -    \\ 
+	                                                & -                                         & -                                       & -                                      & -       \\
+	Urban                                      & -.9521***                   & -.1417                           & -.4084*                      & .0883  \\
+	                                              & (.2150)                           &(.1678)                           & (.2210)                       & (.1743)      \\
+	Constant                                    & 6.495                         & 6.6516                          & 6.1690                       & 6.646   \\
+	N 									              & 1,241                              &1,812                               & 910                               & 1,438   \\
+	$R^2$							           & 0.0156                        &0.0082                         &0.0041                        &0.0002     \\
+	\hline                                       
+	\end{tabulary} 
+\\
+\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+\e{Reference:} A rural place of residence serves as the baseline for comparison
+\label{table4}
+\end{table}
+
+%Left off at France
+
+\begin{table}
+	\centering
+	\def\arraystretch{1.5}
+	\caption{\tb{Self-Placement Ideology - Western Europe}}
+	\begin{tabulary}{\linewidth}{l c c c c c c}
+		\\
+		\hline
+		\tb{Place of Residence}&\tb{Switzerland}&\tb{Germany}&\tb{France} &\tb{Great Britain}&\tb{Ireland}&\tb{Portugal}\\
+		\hline
+		Small Town                          & - .4973           & -.3295***             &-.1436                         &  .6419***   &             & \\      
+		                                                & (.4333)            & (.1087)                      & (.2864)                         & (.2060)        &          &  \\
+		Suburban                            & -.2663***           & .0912                  & -                                     & - .1095      &           & \\ 
+	                                                  	& (.0852)                   & (.1693)              & -                                    & (.3871)      &          &  \\
+		Urban                                      & -.8650***         & -.6361***        & -.2151                     & .3048**      &          &    \\
+	                                                    	& (.0976)          &(.1311)                     & (.2406)                       & (.1526)        &            &  \\
+		Constant                                    & 5.462          & 4.630                   & 5.9674                        & 7.009       &             &   \\
+		N 									              & 4,728               &1,697                & 957                               & 1,179     &           &  \\
+		$R^2$							           & 0.0191           &0.0176                  &0.0035                        &0.0097     &           &  \\
+		\hline                                       
+	\end{tabulary} 
+	\\
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+	\label{table5}
+\end{table}
+
+
+
+\begin{table}
+	\centering
+	\def\arraystretch{1.5}
+	\caption{\tb{Self-Placement Ideology - Pacific Islands}}
+	\begin{tabulary}{\linewidth}{l c c c c}
+		\\
+		\hline
+		\tb{Place of Residence}&\tb{Australia}&\tb{New Zealand (2011)}&\tb{New Zealand (2014)} &\tb{Philippines}\\
+		\hline
+		Small Town                          & - .2108            & -.2283                       &-.1436                         &  .6419***  \\      
+															& (.1540)            & (.2213)                      & (.2864)                         & (.2060)    \\
+		Suburban                            & -.1433               & -                                      & -                                     & - .1095   \\ 
+														& (.1570)                   & -                                     & -                                    & (.3871)       \\
+		Urban                                      & -.3005**         & -.2653                           & -.2151                     & .3048** \\
+																& (.1335)          &(.2114)                        & (.2406)                       & (.1526)      \\
+		Constant                                    & 5.372          & 5.754                          & 5.9674                        & 7.009   \\
+		N 									              & 3,363               &1,039                               & 957                               & 1,179  \\
+		$R^2$							           & 0.0018           &0.0016                         &0.0035                        &0.0097     \\
+		\hline                                       
+	\end{tabulary} 
+	\\
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+	\label{table10}
+\end{table}
+
 
 \subsection{Objective Issue Stances as a Dependent Measure}
 
