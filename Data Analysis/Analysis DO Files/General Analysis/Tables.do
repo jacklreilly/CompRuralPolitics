@@ -13,3 +13,8 @@ cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 tab electlab electiontype
 
 bys electlab: tab placeclean
+
+*Generate a table to reflect level of democracy, regime age and Electoral Formula
+preserve
+collapse (mean) democlean regageclean formulaclean, by (electlab)
+tab electlab democlean regageclean formulaclean

@@ -51,3 +51,6 @@ graph hbar (mean) health, over(placeclean, sort(1)) title("Attitudes Towards Hea
 graph hbar (mean) police, over(placeclean, sort(1)) title("Attitudes Towards Law Enforcement Spending", span) ysize(10)
 graph hbar (mean) income, over(placeclean, sort(1)) title("Attitudes Towards Combatting Income Inequality", span) ysize(10)
 
+*Graph Liberalism and Ideology
+
+twoway (scatter liberalism ideoclean, mcolor(black) msymbol(circle_hollow) jitter(7)) (lowess liberalism ideoclean), ytitle(Liberalism Scale Score) xtitle(Self-Placement Ideology) title(Liberalsim and Ideology)
