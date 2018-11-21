@@ -102,9 +102,12 @@ sum polityds
 *Margins!
 margins i.placeclean##i.polityds
 
+***For the Liberalism variable***
 *Regression with all the variables 
-reg ideoclean i.placeclean democlean regageclean formulaclean
+reg liberalism i.placeclean democlean regageclean formulaclean
 rvfplot
+
+
 
 *bysort election. regress liberalism components on place
 bys electlab: reg health i.placeclean

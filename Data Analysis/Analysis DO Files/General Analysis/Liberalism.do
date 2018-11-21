@@ -79,3 +79,45 @@ rvfplot
 *Controlling for all other regime variables
 reg liberalism i.placeclean regageclean democlean formulaclean
 
+******************************************
+**New Set of Liberalism Regressions
+
+preserve
+collapse (mean) health education unemploy defense pensions industry police income, by (electlab)
+restore
+
+**Drop countries missing on any one of the liberalism factors
+preserve
+destring polity, generate (polityds)
+collapse (mean) health education unemploy defense pensions industry police income, by (polityds)
+restore
+
+destring polity, generate (polityds)
+drop if polityds==320
+drop if polityds==3440
+drop if polityds==3720
+drop if polityds==4040
+
+*Rerun Regression with liberalism
+
+reg liberalism i.placeclean
+rvfplot
+
+bys electlab: reg liberalism i.placeclean
+reg liberalism i.placeclean regageclean democlean formulaclean
+
+
+*By Each level of Democracy, Regress place on ideology
+bys democlean: reg liberalism i.placeclean
+
+*By Electoral Formula, regress place on ideology
+bys formulaclean: reg liberalism i.placeclean
+
+*By Regime Age, regress place on ideology
+bys regageclean: reg liberalism i.placeclean
+
+*Putting each variable as a dependent
+reg liberalism i.placeclean democlean
+reg liberalism i.placeclean formulaclean
+reg liberalism i.placeclean regageclean
+reg liberalism i.placeclean democlean formulaclean regageclean
