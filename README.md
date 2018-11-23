@@ -17,6 +17,7 @@
 **Quantitative Political Analysis II**
 
 11/21/2018 - Research Pre-Registration 1 Due
+
 11/28/2018 - Pre-Registration II due
 
 ## Description of Repository Contents
