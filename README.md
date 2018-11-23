@@ -1,4 +1,4 @@
-# Place of Residence and Political Attidtudes in Democracies Worldwide
+# Place of Residence and Political Attitudes in Democracies Worldwide
 
 ## Project Log
 
@@ -16,7 +16,8 @@
 
 **Quantitative Political Analysis II**
 
-11/14/2018 - Research Pre-Registration 1 Due
+11/21/2018 - Research Pre-Registration 1 Due
+11/28/2018 - Pre-Registration II due
 
 ## Description of Repository Contents
 
@@ -40,3 +41,7 @@ This is the file for the materials used in the data analysis.
 ### *Outline*
 
 This folder contains the materials used to create the Point-Based Outline due on 11/11/2018 for Transitions to Democracy.
+
+### *Final Paper*
+
+This folder includes the PDF of the final paper along with the LATEX code that is used to generate the submitted final paper.
