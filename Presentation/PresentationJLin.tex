@@ -4,6 +4,7 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usetheme{default}
+\usepackage{tabulary}
 
 
 \newcommand\e{\emph}
@@ -19,7 +20,7 @@
 	%\logo{}
 	%\institute{New College of Florida}
 	%\date{}
-	%\subject{}
+    %\subject{Transitions to Democracy}
 	\setbeamercovered{transparent}
 	\setbeamertemplate{navigation symbols}{}
 	\begin{frame}[plain]
@@ -50,6 +51,20 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{ALSO the United States}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.7\textwidth]{ClayLab}}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{NOT the United States}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.7\textwidth]{Europe}}
+\end{figure}
+\end{frame}
+
+\begin{frame}
 \frametitle{Polities in the CSES}
 \begin{figure}[ht!]    \centering
 	{	 \includegraphics[width=.8\textwidth]{DemAge}}
@@ -75,7 +90,13 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Data - CSES Module IV}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.9\textwidth]{Mod4}}
+\end{figure}
+\end{frame}
 
+\begin{frame}
 \frametitle{Independent Measures}
 \begin{itemize}
 	\item Country
@@ -96,18 +117,112 @@
 \end{frame}
 
 \begin{frame}
-
-\frametitle{Results}
-\begin{itemize}
-	\item Self-Placement as Dependent Measure
-	\item Liberalism as Dependent Measure
-	\item Considerations of Macro Variables
-\end{itemize}
+\tiny
+%\frametitle{Results - Ideology and Liberalism}
+\begin{table}[H]
+	\centering
+	\def\arraystretch{1}
+	\caption{\tb{General Trends of Ideology}}
+	\begin{tabulary}{\linewidth}{l c c}
+		\hline
+		\tb{Place of Residence}&\tb{Self-Placement} & \tb{Liberalism} \\
+		\hline
+		Small Town&-.1338***& -.1005*** \\    
+		& (.0336) & (.0136)  \\
+		Suburban & -.2591*** &-.1737 ***\\ 
+		& (.0358) &(.0162) \\
+		Urban   & -.0482 &-.1309***  \\
+		& (.0300)  &(.123)  \\
+		Constant   & 5.597*** &5.7164*** \\
+		&(.0234) & (.0093)\\
+		N  & 47,821 & 42,500 \\
+		$R^2$	& 0.0011 & 0.0037 \\
+		\hline                                       
+	\end{tabulary}
+	\\
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+\end{table}
 \end{frame}
 
 \begin{frame}
-\frametitle{Conclusions}
-When regressed on itself with regime variables, rural residents are significantly more conservative than urban residents - Yet, these points of conservatism are relatively small.
+\frametitle{Regional Urban-Rural Splits}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=\textwidth]{Regions}}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Macro Variables}
+\begin{enumerate}
+	\item Level of Democracy
+	\item Regime Age
+	\item Electoral Formula
+\end{enumerate}	
+\end{frame}
+
+\begin{frame}
+\tiny
+\begin{table}[h!]
+	\centering
+	\caption{\tb{By Electoral Formula}}
+	\begin{tabulary}{\linewidth}{l c c c}
+		\\
+		\hline
+		\tb{Place of Residence}&\tb{Majoritarian}&\tb{Proportional} &\tb{Mixed} \\
+		\hline
+		Small Town&-.6640*** &.0608 &-.1600** \\
+		&(.0766)&(.0435) &(.0727) \\
+		Suburban&-.6389*** &-.1894***&-.1260  \\
+		&(.1042) &(.0451) &(.1180) \\
+		Urban&-.5781*** &-.0327 &.2655*** \\
+		&(.0710) &(.0388) &(.0644) \\
+		Constant& 5.8256*** &5.5408***&5.5562*** \\
+		&(.0543) &(.0297) &(.0531) \\
+		Countries&5&21&6 \\
+		N&8,350&28,869 &10,602 \\
+		$R^2$&0.0114&0.0011 &0.0052 \\
+		\hline 
+	\end{tabulary} 
+	\\ 
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+\end{table}
+\end{frame}
+
+\begin{frame}
+\tiny
+\begin{table}[h!]
+	\centering
+	%\def\arraystretch{1.5}
+	\begin{tabulary}{\linewidth}{l c c}
+		\hline
+		\tb{Variable}&\tb{Self-Placement}&\tb{Liberalism} \\
+		\hline
+		\e{Place of Residence} & & \\
+		Small Town &-.1000***&-.0018 \\
+		&(.0339)&(.0130) \\
+		Suburban& -.1517***& .0147 \\
+		&(.0401)& (.0157) \\
+		Urban&-.0517* & -.0420*** \\
+		&(.0304) & (.0117) \\
+		\e{Democracy}& -.1995*** & -.0421***\\
+		&(.0110) & (.0040)\\
+		\e{Regime Age} & -.0014*** &  -.0075***\\
+		&(.0002) & (.0001)\\
+		\e{Electoral Formula}&.0778*** & -.0440***\\
+		&(.0189) & (.0070) \\
+		\hline
+		Constant& 7.3627*** & 6.5149*** \\
+		&(.1067) & (.0391)\\
+		N&46,555 & 41,373 \\
+		$R^2$&0.0135& 0.1273 \\
+		\hline
+	\end{tabulary}
+	\\
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+\end{table}
 \end{frame}
 
 \begin{frame}
@@ -127,6 +242,20 @@ When regressed on itself with regime variables, rural residents are significantl
 \e{Hypothesis 3D -- Polity Differences} 
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=\textwidth]{RuralUrban}}
+\end{figure}
+\end{frame}
 \endgroup
+
+\begin{frame}
+\frametitle{That's All, Folks!}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=\textwidth]{Sketch}}
+\end{figure}
+\end{frame}
 
 \end{document}
