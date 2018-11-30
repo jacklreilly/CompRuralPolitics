@@ -1,0 +1,334 @@
+Influence of Electoral Formula
+
+Electoral Formula description
+
+D5058       >>> ELECTORAL FORMULA IN ALL ELECTORAL SEGMENTS
+                         (TIERS)
+---------------------------------------------------------------------------
+
+         This is a variable indicating whether the country uses (i) a
+         majoritarian formula in all of its electoral segments (tiers),
+         (ii) a proportional formula in all of its electoral segments
+         (tiers), or (iii) a mixed formula.
+
+         The definition of this variable is taken from Matt Golder's
+         database about Democratic Electoral Systems Around the World,
+         1946-2000 (http://mattgolder.com/elections, Date accessed: May 17,
+         2018).
+
+         MAJORITARIAN systems require successful candidates to win either
+         a plurality or majority of the vote. As a result, they are
+         considered majoritarian.
+         PROPORTIONAL systems can be divided into two types: those that use
+         party lists and those like the single transferable vote that do
+         not. Those systems employing lists can themselves be divided into
+         two further categories: quota systems (with allocation of
+         remainders) and highest average systems.
+         MIXED systems use a mixture of majoritarian and proportional
+         electoral rules. A country can be classified as having a mixed
+         system whether it uses one or more electoral segments (tiers); in
+         practice, most mixed systems have more than one segment (tier).
+         Mixed electoral systems can be divided into those in which the
+         two electoral formulas are dependent and those in which they are
+         independent.
+         ..................................................................
+
+             1. MAJORITARIAN
+             2. PROPORTIONAL
+             3. MIXED
+
+             9. MISSING
+
+
+         | VARIABLE NOTES: D5058
+         |
+         | Source: CSES Macro Report and Publicly Available Sources
+
+         | ELECTION STUDY NOTES - ARGENTINA (2015): D5058
+         |
+         | For the Chamber of Deputies elections (lower house), Argentina
+         | used a proportional closed-list system. Most parties use
+         | primaries to select and order their party lists. Members elected
+         | to the Chamber of Deputies are elected for a four-year term 
+         | which is renewable. Half of the Chamber is renewed every two
+         | years. There are 24 multi-member districts with a party/alliance
+         | needing to exceed 3 percent of the registered electors to 
+         | secure a seat. 
+         | 
+         | For more information see: 
+         | Altman Olin (n.d) "Argentina Electoral System" ACE Electoral        
+         | Knowledge Network, available at: 
+         | http://aceproject.org/regions-en/countries-and-territories/AR
+         | /case-studies/esy_ar (Date accessed: April 8, 2018). 
+         | and       
+         | IFES Election Guide, available at: 
+         | http://www.electionguide.org/elections/id/2471/
+         | (Date accessed: April 8, 2018). 
+
+         | ELECTION STUDY NOTES - AUSTRIA (2013): D5058
+         |
+         | The Austrian electoral system is a proportional representation
+         | system with three segments or tiers. These correspond to the
+         | federal level tier, the Land level tier (or state level) and the
+         | regional districts tier. Counting and allocation of seats passes
+         | through each of these levels.
+         | Voters can cast a (single) party vote on an open list and
+         | indicate their preferred candidate on the respective party list.
+         | See also Election Study Note for D5038.
+
+         | ELECTION STUDY NOTES - GERMANY (2013): D5058
+         |
+         | Mixed: 299 members are elected at district level under the
+         | majority (first-past-the post) system. The remaining seats
+         | are allocated through a party list using proportional
+         | representation using the Sainte-Lague Formula.
+
+         | ELECTION STUDY NOTES - GREECE (2012 & 2015): D5058
+         |
+         | Greece uses the Hagenbach-Bischoff system of "reinforced"
+         | proportional representation, with voting for party lists and,
+         | within each list, preferential vote.
+
+         | ELECTION STUDY NOTES - HONG KONG (2012): D5058
+         |
+         | This concerns the election of 35 representative in 
+         | geographical constituencies, and 5 representatives in 
+         | the District Council (Second) Functional Constituency. 
+         | For more details, see ES note for D5038.
+
+         | ELECTION STUDY NOTES - ICELAND (2013): D5058
+         |
+         | The Icelandic Althingi (Parliament) has 63 members, where 54
+         | members are elected from 6 multi-member (9 seats apiece)
+         | constituencies (first tier). In addition, there is a second
+         | tier, comprising of 9 "supplementary" seats that are
+         | allocated to parties (using the D'Hondt method) to ensure the
+         | number of seats they receive is in proportion to its national
+         | vote. However, only party lists that obtain at least 5% of
+         | the national vote are entitled to receive these seats.
+         | 
+         | Source:
+         | Landskjorstjorn Elections to the Althingi:
+         | http://www.landskjor.is/media/frettir/AnalysisIceland
+         | Election2013.pdf 
+         | (Date accessed January 14, 2015).
+
+         | ELECTION STUDY NOTES - JAPAN (2013): D5058
+         |
+         | The data in variables D5058-D5062 refer to the Upper House
+         | of Japanese Parliament, because the current Japanese CSES
+         | election study refers to the Upper House elections.
+         | See also note D5038.
+
+         | ELECTION STUDY NOTES - KENYA (2013): D5058
+         |
+         | For both houses of the Parliament, Kenya uses first-past-the
+         | -post election system.
+         | See also the election study note for D5038.
+
+         | ELECTION STUDY NOTES - NEW ZEALAND (2014): D5058
+         |
+         | Mixed: 70 members are elected at the district level (tier 1)  
+         | under the majority (first-past-the post) system. The remaining  
+         | 50 seats (tier 2) are allocated through a national party list  
+         | using proportional representation based on the 
+         | Sainte-Lague Formula.
+
+         | ELECTION STUDY NOTES - NEW ZEALAND (2014): D5058
+         |
+         | Mixed: 70 members are elected at the district level (tier 1)  
+         | under the majority (first-past-the post) system. The remaining  
+         | 50 seats (tier 2) are allocated through a national party list  
+         | using proportional representation based on the 
+         | Sainte-Lague Formula.
+ 
+         | ELECTION STUDY NOTES - ROMANIA (2012): D5058
+         |
+         | Electoral reform came on to the agenda in Romania in the 
+         | aftermath of 2004 elections and the election of a weak 
+         | centre-right coalition between the National Liberal Party (PNL) 
+         | and the Democratic (PD) parties. However, it was a feud between  
+         | President of Romania and the Romanian parliament that brought
+         | the issue to the fore. In 2007, the party alliance of the 
+         | PNL and the PD split. The Romanian parliament then voted to 
+         | impeach President Basescu, a proponent of electoral reform, 
+         | accusing him of abuse of power. The row was sparked by the 
+         | decision of then Justice Minister Monica Macovei to take the 
+         | appointment of special prosecutors into the domain of the 
+         | president, where previously it had been the responsibility of 
+         | an independent body. A national referendum was held 
+         | on May 19, 2007 to decide whether the president's dismissal by 
+         | parliament would be upheld. However, the proposal was defeated
+         | in a low turnout referendum and Basescu was reinstated as
+         | Romanian President shortly afterwards. After his reinstatement, 
+         | President Basescu made electoral reform a central issue,
+         | calling for a national referendum on the subject. Initially 
+         | President Basescu and Prime Minister Tariceanu put forward 
+         | rival models of electoral reform. However, after months of 
+         | debate on the subject, including a referendum on the issue, 
+         | a compromise was eventually agreed and a new electoral system 
+         | was adopted in time for the 2008 parliamentary elections. 
+         | 
+         | The system adopted was candidate centred, with voters having one
+         | vote for the Chamber of Deputies (Lower House) and one vote for
+         | the Senate. The systems is classified as a mixed system because 
+         | it employs both majoritarian and proportional rules.  Voters 
+         | cast ballots in single member districts. However, the seat 
+         | allocation procedure is notably complex and operates over 
+         | multiple tiers. Districts are geographically identical to 
+         | counties and each county is divided into several single member 
+         | districts, known in Romania as colleges. Voters are initially 
+         | aggregated at national level to determine which parties have
+         | passed the explicit electoral threshold (see variable D5046 and
+         | variable D5047) and are thus eligible for seats. 
+         | Direct seats are won by polling 50% in a district; however, 
+         | candidates winning over 50% in their districts win the seat
+         | only if their party passes the appropriate threshold. 
+         | However, a party can also enter parliament if it wins at least 
+         | three Senate and six Deputy districts in the first tier  
+         | regardless of the percentage of votes the party obtains at the 
+         | national level. 
+         | To decide on seat allocation, the number of votes won by each
+         | of the parties is totalled and divided by the number of seats 
+         | (corresponding to the number of districts) established for each
+         | constituency, thus obtaining an electoral quota. Then, the
+         | number of votes won by each party is divided by the quota, thus
+         | giving the number of seats to which each party is entitled. The
+         | second stage involves thee remainders of these divisions being
+         | summed up for each party at the national level using the D'Hondt
+         | system, thus giving a ranked list of parties. Then, in the
+         | district, the first party on the list, regardless of its votes 
+         | has priority in the redistribution process, the second party on
+         | the list follows, and so forth. Candidates belonging to the
+         | parties that passed the threshold - winning over 50% of the
+         | votes in their district - are automatically elected and their
+         | districts are no longer included in the next stages of the seat
+         | allocation process. 
+         | The candidates from districts without a first round winner then 
+         | enter the redistribution process. In each constituency, the 
+         | candidates of each party are ranked in the order of the number 
+         | of votes obtained by each of them in the district in which they 
+         | ran. Based on the quota, each party receives a number of seats
+         | corresponding to its quota. After this stage, the Electoral 
+         | Commission determines the number of seats the party is entitled
+         | to in the final distribution.      
+         | For 2012, the Chamber of Deputies elected 412 members and the 
+         | Senate elected 176 members. Seats are reserved in parliament for
+         | 18 ethnic minority groups representing Germans, Romas, 
+         | Macedonians, Armenians, Bulgarians, Albanians, Jews, Tatars, 
+         | Czechs/Slovaks, Russians/Lipovians, Serbs, Poles, Italians, 
+         | Ukrainians, Turks, Croatians, and Ruthenians. 
+         | 
+         | For more information see: 
+         | Gherghina & Jiglau (2012) "Where does the mechanism collapse?:        
+         | Understanding the 2008 Romanian Electoral System", 
+         | Representation, Vol 48 No 4, pp.445-59. 
+         | DOI: 10.1080/00344893.2012.720889         
+         | Date accessed: March 7, 2017. 
+
+         | ELECTION STUDY NOTES - ROMANIA (2014): D5058
+         |
+         | The 2014 Romanian election study is concerned with the 
+         | Presidential elections of 2014. 
+         | However, the information about the electoral system, presented 
+         | in variables D5038-D5047 and D5058-D5075 concern the Lower and 
+         | the Upper House of the Romanian parliament.
+         | For more details about the electoral system see the ES note 
+         | for D5038.
+
+         | ELECTION STUDY NOTES - SOUTH AFRICA (2014): D5058
+         |
+         | The South African electoral system is a closed-list 
+         | proportional representation system. The National Assembly 
+         | seats are filled in two tiers: Half (200) seats are 
+         | regional seats and filled by reference to regional votes 
+         | and regional lists (representing nine federal provinces); 
+         | the other half (200) are national seats and filled by 
+         | reference to national votes and national lists (or 
+         | entirely from regional lists if a party did not submit 
+         | a separate national list). 
+
+         | ELECTION STUDY NOTES - SOUTH KOREA (2012): D5058
+         |
+         | Korea employs a mixed-member majoritarian system that combines 
+         | 246 single-member districts (SMD) with 54 proportional 
+         | representation (PR) seats, elected from a single nation-wide 
+         | district. Each voter casts two votes, one for an individual 
+         | candidate in the SMD segment, and one for a closed party list 
+         | in the PR segment.
+
+         | ELECTION STUDY NOTES - TAIWAN (2012): D5058
+         |
+         | The electoral law in the 2012 legislative election is mixed-
+         | member majoritarian (MMM) system, and the total number of seats
+         | is 113. Among them, 73 seats are elected based on the single-
+         | member districts (SMD), 34 seats based on the proportional
+         | representational (PR) in a nationwide district, and 6 seats for
+         | the aboriginals.
+
+By Electoral Formula, regress place on ideology
+
+. bys formulaclean: reg ideoclean i.placeclean
+
+---------------------------------------------------------------------------------------------
+-> formulaclean = 1
+
+      Source |       SS           df       MS      Number of obs   =     8,350
+-------------+----------------------------------   F(3, 8346)      =     32.15
+       Model |  626.868723         3  208.956241   Prob > F        =    0.0000
+    Residual |  54236.7476     8,346  6.49853194   R-squared       =    0.0114
+-------------+----------------------------------   Adj R-squared   =    0.0111
+       Total |  54863.6163     8,349  6.57127995   Root MSE        =    2.5492
+
+------------------------------------------------------------------------------
+   ideoclean |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+  placeclean |
+          2  |  -.6640252   .0766552    -8.66   0.000    -.8142883    -.513762
+          3  |  -.6389266   .1042816    -6.13   0.000    -.8433444   -.4345088
+          4  |  -.5781936   .0710787    -8.13   0.000    -.7175255   -.4388616
+             |
+       _cons |   5.826503   .0543991   107.11   0.000     5.719867    5.933138
+------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+-> formulaclean = 2
+
+      Source |       SS           df       MS      Number of obs   =    28,869
+-------------+----------------------------------   F(3, 28865)     =     10.38
+       Model |  195.849957         3   65.283319   Prob > F        =    0.0000
+    Residual |   181596.13    28,865  6.29122223   R-squared       =    0.0011
+-------------+----------------------------------   Adj R-squared   =    0.0010
+       Total |   181791.98    28,868  6.29735277   Root MSE        =    2.5082
+
+------------------------------------------------------------------------------
+   ideoclean |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+  placeclean |
+          2  |   .0608436   .0435934     1.40   0.163    -.0246016    .1462887
+          3  |  -.1894228   .0451497    -4.20   0.000    -.2779184   -.1009272
+          4  |  -.0327212    .038836    -0.84   0.399    -.1088416    .0433993
+             |
+       _cons |   5.540834    .029763   186.16   0.000     5.482497     5.59917
+------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+-> formulaclean = 3
+
+      Source |       SS           df       MS      Number of obs   =    10,602
+-------------+----------------------------------   F(3, 10598)     =     18.44
+       Model |   366.19296         3   122.06432   Prob > F        =    0.0000
+    Residual |  70137.7204    10,598  6.61801475   R-squared       =    0.0052
+-------------+----------------------------------   Adj R-squared   =    0.0049
+       Total |  70503.9133    10,601  6.65068515   Root MSE        =    2.5726
+
+------------------------------------------------------------------------------
+   ideoclean |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+  placeclean |
+          2  |  -.1600677   .0727161    -2.20   0.028    -.3026048   -.0175306
+          3  |  -.1260139   .1180834    -1.07   0.286    -.3574796    .1054518
+          4  |     .26555   .0644238     4.12   0.000     .1392672    .3918328
+             |
+       _cons |   5.556266   .0531129   104.61   0.000     5.452155    5.660377
+------------------------------------------------------------------------------
