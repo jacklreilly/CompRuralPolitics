@@ -4,6 +4,8 @@
 *Analyzed with Stata 15.1 using MacOSX 10.13.6
 *Management File: Clean data
 
+***KEPT FOR REFERENCE -- SEE CLEAN ALL DO FILE FOR REAL CLEANING
+
 *For this project, I am interested in the following variables
 *D1006 Polity Identifier
 *D1008 Election year

@@ -50,15 +50,15 @@ recode electformula (9 =.), gen (formulaclean)
 
 *recode variables for Liberalism measure
 *Defense and police are reverse coded
-recode D3001_1 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (health)
-recode D3001_2 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (education)
-recode D3001_3 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (unemploy)
-recode D3001_4 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (defense)
-recode D3001_5 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (pensions)
-recode D3001_6 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (industry)
-recode D3001_7 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (police)
-recode D3001_8 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (welfare)
-recode D3004 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (income)
+recode D3001_1 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (health)
+recode D3001_2 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (education)
+recode D3001_3 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (unemploy)
+recode D3001_4 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (defense)
+recode D3001_5 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (pensions)
+recode D3001_6 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (industry)
+recode D3001_7 (1 =1) (2 =.75) (3 =.5) (4 =.25) (5 =0) (7/9 =.), generate (police)
+recode D3001_8 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (welfare)
+recode D3004 (1 =0) (2 =.25) (3 =.5) (4 =.75) (5 =1) (7/9 =.), generate (income)
 
 *Generate liberalism measure as a function of the sum of all the above variables such that a score of 9 means most liberal
 generate liberalism=health+education+unemploy+defense+pensions+industry+police+welfare+income
@@ -70,6 +70,20 @@ bys placeclean: egen avglib=mean(liberalism)
 *Encode new Polity variable
 encode D1004, generate (electlab)
 
+*Control Variables 
+*D2002    GENDER
+*D2003    EDUCATION
+*D2012    SOCIO ECONOMIC STATUS
+*D2001_Y  DATE OF BIRTH OF RESPONDENT - YEAR
+*D2025    RELIGIOSITY
+
+recode D2002 (3 7 8 9 =.), generate (gender)
+recode D2003 (96/99 =.), generate (educ)
+recode D2012 (7/9 =.), generate (ses)
+recode D2001_Y (9997 9998 9999 =.), generate (birthyr)
+recode D2025 (7/9 =.), generate (religion)
+
+generate age=2018-birthyr
 
 *Save clean data
 save "CSES4cleanall.dta", replace

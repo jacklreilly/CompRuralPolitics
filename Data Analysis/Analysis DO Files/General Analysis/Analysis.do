@@ -107,8 +107,6 @@ margins i.placeclean##i.polityds
 reg liberalism i.placeclean democlean regageclean formulaclean
 rvfplot
 
-
-
 *bysort election. regress liberalism components on place
 bys electlab: reg health i.placeclean
 reg health i.placeclean
@@ -120,3 +118,26 @@ rvfplot
 
 *sort by election - using a differnt election identifier from above
 bys electlab: reg ideoclean i.placeclean
+
+******************************************
+********REGRESSIONS WITH CONTROLS*********
+******************************************
+
+*Regression Place on self placement ideology
+*Control Variables 
+*D2002    GENDER
+*D2003    EDUCATION
+*D2012    SOCIO ECONOMIC STATUS
+*D2001_Y  DATE OF BIRTH OF RESPONDENT - YEAR
+*D2025    RELIGIOSITY
+
+*Using only participant characteristics and controls
+reg ideoclean i.placeclean gender educ ses age religion
+rvfplot
+
+*Including country controls
+reg ideoclean i.placeclean democlean regageclean formulaclean gender educ ses age religion
+rvfplot
+
+*Sorted by Polity
+bys electlab: reg ideoclean i.placeclean gender educ ses age religion
