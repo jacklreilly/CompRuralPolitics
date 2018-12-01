@@ -5,7 +5,7 @@
 *Analysis File
 
 *Read in Cleaned data generated from the Management DO File
-use "/Users/pebl/Desktop/Working/CSES Data stages/CSES4cleanall.dta", clear
+use "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis/CSES4cleanall.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
@@ -132,12 +132,25 @@ bys electlab: reg ideoclean i.placeclean
 *D2025    RELIGIOSITY
 
 *Using only participant characteristics and controls
-reg ideoclean i.placeclean gender educ ses age religion
+reg ideoclean i.placeclean partyid close gender educ ses age religion
 rvfplot
 
 *Including country controls
 reg ideoclean i.placeclean democlean regageclean formulaclean gender educ ses age religion
 rvfplot
 
+reg ideoclean i.placeclean democlean regageclean formulaclean partyid close gender educ ses age religion
+rvfplot
+
 *Sorted by Polity
 bys electlab: reg ideoclean i.placeclean gender educ ses age religion
+rvfplot
+
+*Added party Idenfitication
+bys electlab: reg ideoclean i.placeclean partyid close gender educ ses age religion
+
+*Using objective Issue Stances 
+reg liberalism i.placeclean partyid close gender educ ses age religion
+rvfplot
+
+bys electlab: reg liberalism i.placeclean partyid close gender educ ses age religion

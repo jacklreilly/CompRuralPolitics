@@ -5,7 +5,7 @@
 *Graphs
 
 *Read in Cleaned data generated from the Management DO File
-use "/Users/pebl/Desktop/Working/CSES Data stages/CSES4cleanall.dta", clear
+use "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis/CSES4cleanall.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
@@ -54,3 +54,7 @@ graph hbar (mean) income, over(placeclean, sort(1)) title("Attitudes Towards Com
 *Graph Liberalism and Ideology
 
 twoway (scatter liberalism ideoclean, mcolor(black) msymbol(circle_hollow) jitter(7)) (lowess liberalism ideoclean), ytitle(Liberalism Scale Score) xtitle(Self-Placement Ideology) title(Liberalsim and Ideology)
+
+*Average Liberalism
+egen avgliberal=mean(liberalism), by (ideoclean)
+twoway (scatter avgliberal ideoclean), ytitle(Issue Stance (Average)) xtitle(Self-Placement Ideology) title(Average Issue Position by Self-Identified Ideology)

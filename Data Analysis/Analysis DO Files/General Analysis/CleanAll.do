@@ -85,5 +85,23 @@ recode D2025 (7/9 =.), generate (religion)
 
 generate age=2018-birthyr
 
+*OVERALL CLEAN PARTY DATA
+*D3018_3 Closeness to party
+*D3018_4 How Close
+*D5017 ALL Party official lean
+
+recode D3018_3 (97 98 99 =.), generate (partyid)
+recode D3018_4 (7 8 9 =.), generate (close)
+
+recode D5017_A (97 99 =.), generate (A)
+recode D5017_B (97 99 =.), generate (B)
+recode D5017_C (97 99 =.), generate (C)
+recode D5017_D (97 99 =.), generate (D)
+recode D5017_E (97 99 =.), generate (E)
+recode D5017_F (97 99 =.), generate (F)
+recode D5017_G (97 99 =.), generate (G)
+recode D5017_H (97 99 =.), generate (H)
+recode D5017_I (97 99 =.), generate (I)
+
 *Save clean data
 save "CSES4cleanall.dta", replace
