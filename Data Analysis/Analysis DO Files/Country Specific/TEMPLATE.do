@@ -6,7 +6,7 @@
 *TEMPLATE
 
 *Read in Cleaned data generated from the Management DO File
-use "/Users/pebl/Desktop/Working/CSES Data stages/CSES4cleanall.dta", clear
+use "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis/CSES4cleanall.dta", clear
 
 cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
@@ -16,4 +16,8 @@ destring polity, generate (polityds)
 *INSERT COUNTRY CODE
 keep if polityds==0320
 
-regress ideoclean i.placeclean i.partyid gender educ ses age religion
+regress ideoclean i.placeclean partyid close gender educ ses age religion
+
+*Graph of place by average self identification
+egen ident=mean(ideoclean), by (placeclean)
+twoway (scatter ident placeclean), ytitle(Average Self-Identified Ideology) xtitle(Place of Residence) title(Austria)

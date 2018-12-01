@@ -29,3 +29,6 @@ rvfplot
 margins, dydx(partyid) at(placeclean)
 marginsplot
 
+*Graph of place by average self identification
+egen ident=mean(ideoclean), by (placeclean)
+twoway (scatter ident placeclean), ytitle(Average Self-Identified Ideology) xtitle(Place of Residence) title(Austria)

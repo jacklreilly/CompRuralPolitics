@@ -14,6 +14,11 @@ cd "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis"
 
 twoway (scatter regageclean democlean, msymbol(circle_hollow) mlabel(electlab) mlabposition(9)), ytitle(Regime Age) ylabel(0(25)200) xtitle(Level of Democracy) xlabel(0(1)12) title(Level of Democracy and Regime Age)
 
+**Printer friendly version
+*Label only outliers
+gen outdemo="Turkey" if democlean==3
+twoway (scatter regageclean democlean, mcolor(black) msymbol(circle_hollow) mlabel(outdemo)), ytitle(Regime Age) xtitle(Level of Democracy) title(Level of Democracy and Regime Age)
+
 *Voter turnout by percentage of registered voters (COUNTRY VARIABLE - find individual variable)
 recode D5006_1 (999 =.), generate (registered)
 
