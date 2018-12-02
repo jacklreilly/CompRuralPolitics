@@ -36,14 +36,6 @@
 \end{frame}
 
 \begin{frame}
-\begin{itemize}
-\frametitle{Literature}
-\item Case specifications 
-\item Analysis of Polities
-\end{itemize}
-\end{frame}
-
-\begin{frame}
 \frametitle{The United States}
 \begin{figure}[H]    \centering
 	{	 \includegraphics[width=\textwidth]{NYT}}
@@ -66,8 +58,8 @@
 
 \begin{frame}
 \frametitle{Polities in the CSES}
-\begin{figure}[ht!]    \centering
-	{	 \includegraphics[width=.8\textwidth]{DemAge}}
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.9\textwidth]{Mod4}}
 \end{figure}
 \end{frame}
 
@@ -92,7 +84,7 @@
 \begin{frame}
 \frametitle{Data - CSES Module IV}
 \begin{figure}[H]    \centering
-	{	 \includegraphics[width=.9\textwidth]{Mod4}}
+	{	 \includegraphics[width=.9\textwidth]{CSES}}
 \end{figure}
 \end{frame}
 
@@ -108,11 +100,32 @@
 \end{frame}
 
 \begin{frame}
-
 \frametitle{Dependent Measures}
 \begin{itemize}
 	\item Self-Placement Ideology (0-10)
-	\item Liberalism - Public Expenditure and Income Inequality
+	\item Liberalism - Public Expenditure and Income Inequality (0-9)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Controls}
+\begin{itemize}
+	\item Gender
+	\item Education
+	\item Socioeconomic Status
+	\item Age
+	\item Party Identification
+	\item Closeness to Party
+	\item Religiosity
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\normalsize
+\frametitle{Models}
+\begin{itemize}
+	\item Self-Placement Ideology = Place of Residence + Controls
+	\item Liberalism = Place of Residence + Controls
 \end{itemize}
 \end{frame}
 
@@ -120,28 +133,30 @@
 \tiny
 %\frametitle{Results - Ideology and Liberalism}
 \begin{table}[H]
-	\centering
-	\def\arraystretch{1}
-	\caption{\tb{General Trends of Ideology}}
-	\begin{tabulary}{\linewidth}{l c c}
-		\hline
-		\tb{Place of Residence}&\tb{Self-Placement} & \tb{Liberalism} \\
-		\hline
-		Small Town&-.1338***& -.1005*** \\    
-		& (.0336) & (.0136)  \\
-		Suburban & -.2591*** &-.1737 ***\\ 
-		& (.0358) &(.0162) \\
-		Urban   & -.0482 &-.1309***  \\
-		& (.0300)  &(.123)  \\
-		Constant   & 5.597*** &5.7164*** \\
-		&(.0234) & (.0093)\\
-		N  & 47,821 & 42,500 \\
-		$R^2$	& 0.0011 & 0.0037 \\
-		\hline                                       
-	\end{tabulary}
-	\\
-	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
-	\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{General Trends in Ideology}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Self-Placement}&\tb{Liberalism} \\
+			\hline
+			Small Town&.1647**&.0432  \\    
+			& (..0722) &(.0278)  \\
+			Suburban & .2714*** &.0082\\ 
+			& (.0934) &(.0352) \\
+			Urban   & .2679*** &.0995***  \\
+			& (.0721)  &(.0272)  \\
+			Constant   & 5.1086*** &2.7915*** \\
+			&(.1993)&(.0762)  \\
+			N  & 10,548 &9.662  \\
+			$R^2$	& 0.0454&0.0195 \\
+			\hline                                       
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+
 \end{table}
 \end{frame}
 
@@ -171,17 +186,16 @@
 		\hline
 		\tb{Place of Residence}&\tb{Majoritarian}&\tb{Proportional} &\tb{Mixed} \\
 		\hline
-		Small Town&-.6640*** &.0608 &-.1600** \\
-		&(.0766)&(.0435) &(.0727) \\
-		Suburban&-.6389*** &-.1894***&-.1260  \\
-		&(.1042) &(.0451) &(.1180) \\
-		Urban&-.5781*** &-.0327 &.2655*** \\
-		&(.0710) &(.0388) &(.0644) \\
-		Constant& 5.8256*** &5.5408***&5.5562*** \\
-		&(.0543) &(.0297) &(.0531) \\
-		Countries&5&21&6 \\
-		N&8,350&28,869 &10,602 \\
-		$R^2$&0.0114&0.0011 &0.0052 \\
+		Small Town&-.2413 &.3437*** &.0425 \\
+		&(.1583)&(.0982) &(.1377) \\
+		Suburban&-.0981 &.2715**&.4923**  \\
+		&(.2307) &(.1174) &(.2124) \\
+		Urban&-.3787* &.1999** &.5009*** \\
+		&(.1995) &(.0981) &(.1298) \\
+		Constant& 1.776*** &5.3337***&5.9321*** \\
+		&(.5730) &(.2616) &(.3651) \\
+		N&1,440&6,057 &3,043\\
+		$R^2$&0.1375&0.0549&0.0221 \\
 		\hline 
 	\end{tabulary} 
 	\\ 
@@ -193,30 +207,29 @@
 \begin{frame}
 \tiny
 \begin{table}[h!]
-	\centering
-	%\def\arraystretch{1.5}
 	\begin{tabulary}{\linewidth}{l c c}
+		\\
 		\hline
 		\tb{Variable}&\tb{Self-Placement}&\tb{Liberalism} \\
 		\hline
 		\e{Place of Residence} & & \\
-		Small Town &-.1000***&-.0018 \\
-		&(.0339)&(.0130) \\
-		Suburban& -.1517***& .0147 \\
-		&(.0401)& (.0157) \\
-		Urban&-.0517* & -.0420*** \\
-		&(.0304) & (.0117) \\
-		\e{Democracy}& -.1995*** & -.0421***\\
-		&(.0110) & (.0040)\\
-		\e{Regime Age} & -.0014*** &  -.0075***\\
-		&(.0002) & (.0001)\\
-		\e{Electoral Formula}&.0778*** & -.0440***\\
-		&(.0189) & (.0070) \\
+		Small Town &.0231&-.0151 \\
+		&(.0519)&(.0271) \\
+		Suburban& .0555***& -.0777** \\
+		&(.0688)& (.0350) \\
+		Urban&.1214** & .0598 \\
+		&(.0507) & (.0267) \\
+		\e{Democracy}& -.1599*** & .0153\\
+		&(.0190) & (.0088)\\
+		\e{Regime Age} & .0013 & .0086***\\
+		&(.00027) & (.0003)\\
+		\e{Electoral Formula}&.0789*** & .0744***\\
+		&(.0302) & (.0151) \\
 		\hline
-		Constant& 7.3627*** & 6.5149*** \\
-		&(.1067) & (.0391)\\
-		N&46,555 & 41,373 \\
-		$R^2$&0.0135& 0.1273 \\
+		Constant& 6.510*** & 2.335*** \\
+		&(.2067) & (.1012)\\
+		N&18,748 & 9,292 \\
+		$R^2$&0.0406& 0.0930 \\
 		\hline
 	\end{tabulary}
 	\\
