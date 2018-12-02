@@ -152,6 +152,10 @@ rvfplot
 *Added party Idenfitication
 bys electlab: reg ideoclean i.placeclean partyid close gender educ ses age religion
 
+*By Electoral Formula
+bys formulaclean: reg ideoclean i.placeclean partyid close gender educ ses age religion
+
+
 *Using objective Issue Stances 
 reg liberalism i.placeclean partyid close gender educ ses age religion
 rvfplot
