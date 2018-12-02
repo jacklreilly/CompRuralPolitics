@@ -240,7 +240,7 @@ Table \ref{table2} shows the percentage of people in each polity that lives in e
 
 
 \begin{figure}[ht!]    \centering
-	{	 \includegraphics[width=\textwidth]{DemAge}}
+	{	 \includegraphics[width=\textwidth]{RegimeDemocracy}}
 	\caption{\tb{Level of Democracy and Regime Age}}\label{figure2}
 \end{figure}
 
@@ -304,7 +304,15 @@ To understand where individuals see their own political values, the dependent va
 
 \subsection{Key Control Variables}
 
+To ensure that we are able to compare the countries and individuals purely based on the place of residence, I employ several controls to the model. These include gender, highest level of education, socioeconomic status, age of respondent, religiosity of respondent, party identification and closeness to a party. 
 
+The gender of the respondent is a dichotomous scale of male versus female. Subjects have the opportunity to decline to respond, as they do in all other variables. Education measures the highest level of education attained by the respondent. The socioeconomic status (SES) measures where the respondent stands on the income ladder. A respondent's age is coded based on the year this analysis is conducted (2018) subtracted from their birth year. 
+
+Religiosity is included as a control because it is often the case that more religious individuals tend to be more conservative. Therefore, this variable measures the extent to which the respondent would agree that they are religious, not necessarily which denomination they identify with. 
+
+Party identification varies widely by country, especially based on the way it is coded in the CSES. Therefore, party ID is treated as a control in the general analysis, along with an individual's feelings of closeness to the party. 
+
+As a result of employing these controls, the number of respondents that we can study drastically decreases from the number of available samples in the original dataset. This is because, as mentioned earlier, any respondent who refuses or does not know the answer is marked as missing data. While this method allows us to get a better picture of the relationship between place and political ideology, it systematically rules out certain countries from the picture because of non-response or lack of inclusion of a particular item in the country's version of the questionnaire 
 
 \subsection{Models for Analysis}
 
@@ -322,7 +330,155 @@ In the following section, I discuss the results for the regressions and comment 
 
 \subsubsection{\e{Place Matters} on the Worldwide Scale}
 
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Worldwide}}
+		\begin{tabulary}{\linewidth}{l c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Worldwide} \\
+			\hline
+			Small Town&-.1338***  \\    
+			& (.0336)   \\
+			Suburban & -.2591***\\ 
+			& (.0358) \\
+			Urban   & -.0482   \\
+			& (.0300)    \\
+			Constant   & 5.597***  \\
+			&(.0234) \\
+			N  & 47,821  \\
+			$R^2$	& 0.0011 \\
+			\hline                                       
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table3}
+	\end{table}
+\end{singlespace}
+
 \subsubsection{\e{Place Matters} By Geographic Region}
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Central/Latin America}}
+		\begin{tabulary}{\linewidth}{l c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Mexico (2012)}&\tb{Mexico (2015)} &\tb{Peru}\\
+			\hline
+			Small Town  & .8064   &-1.428***    & -   \\      
+			 & (1.317) & (.5255)    & -    \\
+			Suburban     & -   & -   & -    \\ 
+			  & -    & -   & -    \\
+			Urban    & 1.107  & -1.2411***   & .2059  \\
+			  &(1.1060)   & (.3994)  & (.4962)      \\
+			Constant  & 12.697*** & 7.306*** & 6.820***  \\
+			&(2.073)&(1.008)&(1.390) \\
+			N   &96   & 327 & 267   \\
+			$R^2$ & 0.2811   &0.0695   &0.0557     \\
+			\hline                   
+		\end{tabulary} 
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table4}
+	\end{table}
+\end{singlespace}
+
+\begin{singlespace}
+\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Western Europe}}
+		\begin{tabulary}{\linewidth}{l c c }
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Germany}&\tb{France} \\
+			\hline
+			Small Town   & -.0753 &-.1266  \\      
+			& (.2080)  & (.1680)   \\
+			Suburban   & .2526 & -.0432    \\ 
+			 & (.3290)  & (.2310)    \\
+			Urban   & -.2544 & -.6460***    \\
+			 &(.2490)  & (.1706)   \\
+			Constant  & 5.399***  & 1.3237** \\
+			&(0.0845)&(.6009) \\
+			N  &427  & 1,332    \\
+			$R^2$  &0.1072 &0.0866  \\
+			\hline                                       
+		\end{tabulary} 
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table5}
+\end{table}
+\end{singlespace}
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Scandinavia}}
+		\begin{tabulary}{\linewidth}{l c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Finland}&\tb{Iceland}&\tb{Sweden} \\
+			\hline
+			Small Town&.2546&1.131***&-.0247 \\
+			&(.4143)&(.4036)&(.4636) \\
+			Suburban&.0600&1.866***&.0325 \\
+			&(.3463)&(.4081)&(.4431) \\
+			Urban&-.6608&.9035**& .0217\\
+			&(.4514)&(.3993)&(.4006) \\
+			Constant&6.5998***&6.063***&2.352** \\
+			&(1.123)&(.8182)&(1.116) \\
+			N&187&428&330\\
+			$R^2$&0.2158&0.1688&0.0677 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table6}
+	\end{table}
+\end{singlespace}
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Central Europe}}
+		\begin{tabulary}{\linewidth}{l c c c c}
+			\\
+			\hline
+			\tb{Place of Residence} &\tb{Austria}&\tb{Czech Republic}& \tb{Poland} &\tb{Slovakia} \\
+			\hline
+			Small Town&.6270**& -.1272 & .3032 & .3954  \\
+			&(.3139) & (.2920) & (.2002) & (.3216) \\
+			Suburban&-.0326& -.4467&.0666 & 2.1723\\
+			&(.3343)&(.4993) & (.3104) & (.1.107)\\
+			Urban&.3822&.5199 & .0954 & 1.1440 \\
+			&(.3888) &(.2944) & (.2662) & (.4518) \\
+			Constant& 4.014***& 3.930***& 5.096*** & 4.3473***  \\
+			&(.9272) & (.8696) & (.8646) & (1.127) \\
+			N&247& 511& 895 & 392 \\
+			$R^2$&0.1126&0.2538 & 0.1348 & 0.1498 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table7}
+	\end{table}
+\end{singlespace}
+
+%Southwestern Europe
+
 
 \subsubsection{Summary: Place Matters?}
 
@@ -332,6 +488,7 @@ In the previous section, I looked at specific countries to try to discern the ex
 
 The analysis employed in this section will look at general trends to see if there is indeed an influence between place and positions on spending. A variable was created for this analysis which aggregates the views that people have for spending government money on various social services in the country (see Appendix \ref{AppendixB} for more information on variable coding). 
 
+%Fixed to include Controls
 \begin{table}[h!]
 	\centering
 	%\def\arraystretch{1.5}
@@ -341,16 +498,16 @@ The analysis employed in this section will look at general trends to see if ther
 		\hline
 		\tb{Place of Residence} & \tb{Worldwide} \\
 		\hline 
-		Small Town&-.1005*** \\
-		&(.0136)\\
-		Suburban&-.1737***\\
-		&(.0162) \\
-		Urban&-.1306*** \\
-		&(.0123)\\
-		Constant&5.7164*** \\
-		&(.0093) \\
-		N&42,500 \\
-		$R^2$&0.0037 \\
+		Small Town&.0432 \\
+		&(.0278)\\
+		Suburban&.0082\\
+		&(.0352) \\
+		Urban&.0995*** \\
+		&(.0272)\\
+		Constant&2.7915*** \\
+		&(.0762) \\
+		N&9.662 \\
+		$R^2$&0.0195 \\
 		\hline
 	\end{tabulary}
 	\\
@@ -371,6 +528,7 @@ To test the core of Hypothesis 3, we will turn next to how these macro variables
 
 Table \ref{table15} shows the influence of each of the macro variables, when taken together, on the relationship between place of residence and individual placement on political ideology and on the objective measures seen in the liberalism measure.
 
+%Self Placement Column Changed
 \begin{table}[h!]
 	\centering
 	%\def\arraystretch{1.5}
@@ -381,23 +539,23 @@ Table \ref{table15} shows the influence of each of the macro variables, when tak
 	\tb{Variable}&\tb{Self-Placement}&\tb{Liberalism} \\
 	\hline
 	\e{Place of Residence} & & \\
-	Small Town &-.1000***&-.0018 \\
-	&(.0339)&(.0130) \\
-	Suburban& -.1517***& .0147 \\
-	&(.0401)& (.0157) \\
-	Urban&-.0517* & -.0420*** \\
-	&(.0304) & (.0117) \\
-	\e{Democracy}& -.1995*** & -.0421***\\
-	&(.0110) & (.0040)\\
-	\e{Regime Age} & -.0014*** &  -.0075***\\
-	&(.0002) & (.0001)\\
-	\e{Electoral Formula}&.0778*** & -.0440***\\
-	&(.0189) & (.0070) \\
+	Small Town &.0231&-.0018 \\
+	&(.0519)&(.0130) \\
+	Suburban& .0555***& .0147 \\
+	&(.0688)& (.0157) \\
+	Urban&.1214** & -.0420*** \\
+	&(.0507) & (.0117) \\
+	\e{Democracy}& -.1599*** & -.0421***\\
+	&(.0190) & (.0040)\\
+	\e{Regime Age} & .0013 &  -.0075***\\
+	&(.00027) & (.0001)\\
+	\e{Electoral Formula}&.0789*** & -.0440***\\
+	&(.0302) & (.0070) \\
 	\hline
-	Constant& 7.3627*** & 6.5149*** \\
-	&(.1067) & (.0391)\\
-	N&46,555 & 41,373 \\
-	$R^2$&0.0135& 0.1273 \\
+	Constant& 6.510*** & 6.5149*** \\
+	&(.2067) & (.0391)\\
+	N&18748 & 41,373 \\
+	$R^2$&0.0406& 0.1273 \\
 	\hline
 	\end{tabulary}
 	\\
@@ -580,7 +738,7 @@ Figure \ref{figure3} shows the distribution of voters for Donald Trump and Hilla
 
 \begin{table}[h!]
 	\centering
-	\def\arraystretch{1.5}
+	%\def\arraystretch{1.5}
 	\caption{\tb{Variables Used in Analyses}}
 	\begin{tabulary}{\linewidth}{l c c c}
 		\\
@@ -590,6 +748,13 @@ Figure \ref{figure3} shows the distribution of voters for Donald Trump and Hilla
 		Election ID Variable &D1004&Polity and Election Year&-\\
 		Place of Residence&D2031&Rural or Urban Residence&-\\
 		Left-Right Self&D3014&Self-rate ideology &-\\
+		Age&D2001\_Y&2018-VAR-Value&- \\
+		Gender&D2002&Gender of Respondent&- \\
+		Education&D2003&Highest Education Attained&- \\
+		Socioeconomic Status&D2012&SES&- \\
+		Religiosity&D2025&Identifies with religion?&-  \\
+		Party ID&D3018\_3&Party Closest to R&- \\
+		Closeness&D3018\_4&Party attachment&- \\
 		Level of Democracy&D5051\_1&Democracy-Autocracy at Election&Polity IV Project\\
 		Age of Current Regime&D5052&Age of Regime in Years& Polity IV Project\\
 		Electoral Formula&D5058&Method of Election&CSES Macro Report\\
@@ -672,7 +837,7 @@ Additionally, it is important to note that not all respondents of all countries 
 
 \subsection{Liberalism - Variable Generation}
 
-The \txt{liberalism} variable was generate by an aggregation of the 9 questions. Each of the variables were recoded and summed. The final score yielded a 0-9 scale where a person who scored a 9 is evaluated as the most liberal in terms of their view on economic and social policy, whereas someone with a score of 0 would be the most opposite.
+The \txt{liberalism} variable was generate by an aggregation of the 9 questions. Each of the variables were recoded and summed. The final score yielded a 0-9 scale where a person who scored a 9 is evaluated as the most conservative in terms of their view on economic and social policy, whereas someone with a score of 0 would be the most opposite.
 
 \clearpage 
 
