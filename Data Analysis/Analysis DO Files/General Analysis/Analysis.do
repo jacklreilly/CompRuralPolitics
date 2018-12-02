@@ -142,6 +142,9 @@ rvfplot
 reg ideoclean i.placeclean democlean regageclean formulaclean partyid close gender educ ses age religion
 rvfplot
 
+reg ideoclean i.placeclean partyid close gender educ ses age religion
+rvfplot
+
 *Sorted by Polity
 bys electlab: reg ideoclean i.placeclean gender educ ses age religion
 rvfplot
@@ -151,6 +154,8 @@ bys electlab: reg ideoclean i.placeclean partyid close gender educ ses age relig
 
 *Using objective Issue Stances 
 reg liberalism i.placeclean partyid close gender educ ses age religion
+rvfplot
+reg liberalism i.placeclean democlean regageclean formulaclean partyid close gender educ ses age religion
 rvfplot
 
 bys electlab: reg liberalism i.placeclean partyid close gender educ ses age religion

@@ -21,4 +21,4 @@ regress ideoclean i.placeclean partyid close gender educ ses age religion
 *Graph of place by average self identification
 egen yr2012=mean(ideoclean), by (placeclean), if year==2012
 egen yr2015=mean(ideoclean), by (placeclean), if year==2015
-twoway (scatter yr2012 yr2015 placeclean), ytitle(Average Self-Identified Ideology) xtitle(Place of Residence) title(Greece)
+twoway (scatter yr2012 placeclean, mcolor(black) msymbol(circle_hollow)) (scatter yr2015 placeclean, mcolor(black)), ytitle(Self-Identified Ideology) xtitle(Place of Residence) title(Greece)
