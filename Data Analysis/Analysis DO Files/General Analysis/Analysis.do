@@ -139,11 +139,12 @@ rvfplot
 reg ideoclean i.placeclean democlean regageclean formulaclean gender educ ses age religion
 rvfplot
 
+*With party ID and closeness to party
 reg ideoclean i.placeclean democlean regageclean formulaclean partyid close gender educ ses age religion
 rvfplot
 
 reg ideoclean i.placeclean partyid close gender educ ses age religion
-rvfplot
+rvfplot, title(Residual with Ideology as Dependent Variable)
 
 *Sorted by Polity
 bys electlab: reg ideoclean i.placeclean gender educ ses age religion
@@ -158,7 +159,8 @@ bys formulaclean: reg ideoclean i.placeclean partyid close gender educ ses age r
 
 *Using objective Issue Stances 
 reg liberalism i.placeclean partyid close gender educ ses age religion
-rvfplot
+rvfplot, title(Residuals with Liberalism as Dependent Variable)
+
 reg liberalism i.placeclean democlean regageclean formulaclean partyid close gender educ ses age religion
 rvfplot
 

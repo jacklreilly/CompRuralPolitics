@@ -27,21 +27,21 @@ regress ideoclean i.placeclean partyid close gender educ ses age religion
 rvfplot
 
 *Graph of the coefficients from the regression
-coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES" age = "Age" religion = "Religious"  _cons = "Constant") title(Latvia)
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES" age = "Age" religion = "Religious"  _cons = "Constant") title(2011)
 graph save "lat2011.gph"
 
 *Boxplot for the distribution of ideology by place
-graph box ideoclean, over(placeclean) ytitle(Self-Identified Ideology) title(Latvia)
+graph box ideoclean, over(placeclean) ytitle(Self-Identified Ideology) title(2011)
 graph save "lat2011b.gph"
 
 restore
 
-*******NEEDS MORE INVESTIGATION - NO VALUES FOR 2014*****
+*2014 elections
 preserve
 destring polity, generate (polityds)
 
 *INSERT COUNTRY CODE
-keep if polityds==3000
+keep if polityds==4280
 
 *Set of Regressions for 2014
 keep if year==2014
