@@ -22,14 +22,32 @@ egen yr2014=mean(ideoclean), by (placeclean), if year==2014
 twoway (scatter yr2011 placeclean, mcolor(black) msymbol(circle_hollow)) (scatter yr2014 placeclean, mcolor(black)), ytitle(Average Self-Identified Ideology) xtitle(Place of Residence) title(New Zealand)
 
 keep if year==2011
+
+***SELF-PLACEMENT IDEOLOGY
 regress ideoclean i.placeclean partyid close gender educ ses age religion
-rvfplot
+rvfplot, title(New Zealand)
+graph export "Graphs/Residuals/CountryIdeo/NZealand.pdf", replace
 
 *Graph of the coefficients from the regression
-coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES" age = "Age" religion = "Religious"  _cons = "Constant") title(New Zealand)
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(New Zealand)
+graph export "Graphs/Paper Graphs/Coefplots/IdeoCoef/NZealand.pdf", replace
 
 *Boxplot for the distribution of ideology by place
 graph box ideoclean, over(placeclean) ytitle(Self-Identified Ideology) title(New Zealand)
+graph export "Graphs/Paper Graphs/Box Plots/NZealand.pdf", replace
+
+*****ISSUE STANCES*****
+regress liberalism i.placeclean partyid close gender educ ses age religion
+rvfplot, title(New Zealand)
+graph export "Graphs/Residuals/CountryLib/NZealand.pdf", replace
+
+*Graph of the coefficients from the regression
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(New Zealand)
+graph export "Graphs/Paper Graphs/Coefplots/LibCoef/NZealand.pdf", replace
+
+*Boxplot for the distribution of ideology by place
+graph box liberalism, over(placeclean) ytitle(Issue Stances) title(New Zealand)
+graph export "Graphs/Paper Graphs/BoxLib/NZealand.pdf", replace
 
 
 
