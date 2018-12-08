@@ -20,14 +20,31 @@ keep if polityds==7100
 egen ident=mean(ideoclean), by (placeclean)
 twoway (scatter ident placeclean), ytitle(Average Self-Identified Ideology) xtitle(Place of Residence) title(South Africa)
 
+***SELF-PLACEMENT IDEOLOGY
 regress ideoclean i.placeclean partyid close gender educ ses age religion
-rvfplot
+rvfplot, title(South Africa)
+graph export "Graphs/Residuals/CountryIdeo/SAfrica.pdf", replace
 
 *Graph of the coefficients from the regression
-coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES" age = "Age" religion = "Religious"  _cons = "Constant") title(South Africa)
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(South Africa)
+graph export "Graphs/Paper Graphs/Coefplots/IdeoCoef/SAfrica.pdf", replace
 
 *Boxplot for the distribution of ideology by place
 graph box ideoclean, over(placeclean) ytitle(Self-Identified Ideology) title(South Africa)
+graph export "Graphs/Paper Graphs/Box Plots/SAfrica.pdf", replace
+
+*****ISSUE STANCES*****
+regress liberalism i.placeclean partyid close gender educ ses age religion
+rvfplot, title(South Africa)
+graph export "Graphs/Residuals/CountryLib/SAfrica.pdf", replace
+
+*Graph of the coefficients from the regression
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(South Africa)
+graph export "Graphs/Paper Graphs/Coefplots/LibCoef/SAfrica.pdf", replace
+
+*Boxplot for the distribution of ideology by place
+graph box liberalism, over(placeclean) ytitle(Issue Stances) title(South Africa)
+graph export "Graphs/Paper Graphs/BoxLib/SAfrica.pdf", replace
 
 
 
