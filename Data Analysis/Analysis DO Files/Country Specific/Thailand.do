@@ -30,7 +30,7 @@ coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburb
 graph save "Graphs/Paper Graphs/Coefplots/LibCoef/Thailand.pdf"
 
 *Boxplot for the distribution of ideology by place
-graph box liberalism, over(placeclean) ytitle(Self-Identified Ideology) title(Thailand)
+graph box liberalism, over(placeclean) ytitle(Issue Stances) title(Thailand)
 graph save "Graphs/Paper Graphs/BoxLib/Thailand.pdf"
 
 
