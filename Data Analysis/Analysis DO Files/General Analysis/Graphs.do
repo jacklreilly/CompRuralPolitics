@@ -63,3 +63,6 @@ twoway (scatter liberalism ideoclean, mcolor(black) msymbol(circle_hollow) jitte
 *Average Liberalism
 egen avgliberal=mean(liberalism), by (ideoclean)
 twoway (scatter avgliberal ideoclean), ytitle(Issue Stance (Average)) xtitle(Self-Placement Ideology) title(Average Issue Position by Self-Identified Ideology)
+
+*Graph of Democracy and Freedoms in the country
+
