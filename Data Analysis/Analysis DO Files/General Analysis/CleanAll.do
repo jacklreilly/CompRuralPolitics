@@ -103,5 +103,16 @@ recode D5017_G (97 99 =.), generate (G)
 recode D5017_H (97 99 =.), generate (H)
 recode D5017_I (97 99 =.), generate (I)
 
+*Recode Freedom House variable as another Macro variable control
+* D5050_1  Freedom House rating 1 = Most Free; 7 = least free
+* D5086    Corruption Index 0 = Most Corrupt; 100 = Least Corrupt
+
+recode D5050_1 (9 =.), generate (D5050c)
+recode D5086 (999 =.), generate (corrupt)
+
+*Reverse code Freedom House to match the ratings of the other scales
+
+gen freehouse=8-D5050c
+
 *Save clean data
 save "CSES4cleanall.dta", replace
