@@ -4,6 +4,15 @@
 *Analyzed with Stata 15.1 using MacOSX 10.13.6
 *Analysis File
 
+**********************************
+****HOW TO USE THIS FILE**********
+**********************************
+
+* This file is intended for the analysis of the data on a large scale. All country specific analyses are completed in the individual DO Files for the country
+* Not all of the analyses in this file are reported in the final paper
+* The unreported code is still included in this file and commented on for future reference in the event they are relavant to a future project.
+* Much of this is kept to show the development and progression of ideas for this project
+
 *Read in Cleaned data generated from the Management DO File
 use "/Users/pebl/Desktop/Working/CompRuralPolitics/Data Analysis/CSES4cleanall.dta", clear
 
@@ -165,3 +174,80 @@ reg liberalism i.placeclean democlean regageclean formulaclean partyid close gen
 rvfplot
 
 bys electlab: reg liberalism i.placeclean partyid close gender educ ses age religion
+
+****************************************
+*******UNDERSTANDING MACRO VARIABLES****
+****************************************
+
+*Maintains all individual level controls and other regime macro variables
+
+reg ideoclean i.placeclean democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot, title(All Macro and Micro Varaibles)
+graph export "Macroresid.pdf"
+
+*Interaction with Place and Democracy
+reg ideoclean i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(democlean=(8(1)10))
+marginsplot
+graph export "IdeoPlaceDem.pdf", replace
+
+reg liberalism i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(democlean=(8(1)10))
+marginsplot
+graph export "LibPlaceDem.pdf", replace
+
+*Interaction with Place and Regime Age
+reg ideoclean i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(regageclean=(0(25)200))
+marginsplot
+graph export "IdeoPlaceAge.pdf", replace
+
+reg liberalism i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(regageclean=(0(25)200))
+marginsplot
+graph export "LibPlaceAge.pdf", replace
+
+*Interaction with Place and Electoral Formula
+reg ideoclean i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(formulaclean=(1 2 3))
+marginsplot
+graph export "IdeoPlaceFormula.pdf", replace
+
+reg liberalism i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(formulaclean=(1 2 3))
+marginsplot
+graph export "LibPlaceFormula.pdf", replace
+
+*To see if there are interesting trends
+
+*Interaction with Place and Freedom House Rating
+reg ideoclean i.placeclean##c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(freehouse=(4(.5)7))
+marginsplot
+graph export "IdeoPlaceFree.pdf", replace
+
+reg liberalism i.placeclean## c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(freehouse=(4(.5)7))
+marginsplot
+graph export "LibPlaceFree.pdf", replace
+
+*Interaction with Place and Corruption
+reg ideoclean i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(corrupt=(0(10)100))
+marginsplot
+graph export "IdeoPlaceCorrupt.pdf", replace
+
+reg liberalism i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(corrupt=(0(10)100))
+marginsplot
+graph export "LibPlaceCorrupt.pdf", replace
