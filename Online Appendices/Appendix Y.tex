@@ -1,0 +1,561 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{fullpage} %full page typesetting
+\usepackage{setspace} %allows for non-singlespacing
+\usepackage{graphicx} %graphics capabilities
+\usepackage{latexsym} %extra symbols
+\usepackage{rotating} %rotation for figures
+\usepackage{longtable} %tables that fill more than a single page
+%\usepackage{hyperref} %hypertext links in the document
+\usepackage{natbib} %better bibliographies
+\usepackage{authblk} %author and affiliation in opening
+\usepackage{mathpazo} %use palatino font, rather than times
+\usepackage{appendix}
+\usepackage{lscape}
+\usepackage{tabulary}
+\usepackage[nottoc]{tocbibind}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=cyan]{hyperref}
+\usepackage{ifthen}
+\usepackage{float}
+
+
+\title{\tb{Place of Residence and Political Attitudes in Democracies Worldwide \\ {\large Online Appendix Y -- Original Results} }}
+
+\author{Jennifer Lin}
+\affil{New College of Florida}
+
+\newcommand\e{\emph}
+\newcommand\tb{\textbf}
+\newcommand\un{\underline}
+\newcommand\txt{\texttt}
+
+\doublespacing 
+
+\begin{document}
+
+\begin{singlespace}
+\maketitle
+\end{singlespace}
+
+\section{Results for Self Placement Ideology - Original}
+
+\subsection{Self-Placement Ideology as a Dependent Measure}
+
+\subsubsection{\e{Self-Identified Ideology} on the Worldwide Scale}
+
+For the first model, a regression was conducted to see if there is a general trend between place and self-placement on a 10-point ideology scale. Furthermore, the regression was conducted separately for each election that was represented in this dataset. Table \ref{table3} shows the results for this regression on the global scale. This general trend suggests that, without considerations of any polity-specific factors, there is a difference between the global rural residents, small town and suburban residents in terms of their political ideologies. The trends described in this table suggests that, on a general level, there lies a difference between where people live and their political attitudes. However, several caveats are present in this analysis. From here, we are assuming that individuals conceptualize the places of residence in a similar fashion across geographic boundaries. Additionally, this analysis does not take into account country-specific measures such as the presence of the different possibilities of residence for the people. As I noted in Table \ref{table2}, not all the countries have respondents from each place of residence as categorized in the CSES. Therefore, it would help to break down the analysis by country.
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Worldwide}}
+		\begin{tabulary}{\linewidth}{l c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Worldwide} \\
+			\hline
+			Small Town&-.1338***  \\    
+			& (.0336)   \\
+			Suburban & -.2591***\\ 
+			& (.0358) \\
+			Urban   & -.0482   \\
+			& (.0300)    \\
+			Constant   & 5.597***  \\
+			&(.0234) \\
+			N  & 47,821  \\
+			$R^2$	& 0.0011 \\
+			\hline                                       
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table3}
+	\end{table}
+\end{singlespace}
+
+\subsubsection{\e{Self-Identified Ideology} By Geographic Region}
+
+When the analysis is broken down by the countries themselves, we see a clearer patterns between place of residence and political attitudes of the respondents to the CSES survey. Each country is displayed and analyzed with their regional neighbors. Additionally, these trends are discussed in context of some key macro variables present for each polity that is displayed in Figure \ref{figure2} and Appendix \ref{AppendixC}.
+
+Table \ref{table4} discusses the patterns seen by place of residence for countries in Central America and Latin America. From the results of the regression, we see that urban residents in Argentina are, on average, more liberal than their rural counterparts. This is slightly the case for Mexico at the time of their 2015 elections, but we do not see these trends elsewhere. When considering the levels of democracy, electoral formula and regime age for these countries, the notable difference between the regimes is the age of the system. Residents of Argentina have been living in a democracy for a longer period of time than the other countries represented in this region. 
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Central/Latin America}}
+		\begin{tabulary}{\linewidth}{l c c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Argentina}&\tb{Mexico (2012)}&\tb{Mexico (2015)} &\tb{Peru}\\
+			\hline
+			Small Town  & -    & .6408***   &-.4734    & -   \\      
+			& -  & (.2394) & (.3113)    & -    \\
+			Suburban    & -    & -   & -   & -    \\ 
+			& -     & -    & -   & -    \\
+			Urban   & -.9521*** & -.1417   & -.4084*   & .0883  \\
+			& (.2150)   &(.1678)   & (.2210)  & (.1743)      \\
+			Constant   & 6.495*** & 6.6516*** & 6.1690*** & 6.646***   \\
+			&(.2046)&(.1493)&(.1998)&(.1564) \\
+			N  & 1,241 &1,812   & 910 & 1,438   \\
+			$R^2$ & 0.0156   &0.0082   &0.0041 &0.0002     \\
+			\hline                   
+		\end{tabulary} 
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table4}
+	\end{table}
+\end{singlespace}
+
+In Western Europe, as Table \ref{table5} shows, there is a clearer divide between place of residence and political ideologies, such that, for all of the counties displayed in the table, urban residents are significantly more likely to be more left-leaning than their rural counterparts. Additionally, suburban residents in Switzerland and Portugal are also more likely to be more left-leaning than their rural counterparts. Small town residents can be slightly more left-leaning than rural residents in Portugal, Great Britain and Germany. The countries in this region are some of the free-est and oldest democracies in the world. Therefore, individuals here have had a longer time to socialize and develop their opinions based on factors relating to self-interest. 
+
+\begin{landscape}
+	\begin{table}
+		\centering
+		\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Western Europe}}
+		\begin{tabulary}{\linewidth}{l c c c c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Switzerland}&\tb{Germany}&\tb{France} &\tb{Great Britain}&\tb{Ireland}&\tb{Portugal}\\
+			\hline
+			Small Town   & - .4973  & -.3295*** &-.1148 &  -.3773***  & -   &-.3717* \\      
+			& (.4333)  & (.1087)  & (.1321)    & (.1392)  &- & (.2157) \\
+			Suburban  & -.2663***   & .0912 & -.0246  & -      &-    & -1.1139*** \\ 
+			& (.0852)  & (.1693)  & (.1886)   & -      & - & (.2421)  \\
+			Urban  & -.8650***  & -.6361*** & -..7254***  & -.8310***      &-.2494**& -.8348***   \\
+			& (.0976)  &(.1311)  & (.1706)    & (.1538)   & (.0986)  & (.2121)  \\
+			Constant & 5.462***  & 4.630***  & 4.8086***  & 5.3992***  & 6.1491***  &5.4661***   \\
+			&(.0681)&(0.0845)&(.0943)&(.1197)&(.0772)&(.1483) \\
+			N  & 4,728    &1,697  & 1,916  & 1,386     &  1,594  &1,224  \\
+			$R^2$  & 0.0191    &0.0176 &0.0102    &0.0217  &  0.0040 &0.0218  \\
+			\hline                                       
+		\end{tabulary} 
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table5}
+	\end{table}
+\end{landscape}
+
+Countries in Northern Europe are also relatively free in terms of their level of democracy and time that such democracy is established. Like their Western European counterparts, Scandinavian countries hold similar governing systems but do not experience similar trends in terms of place of residence and political attitudes. As Table \ref{table6} suggests, Finland is the only country with a sharp urban-rural divide. Iceland's place divide comes with the suburban-rural split between the residents. While there are subtle levels of significance elsewhere, it is clear that there is a regional difference when it comes to how democracy influences individual's political attitudes based on place. In the light of countries of Western Europe, Northern European countries do not see the same patterns fo residence divides even with similar freedoms and levels of democracy. This suggests that there are other differences in these regions that are worth considering.
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Scandinavia}}
+		\begin{tabulary}{\linewidth}{l c c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Finland}&\tb{Iceland}&\tb{Norway}&\tb{Sweden} \\
+			\hline
+			Small Town&.1418&.5194**&.0568&-.1030 \\
+			&(.1646)&(.2279)&(.1534)&(.2644) \\
+			Suburban&-.0612&.7355***&-.0277&.0794 \\
+			&(.1452)&(.2290)&(.1847)&(.2690) \\
+			Urban&-.7128***&.3840*& .0888&-.1723\\
+			&(.2202)&(.2220)&(.1429)&(.2368) \\
+			Constant&5.6503***&4.990***&5.5985***&5.2230*** \\
+			&(.1169)&(.2006)&(.1080)&(.1973) \\
+			N&1,387&1,266&1,618&792\\
+			$R^2$&0.0111&0.0096&0.0004&0.0018 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table6}
+	\end{table}
+\end{singlespace}
+
+Turning to Central Europe, Table \ref{table7} suggests that there is a significant difference between place of residence and political attitudes in Slovenia and Slovakia. When we consider factors such as level of democracy and regime age as we did previously, freedom by democracy and stability of the regime are not necessarily trends that help shape the influence of place of residence and political ideologies here. As we previously established, it seems that the oldest regimes in each region lead to more pronounced differences between rural and urban residents, but this trend is not necessarily the case here. Austria is the oldest regime in the region, but urban residents are only slightly more left-leaning than their rural counterparts. 
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Central Europe}}
+		\begin{tabulary}{\linewidth}{l c c c c c}
+			\\
+			\hline
+			\tb{Place of Residence} &\tb{Austria}&\tb{Czech Republic}& \tb{Poland} &\tb{Slovakia}&\tb{Slovenia} \\
+			\hline
+			Small Town&-.2108& -.0223 & .0829 & .4318*** & .0229 \\
+			&(.1540) & (.1687) & (.1421) & (.2000) & (.3262)\\
+			Suburban&-.1433& -.6091*& -.1414 & 1.059& .1549** \\
+			&(.1570)&(.3281) & (.2210) & (.6711) & (.2491)\\
+			Urban&-.3005**&.2860 & -.2002 & .8061*** & -1.3416***\\
+			&(.1335) &(.1773) & (.2042) & (.2437) & (.3169)\\
+			Constant& 5.3726***& 4.9135***& 6.015*** & 4.7527***  & 4.6780 ***\\
+			&(.1219) & (.1300) & (.1050) & (.1370) & (.2060)\\
+			N&3,363& 1,412& 1,634 & 879& 666 \\
+			$R^2$&0.0018&0.0065 & 0.0016 & 0.0148 & 0.0629\\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table7}
+	\end{table}
+\end{singlespace}
+
+In Southwestern Europe, the countries, especially those represented by two separate elections, suggest that trends in the influence of place of residence vary by election. This pattern is perhaps the clearest to discern in this region given that there are more countries here with multiple elections represented in the present module of the dataset. In Greece and Romania, we see that the urban-rural divide was present in the former but not the latter of the elections. This can be attributed to other factors such as candidates who are running in that particular race or the policies that are the most salient in the region at the time. Table \ref{table8} shows these trends and also suggests that Bulgaria and Montenegro see trends of rural-urban division.
+
+\begin{landscape}
+	\begin{table}
+		\centering
+		\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Southwestern Europe}}
+		\begin{tabulary}{\linewidth}{l c c c c c c c}
+			\\
+			\hline
+			\tb{Residence}& \tb{Bulgaria}& \tb{Greece ('12)}& \tb{Greece ('15)} & \tb{Montenegro} & \tb{Serbia} & \tb{Romania ('12)} & \tb {Romania ('14)}\\
+			\hline
+			Small Town&.5324 &-.7220*** &-.1458 & -1.3499*** & .2226 & .1211 & .2699\\
+			&(.3313)& (.2656) & (.3484) & (.3282) & (.2098)& (.2304) & (.3097)\\
+			Suburban& .7821*** & -1.058*** &-.0685 & -.9444** &.1046 &-.1422 &.1463\\
+			& (.2914) &(.2557) & (.3667) & (.4876) &(.2900) & (.5737) & (.4000)\\
+			Urban& .8838**& -1.1088*** & -.1737 & -1.4676*** & -.1549 & .7782*** & -.3691\\
+			& (.3590)& (.1797) & (.3236) & (.4987) & (.2437) & (.2105) & (.3712)\\
+			Constant& 4.739*** &5.5410*** & 4.5961*** &6.7329*** & 5.4643*** & 4.7229*** & 6.4406***\\
+			& (.2267) & (.1271)  & (.3089) & (.2409) & (.1239) & (.1438) & (.1890)\\
+			N& 750 & 928 & 905 & 450 & 1,094 & 1,192 &714\\
+			$R^2$&0.0118 &0.0441& 0.0005 &0.0419 & 0.0020 & 0.130 &0.0037 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table8}
+	\end{table}
+\end{landscape}
+
+Yet, not all countries experience patterns of changing urban-rural division between elections. In Eastern Europe, as represented by Latvia in Table \ref{table9}, the country did not see a shift in attitudes for respondents based on a change in election. 
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Eastern Europe}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence} & \tb{Latvia (2011)} &\tb{Latvia (2014)} \\
+			\hline
+			Small Town &.1635 &.0560 \\
+			&(.2433) & (.2224) \\
+			Suburban&- & -.1285 \\
+			& - & (.2893) \\
+			Urban&-.2292&.0221 \\
+			& (.1850) & (.1996) \\
+			Constant & 6.2775*** &6.3285*** \\
+			& (.1360) & (.1396) \\
+			N&787 & 815\\
+			$R^2$& 0.0041 &0.0005 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table9}
+	\end{table}
+\end{singlespace}
+
+For the data that is available to the Middle East, Africa and Asia, there are simply not enough cases here to make general arguments about the region as a whole. Nonetheless, they are still useful in helping us to understand which countries have a sharper urban-rural divide.
+
+To start, Table \ref{table10} highlights Israel as a country in the Middle East with sharp urban and suburban divides to the rural areas of the country in terms of its political ideology. This is not an effect that is seen in Turkey. A reason for this trend is the freedoms that the people in these countries experience. While it is hard to tell if this pattern is true for all countries in the region, it is worth noting that the differences in the level of democracy here may have a great influence in individual political attitudes. Like the actors in Western Europe and much of the western, democratized world, Israel stands as one of the freest nations in the region. Their democracy has been established for 60 years at the time of this election. Meanwhile, Turkey is the least free of all of the countries that are surveyed in this Module. This limit in freedom of speech at the ballot box may also lay to limit freedom of association and expression for the people in the country, limiting the influence of one's vicinity and social group influence on one's political attitudes.
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Middle East}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Israel} & \tb{Turkey} \\
+			\hline
+			Small Town&1.2822*** & .0228 \\
+			&(.2427)  & (.3120)\\
+			Suburban&1.5019*** &.5457 \\
+			& (.2767)  & (.3326 )\\
+			Urban &- & .2337\\
+			&- & (.2764)\\
+			Constant& 4.9193*** &5.7434*** \\
+			& (,.2067)  & (.2268)\\
+			N&912 & 965\\
+			$R^2$&0.0371 & 0.0037 \\
+			\hline 
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table10}
+	\end{table}
+\end{singlespace}
+
+In the wake of the decolonization movement, countries in Africa are rather young in terms of the length of time that their democracy has been in place. In both of the cases displayed in Table \ref{table11}, it does not seem that the age of the democracy is the reason that place is likely to influence political ideology like other regions in the world. Kenya, a younger regime than South Africa, has a greater difference between urban and rural residents such that urban residents are more likely to be left-leaning at a larger factor (1.269 points on average to the left) than in other places in the world. 
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Africa}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence} & \tb{Kenya}& \tb{South Africa} \\
+			\hline
+			Urban&-1.2690*** &-.06719 \\
+			&(.3701)  &(.1664)\\
+			Constant&6.7690*** &6.4965*** \\
+			& (.1932) & (.1392) \\
+			N&506 & 967\\
+			$R^2$&0.0228 &0.0002 \\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table11}
+	\end{table}
+\end{singlespace}
+
+%Small Town&- &-\\
+% &- & -\\
+%Suburban&- & -\\
+% & - &- \\
+
+In this sample of countries from Asia, the data in Table \ref{table12}, suggests that neither Japan nor South Korea exhibit a significant trends towards having place influence a person's placement on the left-right scale. This is also visible in countries in the Pacific Island, and Australia. But in the cases of the countries displayed in table \ref{table13}, the more democratic a place is does not necessarily suggest that there is a greater division between urban and rural residents in terms of their political ideologies. The Philippines, for instance, is less free than Australia and New Zealand, but demonstrate a greater place divide in terms of political ideology.
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering 
+		%\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Asia}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence} & \tb{Japan} & \tb{South Korea}\\
+			\hline
+			Small Town &.1898 & -.0347 \\
+			&(.1463) & (.2738 )\\
+			Suburban&.1717 & -.1176 \\
+			& (.1574) & (.4343 )\\
+			Urban & .2429* &.3140 \\
+			& (.1365) & (.2518)\\
+			Constant& 5.4179*** & 5.264*** \\
+			& (.1210) & (.2158)\\
+			N&1,563 & 717\\
+			$R^2$& 0.0020 & 0.0052\\
+			\hline
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table12}
+	\end{table}
+\end{singlespace}
+
+\begin{landscape}
+	\begin{table}
+		\centering
+		\def\arraystretch{1.5}
+		\caption{\tb{Self-Placement Ideology - Pacific Islands}}
+		\begin{tabulary}{\linewidth}{l c c c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Australia}&\tb{New Zealand (2011)}&\tb{New Zealand (2014)} &\tb{Philippines}\\
+			\hline
+			Small Town  & - .2108  & -.2283  &-.1436 &  .6419***  \\      
+			& (.1540)   & (.2213) & (.2864)  & (.2060)    \\
+			Suburban  & -.1433   & -   & -    & - .1095   \\ 
+			& (.1570)   & -  & -    & (.3871)       \\
+			Urban  & -.3005** & -.2653  & -.2151 & .3048** \\
+			& (.1335) &(.2114)   & (.2406) & (.1526)      \\
+			Constant   & 5.372***   & 5.754*** & 5.9674***  & 7.009***   \\
+			&(.1219)&(.1826)&(.2207)&(.1030) \\
+			N 	 & 3,363   &1,039    & 957   & 1,179  \\
+			$R^2$  & 0.0018   &0.0016  &0.0035  &0.0097     \\
+			\hline                                       
+		\end{tabulary} 
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table13}
+	\end{table}
+\end{landscape}
+
+\subsubsection{Summary: Place Matters?}
+
+In our analysis for the influence of place of residence on the political attitudes of individuals in certain countries of the world, we generate rather mixed conclusions based on the data. When we consider the differences between neighboring countries in terms of differences in regime age and level of democracy, these factors, nonetheless produce mixed results as an answer to the question about whether place matters in influencing political ideology. From the overall trends, we have evidence to suggest that place of residence does matter, but it depends on contextual factors that extend beyond the information that a country's regime stability, as determined by age, and the freedoms people enjoy, as determined by level of democracy, can tell us about the underpinnings of these observations.
+
+\section{General Trends For Both Objective Issue Stances and Self-Placement Ideology}
+
+\begin{singlespace}
+	\begin{table}[H]
+		\centering
+		\def\arraystretch{1}
+		\caption{\tb{General Trends of Ideology}}
+		\begin{tabulary}{\linewidth}{l c c}
+			\\
+			\hline
+			\tb{Place of Residence}&\tb{Self-Placement} & \tb{Liberalism} \\
+			\hline
+			Small Town&-.1338***& -.1005*** \\    
+			& (.0336) & (.0136)  \\
+			Suburban & -.2591*** &-.1737 ***\\ 
+			& (.0358) &(.0162) \\
+			Urban   & -.0482 &-.1309***  \\
+			& (.0300)  &(.123)  \\
+			Constant   & 5.597*** &5.7164*** \\
+			&(.0234) & (.0093)\\
+			N  & 47,821 & 42,500 \\
+			$R^2$	& 0.0011 & 0.0037 \\
+			\hline                                       
+		\end{tabulary}
+		\\
+		\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+		\e{Reference:} A rural place of residence serves as the baseline for comparison
+		\label{table102}
+	\end{table}
+\end{singlespace}
+
+\subsection{Considerations of Regime Age, Level of Democracy, and Electoral Formula}
+
+In the analysis of results for self-placement ideology, we considered if a country's macro variables has any influence on the relationship between place of residence and political ideology.
+
+To test the core of Hypothesis 3, we will turn next to how these macro variables influence the context where each respondent casts their ballot. I will analyze the big picture before diving into the specifics regarding each factor. Therefore, we will look at the \e{Polity Difference} hypothesis before diving into \e{Level of Democracy}, \e{Regime Age}, and \e{Electoral Formula} hypotheses.
+
+Table \ref{table15} shows the influence of each of the macro variables, when taken together, on the relationship between place of residence and individual placement on political ideology and on the objective measures seen in the liberalism measure.
+
+
+
+\begin{table}[h!]
+	\centering
+	%\def\arraystretch{1.5}
+	\caption{\tb{All Macro Variables - General Trends}}
+	\begin{tabulary}{\linewidth}{l c c}
+		\\
+		\hline
+		\tb{Variable}&\tb{Self-Placement}&\tb{Liberalism} \\
+		\hline
+		\e{Place of Residence} & & \\
+		Small Town &-.1000***&-.0018 \\
+		&(.0339)&(.0130) \\
+		Suburban& -.1517***& .0147 \\
+		&(.0401)& (.0157) \\
+		Urban&-.0517* & -.0420*** \\
+		&(.0304) & (.0117) \\
+		\e{Democracy}& -.1995*** & -.0421***\\
+		&(.0110) & (.0040)\\
+		\e{Regime Age} & -.0014*** &  -.0075***\\
+		&(.0002) & (.0001)\\
+		\e{Electoral Formula}&.0778*** & -.0440***\\
+		&(.0189) & (.0070) \\
+		\hline
+		Constant& 7.3627*** & 6.5149*** \\
+		&(.1067) & (.0391)\\
+		N&46,555 & 41,373 \\
+		$R^2$&0.0135& 0.1273 \\
+		\hline
+	\end{tabulary}
+	\\
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+	\label{table15}
+\end{table}
+
+The data in Table \ref{table15} suggests that there is a difference between urban and rural residents when it comes to spending, but this pattern is not as emphasized in self-placement ideology. The results of this model confirms the work from previous literature to show that urban residents are more open to government spending to help a neighbor than residents in a rural area of a country. Yet, the interesting difference lies in the breakdown of self-placement on the ideology spectrum. While there is not as much significance between urban and rural residents, there are differences with each of the residence types that can be analyzed further.
+
+For the purposes of simplicity in the forthcoming discussion, I will analyze the influence of both dependent variables, but primarily focusing on the self-placement of individuals on the ideology spectrum. From the previous discussion in this section, we can see that the major difference between the different places lie primarily in the self-placement score rather than the liberalism variable. While the objective score is interesting in its own ways, and it will be considered, the weight will be placed on how people see themselves and their place on the political spectrum. 
+
+\subsubsection{By Level of Democracy}
+
+A model that considers the interaction of a country's level of democracy and place of residence on an individual's political attitudes was conducted and the results suggests that the effect of place is more pronounced at lower levels of democracy. However, this is an effect that works in theory and not in practice. Countries with lower levels of democracy might have greater levels of divide between the quality of life in cities than suburbs than rural towns. This observation was displayed numerous times in previous analyses of polities where countries with lower levels of democracy were experiencing a greater difference between place and political attitudes, as exhibited in Asia. Yet, limitations in political expression might mask this reality, which suggests that further exploration in the data is necessary. 
+
+Additionally, the regression suggests that countries with great levels of freedom, which includes the majority of the polities that are included in this study, do not have interactive effects with regard to level of democracy. In other words, this result suggests that having freedoms related to democracy are great, but there may be other factors that mitigates the differences between places of residence and political attitudes. When we looked at countries in each region, there are countries with similar level of democracy, but stark differences in the relationship of core variables.
+
+\subsubsection{By Regime Age}
+
+The results of a regression of the interaction of regime age and place of residence suggests that as the regime gets older, the place of residence becomes more divisive in terms of its influence on political ideology. 
+
+Democratic regimes older than 100 years have well-established government systems that are in a better position to allow individuals to associate and express their self-interests. Oftentimes, these countries are free market economies where competition stimulates people to act as rational actors. However, this patterns is only present for regimes older than 100 years. 
+
+The results also suggest an interesting phenomenon. Place matters also when regimes are younger, which, in this case, is less than 50 years. However, in these young regimes, urban residents are more right-leaning than rural residents. 
+
+From these results, we see that regime age plays a role in influencing how individuals have the opportunity to freely associate and express their views. At the same time, limits in regime freedom constrain individual expression, making this factor dependent on level of democracy. 
+
+\subsubsection{By Electoral Formula}
+
+For this section, we consider Electoral formula. Since there are only 3 categories that any country can select, it makes direct comparison more straightforward. Unlike the previous two discussions, this variable is not continuous, thereby making interactions not as suitable.
+
+\begin{table}[h!]
+	\centering
+	\caption{\tb{Ideology In Each Electoral Formula}}
+	\begin{tabulary}{\linewidth}{l c c c}
+		\\
+		\hline
+		\tb{Place of Residence}&\tb{Majoritarian}&\tb{Proportional} &\tb{Mixed} \\
+		\hline
+		Small Town&-.6640*** &.0608 &-.1600** \\
+		&(.0766)&(.0435) &(.0727) \\
+		Suburban&-.6389*** &-.1894***&-.1260  \\
+		&(.1042) &(.0451) &(.1180) \\
+		Urban&-.5781*** &-.0327 &.2655*** \\
+		&(.0710) &(.0388) &(.0644) \\
+		Constant& 5.8256*** &5.5408***&5.5562*** \\
+		&(.0543) &(.0297) &(.0531) \\
+		Countries&5&21&6 \\
+		N&8,350&28,869 &10,602 \\
+		$R^2$&0.0114&0.0011 &0.0052 \\
+		\hline 
+	\end{tabulary} 
+	\\ 
+	\e{Notes:} *p$<$.1, **p$<$.05. ***p$<$.01 \\
+	\e{Reference:} A rural place of residence serves as the baseline for comparison
+	\label{table16}
+\end{table}
+
+Table \ref{table16} shows the relationship of place of residence in countries grouped by their electoral formula. By the differences in the results, we can see that the electoral formula matters in the relationship between place of residence and political attitudes.
+
+Majoritarian elections are defined by first-past-the-post result tabulations where the candidate with the most votes is tapped as the winner of the race. With this campaign method, there is space of candidates to appeal to certain constituencies strategically to gain the most votes for themselves. In theory, a large representative body should serve different interests, but reality is hard to match expectations. Therefore, candidates and voters alike must push for their own interests to dominate, making a polarized electorate more likely on the lines of differing interest \cite{abramowitz-2010}. The results confirms this expectation. Individuals living in small towns, suburban and urban areas are significantly mor likely to lean left than their rural counterparts. While the differences among each other is not as big of a difference, it is significantly different from a rural place of residence. 
+
+Proportional representation occurs when parties are able to allocate votes in ratio to the number of votes that they receive. Therefore, it becomes more likely that different interests are represented in practice and that minority parties will have a chance in policymaking. This may help explain the insignificant results for the differences in places of residence on political attitudes when the countries are aggregated. However, in our previous discussions, proportional countries also see significant differences between places of residence, with Israel and Greece in 2012. However, this aggregate pattern carries for most of the other proportional representation states in this study.
+
+Finally, a mixed representation system has combinations of the aforementioned systems. When aggregated, there are differences between place of residence and political attitudes. Depending on the specifications of the government design in each country, there can be great variations between countries and levels of significance. While the urban-rural divide is significant in Germany, it is not so in Japan. 
+
+To conclude, we see that the electoral formula matters in shaping political competition and electoral appeals from the perspective of the party. However, there are not clear distinctions for formulas such that it is a tell-all third factor in explaining the relationship between place and political attitudes. 
+
+\section{General Discussion and Conclusion}
+
+From the results of the data analyses, we can see that there are general relationships between place and political attitudes. However, when we dive deeper into the individuality of each country, we see that the idiosyncrasies that define each polity makes this a hard generalization to make. 
+
+\subsection{Summary of Findings}
+
+The goal of this paper is not to make generalizations about how people who live in suburbia around the world compare to those in the rural countryside when it comes to political attitudes, rather, it is to gain a general understanding of how the variables of place and political attitudes relate on a broad and specific level. From the data, I can draw the following conclusions. First, place matters. In the \e{Self-Identified Ideology} hypothesis, the results confirm the findings such that urban residents, on average, differ from their rural counterparts when it comes to political ideology. The results confirm that urban residents, along with small town and suburban residents, tend to be more left leaning than their rural counterparts. However, the average difference between urban and rural, suburban and rural, and even small town and rural, are not necessarily increasing as one moves towards the city. Residents of the global suburbia, on average, see themselves to be more left leaning than their urban counterparts.
+
+Second, the \e{Issue Stances} hypothesis is supported by the data because a person's place of residence does influence how one conceptualizes the issues and rate their support. However, as seen in Table \ref{table14}, urban residents are, on average, more conservative on their willingness to spend public dollars than their rural counterparts. This comes in contrast with the results in the \e{Self-Identified Ideology} hypothesis. While urban residents may see themselves as more left leaning, they may have other motivations to limit their support for social and economic policy.
+
+Finally, in Hypothesis 3, we examine the macro variables that are part of defining major democratic aspects of each country. We find that the \e{Polity Differences} hypothesis holds true when self-placement on the ideological spectrum is the dependent variable. Unique regime factors such as the level of Democracy, regime age, and electoral formula do cooperate to influence political attitudes and the expression of them. When these factors are broken down, we find that the \e{Level of Democracy} hypothesis does not hold on its own terms, but may be influenced by something else. The \e{Regime Age} factor is true for countries older than 100 years and younger than 50 years. Finally, the \e{Electoral Formula} hypothesis holds true. First-past-the-post polities are more likely to have divisive ideologies based on place of residence. Yet, this effect is also seen in mixed systems and some proportional systems.
+
+While there are significant results to demonstrate that place of residence matters, there are many other variables that may play into the extent to which place matters in each polity.
+
+\subsection{Limitations and Future Directions}
+
+For this project, that are many possible future directions that the research can go. In this section, I discuss how present limitations can become possible access points to future research and expansions of this paper.
+
+As discussed throughout the analysis, each polity's idiosyncrasies cannot be fully accounted for in this one study. While this study is useful in understanding global trends, more research in the country's macro-variables are necessary to understanding why there is a significant relationship between place and political ideology in some counties and not others, even if they share grounds on level of democracy, regime age, and electoral formula.
+
+The liberalism issue stance scale was created as a means of universalism, which was helpful in gaining some insight on how individuals conceptualize issue stances. However, it would be helpful to take the voting behavior of each participant into account and see how their self-rated political ideology compares to the candidate that they voted for in their legislative election. These specifications that are necessary to understand the differences between polities for the relationship of place and political attitudes provides insight as to why case studies have been the more popular method in analyzing these trends. 
+
+While there is a relatively healthy mix of countries from different regime ages and electoral formulas, there is not an even distribution of countries based on their level of democracy. For future research, it would be helpful to include more transitioning regimes and autocratic regimes so long as public data is available. It is hard to gather data in their regimes due to government limitations, but trends in these sections would be interesting to observe.
+
+Nonetheless, future research can be dedicated to looking at specifications that set each polity aside including historical, economical, political and other social factors. Residents of a certain place, as \cite{holloway_burning_2007} noted, are clearly not voting blocs. Unique factors of each country can help to explain the influence, or lack thereof, of place and political ideology better than how generalizations can tease out.       
+
+\clearpage
+
+\end{document}
