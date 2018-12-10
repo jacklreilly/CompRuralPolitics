@@ -14,7 +14,7 @@
 \usepackage{lscape}
 \usepackage{tabulary}
 \usepackage[nottoc]{tocbibind}
-\usepackage[colorlinks=true,linkcolor=blue,citecolor=cyan]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=cyan,urlcolor=red]{hyperref}
 \usepackage{ifthen}
 \usepackage{float}
 \usepackage{subcaption}
@@ -44,7 +44,7 @@
 \section*{Abstract} %the star stops this section from appearing in the ToC
 	
 \begin{quote}
-After the 2016 election, many major new pundits pointed at Rural America as the major source of Donald Trump’s victory for the presidency. This is because, as prior research by \cite{walsh_putting_2012} for the United States and \cite{walks_city-suburban_2005} for Canada suggests, residents in rural parts of democratic countries tend to be more religious and less exposed to diversity as their urban counterparts. As a result, they are more conservative in their social views even if they may be more liberal on their fiscal ones. President Trump took advantage of this and won the hearts and minds of many voters in the Midwest and Rural South, which allowed him to secure an electoral college victory despite falling short on the popular vote. For this research project, I was interested to see if this trend extends to other developing and consolidated democracies in the world. Using the CSES Module IV data (2011-2016), I conducted regressions to test place of residence on a self-defined ideological scale and an objective ideology scale constructed using respondent opinions on various issues. By controlling for regime factors such as age and level of democracy, I find statistical significance to suggest that place matters. The data provides sufficient evidence to suggest that if one lives in an urban place compared to a rural one, they are more likely to self-identify as more liberal, and use their place of residence to conceptualize political issues differently as a result of their place of residence.
+After the 2016 election, many major new pundits pointed at Rural America as the major source of Donald Trump’s victory for the presidency. This is because, as prior research by \cite{walsh_putting_2012} for the United States and \cite{walks_city-suburban_2005} for Canada suggests, residents in rural parts of democratic countries tend to be more religious and less exposed to diversity as their urban counterparts. As a result, they are more conservative in their social views even if they may be more liberal on their fiscal ones. President Trump took advantage of this and won the hearts and minds of many voters in the Midwest and Rural South, which allowed him to secure an electoral college victory despite falling short on the popular vote. For this research project, I was interested to see if this trend extends to other developing and consolidated democracies in the world. Using the CSES Module IV data (2011-2016), I conducted regressions to test place of residence on a self-defined ideological scale and an objective ideology scale constructed using respondent opinions on various issues. By controlling for regime factors such as age and level of democracy, I find statistical significance to suggest that place matters in influencing political attitudes based on the context of the country. Directions for future research in this area are fruitful as more work needs to be done to understand how the contextual forces of each polity emphasize the differences between the people's place of residence and their political attitudes.
 
 \end{quote}
 \end{center}
@@ -318,6 +318,12 @@ For the first model, a regression was conducted to see if there is a general tre
 		\label{table3}
 	\end{table}
 \end{singlespace}
+
+
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.6\textwidth]{CoefAllIdeo}}
+	\caption{\tb{Coefficient Plot for Global Ideology Trends}}\label{WorldIdeoCoef}
+\end{figure}
 
 The trends presented in this table suggest an interesting deviation from the \e{Self-Identified Ideology} Hypothesis, and from patterns observed in the United States and Canada, described in the literature review. Here, urban residents are around a quarter of a point more conservative than their rural counterparts. This trend emphasize the need to break down the analysis by country to understand how specific factors within the regions and political boundaries shape these trends.
 
@@ -840,6 +846,11 @@ The analysis employed in this section will look at general trends to see if ther
 \label{table14}
 \end{table}
 
+\begin{figure}[H]    \centering
+	{	 \includegraphics[width=.8\textwidth]{CoefAlllib}}
+	\caption{\tb{Coefficient Plot for Global Issue Stances Trends}}\label{WorldIdeoLib}
+\end{figure}
+
 From the results that reflects general trends in the world based on the new liberalism variable, we see that there are some differences between place of residence and issue stances. Looking at Table \ref{table14} alongside the earlier Table \ref{table3}, we see that there urban-rural divide is less pronounced than it was before. (Both Tables are reproduced in Appendix \ref{AppendixD} for simplicity in comparison). The results here parallel the findings in the self-placement ideology analyses. Here, on a worldwide scale, respondents who live in an urban area are more likely to lean conservative but the tilt towards conservatism is not as great of a point jump compared to the self-placement ideology as a dependent variable. This suggests that people may, on average, place themselves farther to the right or left, but this feeling of placement on the spectrum is not entirely reflected in the way they truly view the issues.
 
 
@@ -941,6 +952,8 @@ In Central and Latin America, the results for the \e{Issue Stances} hypothesis f
 
 When we turn to Western Europe, we see a similar trend that Central and Latin America has with the results between the two dependent variables. Under the \e{Self-Identified Ideology} hypothesis model, France's citizens showed that living in a more urban place led to greater feelings of left-leaning sentiment, but the general trends under the |e{Issue Stances} hypothesis model does not show this. Rather, there is a movement towards the right, albeit not as significant. These patterns are also seen in Central Europe. with the exception of Czech Republic. While the country moved towards the right in the previous model, there was no indication of a real difference between places of residence and political attitudes. However, their shift under the present model suggests that when it comes to objective issue stances, there is a difference between urban and rural residents. The suburban residents of Poland also show that place matters between rural villages and suburbia when is comes to attitudes towards government spending such that suburban residents are more liberal, but this effect is not seen in the urban centers.
 
+Unlike the Self-Placement Ideology model, the results for the Issue Stances suggests that individuals in all of the Scandinavian countries do not differ drastically based on their attitudes towards government spending given place of residence differences. 
+
 \begin{singlespace}
 	\begin{table}[H]
 		\centering
@@ -1039,8 +1052,6 @@ When we turn to Western Europe, we see a similar trend that Central and Latin Am
 	{\tb {Coefficient Plots for Issue Stances in Scandinavia} }
 	\label{ScandinaviaLib}
 \end{figure}
-
-Unlike the Self-Placement Ideology model, the results for the Issue Stances suggests that individuals in all of the Scandinavian countries do not differ drastically based on their attitudes towards government spending given place of residence differences. 
 
 \begin{landscape}
 	\begin{table}
@@ -1327,23 +1338,27 @@ Table \ref{table15} shows the influence of each of the macro variables, when tak
 	\tb{Variable}&\tb{Self-Placement}&\tb{Liberalism} \\
 	\hline
 	\e{Place of Residence} & & \\
-	Small Town &.0231&-.0151 \\
-	&(.0519)&(.0271) \\
-	Suburban& .0555***& -.0777** \\
-	&(.0688)& (.0350) \\
-	Urban&.1214** & .0598 \\
-	&(.0507) & (.0267) \\
-	\e{Democracy}& -.1599*** & .0153\\
-	&(.0190) & (.0088)\\
-	\e{Regime Age} & .0013 & .0086***\\
-	&(.00027) & (.0003)\\
-	\e{Electoral Formula}&.0789*** & .0744***\\
-	&(.0302) & (.0151) \\
+	Small Town &.1301*&-.0275 \\
+	&(..0736)&(.0269) \\
+	Suburban& .0884& -.0741** \\
+	&(..0976)& (.0347) \\
+	Urban&.1484** & .0995*** \\
+	&(..0751) & (.0266) \\
+	\e{Democracy}& .1178***& .0030***\\
+	&(..0357) & (.0120)\\
+	\e{Regime Age} & -.0037** & .0035***\\
+	&(..0016) & (.0005)\\
+	\e{Electoral Formula}&-.0518& .0888***\\
+	&(..0484) & (.0167) \\
+	\e{Freedom House}& -.8108*** &-.0593*** \\
+	&(.1065) & (.0340)  \\
+	\e{Corruption Perception}&.0226***&.0148*** \\
+	&(.0044)& (.0014)  \\
 	\hline
-	Constant& 6.510*** & 2.335*** \\
-	&(.2067) & (.1012)\\
-	N&18,748 & 9,292 \\
-	$R^2$&0.0406& 0.0930 \\
+	Constant& 7.928*** & 2.1065*** \\
+	&(.4323) & (.1439)\\
+	N&10,122 & 9,292 \\
+	$R^2$&0.0509& 0.1113 \\
 	\hline
 	\end{tabulary}
 	\\
@@ -1352,25 +1367,38 @@ Table \ref{table15} shows the influence of each of the macro variables, when tak
 \label{table15}
 \end{table}
 
-The data in Table \ref{table15} suggests that there is a difference between urban and rural residents when it comes to self-placement ideology, but this effect is not highlighted as well when it comes to views on government spending. The results of this model confirms the work from previous literature to show that urban residents are less open to government spending to help a neighbor than residents in a rural area of a country. We do not see the same level of significance for conservative or liberal issue stances as we do in self-placement on the ideological spectrum. Therefore, when we consider the macro variables, urban residents will, in general, place themselves more to the right than what is reflected by their issue stances, and this observation is not seen from chance alone.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.475\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{IdeoMacroCoef}
+		\caption{Self-Placement Ideology}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{LibMacroCoef}
+		\caption{Issue Stances}
+	\end{subfigure}
+	\caption{\tb{Coefficient Plots - All Macro Variables Worldwide}}
+	\label{GlobalMacroCoef}
+\end{figure}
 
-For the purposes of simplicity in the forthcoming discussion, I will analyze the influence of both dependent variables, but primarily focusing on the self-placement of individuals on the ideology spectrum. From the previous discussion in this section, we can see that the major difference between the different places lie primarily in the self-placement score rather than the liberalism variable. While the objective score is interesting in its own ways, and it will be considered, the weight will be placed on how people see themselves and their place on the political spectrum. 
+The data in Table \ref{table15} suggests that there is a difference between urban and rural residents when it comes to self-placement ideology and government spending. Despite the lower scores and levels of significance for the individual place of residence, we see that the macro variables are significant influences of the relationship between place and political ideology on their own. 
+
+In the next sections, I run interactions with each of the macro variables listed under Hypothesis 3 along with the  Freedom House Ratings and Corruption Perception Index as independent and control variables to see how these factors influence the relationship of place and ideology.
 
 \subsubsection{By Level of Democracy}
 
-A model that considers the interaction of a country's level of democracy and place of residence on an individual's political attitudes was conducted and the results suggests that the effect of place is more pronounced at lower levels of democracy. However, this is an effect that works in theory and not in practice. Countries with lower levels of democracy might have greater levels of divide between the quality of life in cities than suburbs than rural towns. This observation was displayed numerous times in previous analyses of polities where countries with lower levels of democracy were experiencing a greater difference between place and political attitudes, as exhibited in Asia. Yet, limitations in political expression might mask this reality, which suggests that further exploration in the data is necessary. 
+A model that considers the interaction between a person's place of residence and their country's level of democracy suggests that the level of democracy only differs slightly between places such that there is almost no effect between your country's level of democracy and where you live that will make a noticeable difference on your personal political ideology nor your feelings towards government spending.
 
-Additionally, the regression suggests that countries with great levels of freedom, which includes the majority of the polities that are included in this study, do not have interactive effects with regard to level of democracy. In other words, this result suggests that having freedoms related to democracy are great, but there may be other factors that mitigates the differences between places of residence and political attitudes. When we looked at countries in each region, there are countries with similar level of democracy, but stark differences in the relationship of core variables.
+The only noteworthy deviation is for countries scoring an 8 on the Polity IV democracy index. The people here are more likely to place themselves lower on the ideology spectrum, thus seeing themselves to be more left leaning as a whole. However, there do not see to be any place differences embedded into these general trends. 
 
 \subsubsection{By Regime Age}
 
-The results of a regression of the interaction of regime age and place of residence suggests that as the regime gets older, the place of residence becomes more divisive in terms of its influence on political ideology. 
+When it comes to regime age, countries younger than 50 years and older than 100 are more likely to have place differences in terms of both political ideology and government spending. As a regime gets older than 100 years, urban residents are more likely to lean more to the left when compared to their rural counterparts under the self-placement ideology scale. They are also more likely to favor government spending towards social welfare policies in these older regimes. 
 
-Democratic regimes older than 100 years have well-established government systems that are in a better position to allow individuals to associate and express their self-interests. Oftentimes, these countries are free market economies where competition stimulates people to act as rational actors. However, this patterns is only present for regimes older than 100 years. 
-
-The results also suggest an interesting phenomenon. Place matters also when regimes are younger, which, in this case, is less than 50 years. However, in these young regimes, urban residents are more right-leaning than rural residents. 
-
-From these results, we see that regime age plays a role in influencing how individuals have the opportunity to freely associate and express their views. At the same time, limits in regime freedom constrain individual expression, making this factor dependent on level of democracy. 
+In general, urban residents in countries with an established democracy of under 50 years tend to be more conservative, or right leaning, than their rural counterparts. This effect is also observed when we consider their preferences on government spending. The trends move towards zero, or no effect, as the regime nears 50 years and stays there until around 100 years. During this time, political attitudes are not affected by place, and may instead be impacted by another variable not considered in this study.
 
 \subsubsection{By Electoral Formula}
 
@@ -1410,7 +1438,19 @@ Proportional representation occurs when parties are able to allocate votes in ra
 
 Finally, a mixed representation system has combinations of the aforementioned systems. When aggregated, there are differences between place of residence and political attitudes. Much like the results in a proportional system, the responses for urban residents are over a half a point to the right, which is a relatively significant amount for countries in this system. This trend goes against the observations of Mexico in their 2015 electon, even if it confirms the patterns of Romania in 2012. 
 
-To conclude, we see that the electoral formula matters in shaping political competition and electoral appeals from the perspective of the party. However, there are not clear distinctions for formulas such that it is a tell-all third factor in explaining the relationship between place and political attitudes. When aggregated, we find differing results than when the countries are broken down, showing that an aggregration of an effect does not indicate how the specifications of polity uniqueness may play out.
+To conclude, we see that the electoral formula matters in shaping political competition and electoral appeals from the perspective of the party. However, there are not clear distinctions for formulas such that it is a tell-all third factor in explaining the relationship between place and political attitudes. When aggregated, we find differing results than when the countries are broken down, showing that an aggregation of an effect does not indicate how the specifications of polity uniqueness may play out.
+
+\subsubsection{Freedom House Ratings and Corruption Perception Index}
+
+As mentioned earlier in this paper, Freedom House Ratings and the Corruption Perception Index score for each country was included in this analysis model to control and understand how each country meets the criteria for a free and fair democracy as defined by \cite{diamond2004overview} in his paper. To understand the freedom, equality and responsiveness principles, I include these variables both as controls and as independent variables to see how they themselves would interact with place of residence to influence one's political ideology and attitudes towards government spending. 
+
+The Freedom House Rating is made by the Freedom House and it measures the extent of political freedoms and civil liberties one has in their country. This ranges from 1, being the least free to 7, which is the most free. The range does not reflect the original rankings; rather these are recoded for the analysis and interpretation to match the direction of the other scales used in this paper.  In the regression model where I interacted this rating with place of residence to see how this would influence individual political ideology and attitudes towards government spending on social welfare issues. From the results, there does not seem to be an interaction between the variables. In other words, the freer a country, the less that this freedom influences the differences in opinions between place of residence and political ideology. While there are differences between place, the effect cannot be fully attributed to place of residence.
+
+The Corruption Perception Index was added as a means to understand government responsiveness to the desires to the citizens. In a more corrupt nation, the leaders on top are less likely to respond to popular desires and cater to the needs and interests of their own leaders. This scale ranges from 0, being the most corrupt to 100, being the least corrupt. Across all levels of corruption, urban residents consistently differ from their rural counterparts in terms of views towards government spending, such that they are more likely to be more conservative about it. However, this is not seen in the scores related to the self-placement on the ideology scale. Where there are slight differences between place of residence everywhere, this effect is not noticeable enough to have a large impact.
+
+Therefore, from these analyses, the placement of the Freedom House Rating and the Corruption Perception Index is helpful in controlling for regime differences in these factors and allowing for a more uniform definition of democracy, but these factors themselves do not carry that big of an effect on how place influences political ideologies and issue attitudes. 
+
+Taken together, the analyses in this section suggest that when each of these macro variables are alone, they may produce effects not observed by chance, but they can also produce some interactive effects with the place of residence variable. The lack of results in this section suggests that not one polity defining variable can work to produce significance in its influence of the relationship between place and political ideology. This is an effect that can lead to future research to understand how the variables cooperate to create effects. While I was not able to gain an understanding of overall cooperative effects of the five macro variables, the regressions for each individual country suggests that there are still variations between the polities beyond these five that can determine whether there is a place difference for political ideology and issue attitudes. 
 
 \section{General Discussion and Conclusion}
 
@@ -1418,11 +1458,11 @@ From the results of the data analyses, we can see that there are general relatio
 
 \subsection{Summary of Findings}
 
-The goal of this paper is not to make generalizations about how people who live in suburbia around the world compare to those in the rural countryside when it comes to political attitudes, rather, it is to gain a general understanding of how the variables of place and political attitudes relate on a broad and specific level. From the data, I can draw the following conclusions. First, place matters. In the \e{Self-Identified Ideology} hypothesis, the results confirm the findings such that urban residents, on average, differ from their rural counterparts when it comes to political ideology. The results confirm that urban residents, along with small town and suburban residents, tend to be more left leaning than their rural counterparts. However, the average difference between urban and rural, suburban and rural, and even small town and rural, are not necessarily increasing as one moves towards the city. Residents of the global suburbia, on average, see themselves to be more left leaning than their urban counterparts.
+The goal of this paper is not to make generalizations about how people who live in suburbia around the world compare to those in the rural countryside when it comes to political attitudes, rather, it is to gain a general understanding of how the variables of place and political attitudes relate on a broad and specific level. From the data, I can draw the following conclusions. First, place matters. In the \e{Self-Identified Ideology} hypothesis, the results confirm the findings such that urban residents, on average, differ from their rural counterparts when it comes to political ideology. However, the results does not support the predicted general direction of the hypotheses. Unlike the results shown in past literature, many countries tend to lean right, with the exception of Greece.
 
 Second, the \e{Issue Stances} hypothesis is supported by the data because a person's place of residence does influence how one conceptualizes the issues and rate their support. However, as seen in Table \ref{table14}, urban residents are, on average, more conservative on their willingness to spend public dollars than their rural counterparts. This comes in contrast with the results in the \e{Self-Identified Ideology} hypothesis. While urban residents may see themselves as more left leaning, they may have other motivations to limit their support for social and economic policy.
 
-Finally, in Hypothesis 3, we examine the macro variables that are part of defining major democratic aspects of each country. We find that the \e{Polity Differences} hypothesis holds true when self-placement on the ideological spectrum is the dependent variable. Unique regime factors such as the level of Democracy, regime age, and electoral formula do cooperate to influence political attitudes and the expression of them. When these factors are broken down, we find that the \e{Level of Democracy} hypothesis does not hold on its own terms, but may be influenced by something else. The \e{Regime Age} factor is true for countries older than 100 years and younger than 50 years. Finally, the \e{Electoral Formula} hypothesis holds true. First-past-the-post polities are more likely to have divisive ideologies based on place of residence. Yet, this effect is also seen in mixed systems and some proportional systems.
+Finally, in Hypothesis 3, we examine the macro variables that are part of defining major democratic aspects of each country. We find that the \e{Polity Differences} hypothesis holds true when self-placement on the ideological spectrum is the dependent variable. When these factors are included in a model along with Freedom House Rating and Corruption Perception Index, the results suggest that these variables are contributing factors to how the worldwide trends operate in the ability for people in different places of residence to express their political attitudes. However, individually, there are limited differences between levels in each factor and its role in the relationship between the variables. We have some reason to suggest that these factors are cooperating in each country to influence the trends of influence between place and political attitudes, yet this would have to be proven through future research.
 
 While there are significant results to demonstrate that place of residence matters, there are many other variables that may play into the extent to which place matters in each polity.
 
@@ -1664,7 +1704,26 @@ The tables depicting general trends are reproduced below for an easier side-by-s
 		\label{table102}
 	\end{table}
 \end{singlespace}
+\clearpage
 
+\section{For Further Information and Reproductions}
+\label{Online}
+
+This paper contains some additional graphs and reproduction information that would not fit on this paper for length and size concerns. Therefore, these materials are attached in the form of a Git Repository for reference and reproduction.
+
+The data for this project can be downloaded from the CSES Module IV page: \url{http://www.cses.org/datacenter/module4/module4.htm}
+
+All of the Stata DO files and process-flow for this paper can be accessed by cloning this Git Repository link to a local device: \url{https://github.com/lin-jennifer/CompRuralPolitics.git}
+
+There are five different Online Appendices Files that are attached to this document, and it is available on the Git Repository as a .tex and .pdf format. Additionally, they are available by clicking each name below.
+
+\begin{quote}
+\href{https://drive.google.com/file/d/175fvnZSjtcPDN4PoS1wW_Iw-PWTRWVJk/view?usp=sharing}{Online Appendix A -- Box Plots as Summary Statistics for Each Country} \\
+\href{https://drive.google.com/file/d/1rFyIFRxbDp8NFk02RaVUj-C6hNtOKx2u/view?usp=sharing}{Online Appendix B -- Residual Plots for Regressions} \\
+\href{https://drive.google.com/file/d/15xRxKmMw7UeUlXWFSc1yJr_eGSFOcDjU/view?usp=sharing}{Online Appendix C -- Margins Plots for Macro Variable Interactions} \\
+\href{https://drive.google.com/file/d/1OVcB038erJnrL_R9ExDKx5ryF-qSXKyp/view?usp=sharing}{Online Appendix Y -- ARCHIVE Draft 1 of Results}  \\
+\href{https://drive.google.com/file/d/1byaS6KsEFQO-ZLMpMFtgMAwa7bZ1pzXR/view?usp=sharing}{Online Appendix Z -- ARCHIVE Elections held by each country in CSES} \\
+\end{quote}
 
 \clearpage
 
