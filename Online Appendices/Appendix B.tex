@@ -20,7 +20,12 @@
 \usepackage{subcaption}
 \usepackage{mwe}
 \usepackage{caption}
-
+\usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	columns=flexible,
+	breaklines=true
+}
 
 \title{\tb{Place of Residence and Political Attitudes in Democracies Worldwide \\ {\large Online Appendix B -- Residual Plots} }}
 
@@ -44,10 +49,10 @@
 
 For the general model, the regressions that were ran used the following code:
 
-\begin{verbatim}
+\begin{lstlisting}
 regress ideology i.place gender age education ses partyid closeness religion
 regress liberalism i.place gender age education ses partyid closeness religion
-\end{verbatim}
+\end{lstlisting}
 
 The Residual versus Fitted plots for the models are as follows:
 
@@ -70,10 +75,10 @@ The Residual versus Fitted plots for the models are as follows:
 
 For the inclusion of all countries and their macro variables, the following regression commands are used:
 
-\begin{verbatim}
+\begin{lstlisting}
 regress ideology i.place democracy electformula regimeage freedomhouse corruption gender age education ses partyid closeness religion
 regress liberalism i.place democracy electformyla regimeage freedomhouse corruption gender age education ses partyid closeness religion
-\end{verbatim}
+\end{lstlisting}
 
 \begin{figure}[H]
 	\centering
@@ -405,7 +410,7 @@ regress liberalism i.place democracy electformyla regimeage freedomhouse corrupt
 \begin{figure}[H]
 	\centering 
 	\includegraphics[width=\textwidth]{Residuals/CountryIdeo/Slovakia}
-	\caption{Slovakia}
+	\caption{Slovakia - Self-Placement Ideology}
 	\label{Slovakia}
 \end{figure}
 
@@ -458,6 +463,13 @@ regress liberalism i.place democracy electformyla regimeage freedomhouse corrupt
 	\end{subfigure}
 	\caption{Sweden}
 	\label{Sweden}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Residuals/CountryLib/Thailand}
+	\caption{Thailand - Issue Stances}
+	\label{Thailand}
 \end{figure}
 
 \begin{figure}[H]
