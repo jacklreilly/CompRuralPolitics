@@ -28,6 +28,119 @@ sum placeclean, detail
 sum ideoclean, detail
 sum democlean, detail
 
+****************************************
+*****INDIVIDUAL LEVEL ANALYSIS**********
+****************************************
+
+*Considers all individual level variables and controls 
+
+reg ideoclean i.placeclean partyid close gender educ ses age religion
+rvfplot, title(Residuals with Liberalism as Dependent Variable)
+graph export "Graphs/Paper Graphs/Residuals/ResidAllIdeo.pdf", replace
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(Worldwide)
+graph export "Graphs/Paper Graphs/Coefplots/CoefAllIdeo.pdf", replace
+graph box ideoclean, over(placeclean) ytitle(Self-Placement Ideology) title(Worldwide)
+graph export "Graphs/BoxAllIdeo.pdf", replace
+
+reg liberalism i.placeclean partyid close gender educ ses age religion
+rvfplot, title(Residuals with Liberalism as Dependent Variable)
+graph export "Graphs/Paper Graphs/Residuals/ResidAllLib.pdf", replace
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(Worldwide)
+graph export "Graphs/Paper Graphs/Coefplots/CoefAlllib.pdf", replace
+graph box liberalism, over(placeclean) ytitle(Issue Stances) title(Worldwide)
+graph export "Graphs/BoxAllLib.pdf", replace
+
+
+****************************************
+*******UNDERSTANDING MACRO VARIABLES****
+****************************************
+
+*Maintains all individual level controls and other regime macro variables
+
+reg ideoclean i.placeclean democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot, title(All Macro and Micro Varaibles)
+graph export "Macroresid.pdf"
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" democlean = "Level of Democracy" regageclean = "Regime Age" formulaclean = "Electoral Formula" freehouse = "Freedom House Rating" corrupt = "Corruption Perception Index" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(Self-Placement Ideology)
+graph export "Graphs/Paper Graphs/IdeoMacroCoef.pdf", replace
+
+reg liberalism i.placeclean democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot, title(All Macro and Micro Varaibles)
+graph export "Macroresidlib.pdf"
+coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" democlean = "Level of Democracy" regageclean = "Regime Age" formulaclean = "Electoral Formula" freehouse = "Freedom House Rating" corrupt = "Corruption Perception Index" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(Issue Stances)
+graph export "Graphs/Paper Graphs/LibMacroCoef.pdf", replace
+
+
+*Interaction with Place and Democracy
+reg ideoclean i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(democlean=(3 8 9 10))
+marginsplot
+graph export "IdeoPlaceDem.pdf", replace
+
+reg liberalism i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(democlean=(3 7 8 9 10))
+marginsplot
+graph export "LibPlaceDem.pdf", replace
+
+*Interaction with Place and Regime Age
+reg ideoclean i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(regageclean=(0(25)200))
+marginsplot
+graph export "IdeoPlaceAge.pdf", replace
+
+reg liberalism i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(regageclean=(0(25)200))
+marginsplot
+graph export "LibPlaceAge.pdf", replace
+
+*Interaction with Place and Electoral Formula
+reg ideoclean i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(formulaclean=(1 2 3))
+marginsplot
+graph export "IdeoPlaceFormula.pdf", replace
+
+reg liberalism i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(formulaclean=(1 2 3))
+marginsplot
+graph export "LibPlaceFormula.pdf", replace
+
+*To see if there are interesting trends
+
+*Interaction with Place and Freedom House Rating
+reg ideoclean i.placeclean##c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(freehouse=(4(.5)7))
+marginsplot
+graph export "IdeoPlaceFree.pdf", replace
+
+reg liberalism i.placeclean## c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(freehouse=(4(.5)7))
+marginsplot
+graph export "LibPlaceFree.pdf", replace
+
+*Interaction with Place and Corruption
+reg ideoclean i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(corrupt=(0(10)100))
+marginsplot
+graph export "IdeoPlaceCorrupt.pdf", replace
+
+reg liberalism i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
+rvfplot
+margins, dydx(placeclean) at(corrupt=(0(10)100))
+marginsplot
+graph export "LibPlaceCorrupt.pdf", replace
+
+
+*************************************************************************************************************************************
+********ARCHIVED MESS*********FOR FUTURE REFERENCE*********ARCHIVED MESS******FOR FUTURE REFERENCE***********ARCHIVED MESS***********
+*************************************************************************************************************************************
 *************************************
 *********DRAW SOME GRAPHS************
 *************************************
@@ -174,80 +287,3 @@ reg liberalism i.placeclean democlean regageclean formulaclean partyid close gen
 rvfplot
 
 bys electlab: reg liberalism i.placeclean partyid close gender educ ses age religion
-
-****************************************
-*******UNDERSTANDING MACRO VARIABLES****
-****************************************
-
-*Maintains all individual level controls and other regime macro variables
-
-reg ideoclean i.placeclean democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
-rvfplot, title(All Macro and Micro Varaibles)
-graph export "Macroresid.pdf"
-
-*Interaction with Place and Democracy
-reg ideoclean i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(democlean=(8(1)10))
-marginsplot
-graph export "IdeoPlaceDem.pdf", replace
-
-reg liberalism i.placeclean##i.democlean regageclean formulaclean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(democlean=(8(1)10))
-marginsplot
-graph export "LibPlaceDem.pdf", replace
-
-*Interaction with Place and Regime Age
-reg ideoclean i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(regageclean=(0(25)200))
-marginsplot
-graph export "IdeoPlaceAge.pdf", replace
-
-reg liberalism i.placeclean##c.regageclean democlean formulaclean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(regageclean=(0(25)200))
-marginsplot
-graph export "LibPlaceAge.pdf", replace
-
-*Interaction with Place and Electoral Formula
-reg ideoclean i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(formulaclean=(1 2 3))
-marginsplot
-graph export "IdeoPlaceFormula.pdf", replace
-
-reg liberalism i.placeclean##i.formulaclean regageclean democlean freehouse corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(formulaclean=(1 2 3))
-marginsplot
-graph export "LibPlaceFormula.pdf", replace
-
-*To see if there are interesting trends
-
-*Interaction with Place and Freedom House Rating
-reg ideoclean i.placeclean##c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(freehouse=(4(.5)7))
-marginsplot
-graph export "IdeoPlaceFree.pdf", replace
-
-reg liberalism i.placeclean## c.freehouse formulaclean regageclean democlean corrupt gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(freehouse=(4(.5)7))
-marginsplot
-graph export "LibPlaceFree.pdf", replace
-
-*Interaction with Place and Corruption
-reg ideoclean i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(corrupt=(0(10)100))
-marginsplot
-graph export "IdeoPlaceCorrupt.pdf", replace
-
-reg liberalism i.placeclean##c.corrupt freehouse formulaclean regageclean democlean gender age ses educ partyid close religion
-rvfplot
-margins, dydx(placeclean) at(corrupt=(0(10)100))
-marginsplot
-graph export "LibPlaceCorrupt.pdf", replace

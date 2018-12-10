@@ -23,15 +23,15 @@ twoway (scatter ident placeclean), ytitle(Average Self-Identified Ideology) xtit
 *****ISSUE STANCES*****
 regress liberalism i.placeclean partyid close gender educ ses age religion
 rvfplot, title(Thailand)
-graph save "Graphs/Residuals/CountryLib/Thailand.pdf"
+graph export "Graphs/Residuals/CountryLib/Thailand.pdf", replace
 
 *Graph of the coefficients from the regression
 coefplot, xline(0) coeflabels(2.placeclean = "Small Town" 3.placeclean = "Suburban" 4.placeclean = "Urban" partyid = "Party ID" close = "Close to Party" gender = "Gender" educ = "Education" ses = "SES"age = "Age" religion = "Religious"  _cons = "Constant") title(Thailand)
-graph save "Graphs/Paper Graphs/Coefplots/LibCoef/Thailand.pdf"
+graph export "Graphs/Paper Graphs/Coefplots/LibCoef/Thailand.pdf", replace
 
 *Boxplot for the distribution of ideology by place
 graph box liberalism, over(placeclean) ytitle(Issue Stances) title(Thailand)
-graph save "Graphs/Paper Graphs/BoxLib/Thailand.pdf"
+graph export "Graphs/Paper Graphs/BoxLib/Thailand.pdf", replace
 
 
 
