@@ -1,0 +1,100 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{fullpage} %full page typesetting
+\usepackage{setspace} %allows for non-singlespacing
+\usepackage{graphicx} %graphics capabilities
+\usepackage{latexsym} %extra symbols
+\usepackage{rotating} %rotation for figures
+\usepackage{longtable} %tables that fill more than a single page
+%\usepackage{hyperref} %hypertext links in the document
+\usepackage{natbib} %better bibliographies
+\usepackage{authblk} %author and affiliation in opening
+\usepackage{mathpazo} %use palatino font, rather than times
+\usepackage{appendix}
+\usepackage{lscape}
+\usepackage{tabulary}
+\usepackage[nottoc]{tocbibind}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=cyan]{hyperref}
+\usepackage{ifthen}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{mwe}
+\usepackage{caption}
+
+
+\title{\tb{Place of Residence and Political Attitudes in Democracies Worldwide \\ {\large Online Appendix B -- Residual Plots} }}
+
+\author{Jennifer Lin}
+\affil{New College of Florida}
+
+\newcommand\e{\emph}
+\newcommand\tb{\textbf}
+\newcommand\un{\underline}
+\newcommand\txt{\texttt}
+
+\doublespacing 
+
+\begin{document}
+
+\begin{singlespace}
+\maketitle
+\end{singlespace}
+
+\section{Residual Plots for General Trends}
+
+For the general model, the regressions that were ran used the following code:
+
+\begin{verbatim}
+regress ideology i.place gender age education ses partyid closeness religion
+regress liberalism i.place gender age education ses partyid closeness religion
+\end{verbatim}
+
+The Residual versus Fitted plots for the models are as follows:
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.475\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{Residuals/ResidAllIdeo}
+		\caption{Self-Placement Ideology}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{Residuals/ResidAllLib}
+		\caption{Issue Stances}
+	\end{subfigure}
+	\caption{Residual Plots for Individual-Level Responses}
+	\label{AllRVF}
+\end{figure}
+
+For the inclusion of all countries and their macro variables, the following regression commands are used:
+
+\begin{verbatim}
+regress ideology i.place democracy electformula regimeage freedomhouse corruption gender age education ses partyid closeness religion
+regress liberalism i.place democracy electformyla regimeage freedomhouse corruption gender age education ses partyid closeness religion
+\end{verbatim}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.475\textwidth}   
+		\centering 
+		\includegraphics[width=\textwidth]{Residuals/Macroresid}
+		\caption{Self-Placement Ideology}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.475\textwidth}
+		\centering 
+		\includegraphics[width=\textwidth]{Residuals/Macroresidlib}
+		\caption{Issue Stances}
+	\end{subfigure}
+	\caption{Residual Plots for Macro-Level Variables and Individual-Level Responses}
+	\label{AllMacroRVF}
+\end{figure}
+
+
+\section{Residual Plots for Each Country}
+
+
+
+\end{document}
