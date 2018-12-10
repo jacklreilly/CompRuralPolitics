@@ -184,13 +184,14 @@ Table \ref{table2} shows the percentage of people in each polity that lives in e
 %	\caption{\tb{Distribution of Responses By Place of Residence}}\label{figure1}
 %\end{figure}
 
+Now that we've analyzed the distribution of respondents by polity and the elections that the country is having in the studied election cycle, it is also beneficial to note some of the macro trends that are present which can help categorize the countries and take their variations into account in the analysis. As we will see later, I use the CSES labels for democracy but also include several variables to check the definition of democracy to be as \cite{diamond2004overview} categorizes it's key characteristics to be regimes that grant citizens individual freedoms, equality before the law and feature government responsiveness.
 
 \begin{figure}[ht!]    \centering
 	{	 \includegraphics[width=\textwidth]{AgeDemPF}}
 	\caption{\tb{Level of Democracy and Regime Age}}\label{figure2}
 \end{figure}
 
-Now that we've analyzed the distribution of respondents by polity and the elections that the country is having in the studied election cycle, it is also beneficial to note some of the macro trends that are present which can help categorize the countries and take their variations into account in the analysis. Figure \ref{figure2} shows a graphical display of the countries represented in Module IV of the CSES sorted by their level of democracy and regime age. As the graph suggests, most of the countries represented in this study are very free. Yet, when it comes to the time that the electoral democracy has been around, most reside under the 50 year mark but it largely centers around and below 25 years. For a better breakdown of the exact values of each country's regime age and level of democracy, Table \ref{table101} in Appendix \ref{AppendixC} shows this data broken down more specifically, adding the consideration of the regime's electoral formula. From what this figure can show us, it is important to note some extreme values on both variables. Turkey's 2015 election stands out on Figure \ref{figure2} because it is the least democratic of the group. Additionally, it is also interesting to note the longest standing democracies such as the United States, Switzerland, Australia, Canada and New Zealand. These countries are those where there are most prior research given the country's openness to gathering of data from its citizens and the people's abilities to express their desires freely. The countries that center around eight and nine on the democracy scale that have democracies that are younger than 50 years will be the most interesting to consider given limitations in the existing literature that is available for these places.
+Figure \ref{figure2} shows a graphical display of the countries represented in Module IV of the CSES sorted by their level of democracy and regime age. As the graph suggests, most of the countries represented in this study are very free. Yet, when it comes to the time that the electoral democracy has been around, most reside under the 50 year mark but it largely centers around and below 25 years. For a better breakdown of the exact values of each country's regime age and level of democracy, Table \ref{table101} in Appendix \ref{AppendixC} shows this data broken down more specifically, adding the consideration of the regime's electoral formula. From what this figure can show us, it is important to note some extreme values on both variables. Turkey's 2015 election stands out on Figure \ref{figure2} because it is the least democratic of the group. Additionally, it is also interesting to note the longest standing democracies such as the United States, Switzerland, Australia, Canada and New Zealand. These countries are those where there are most prior research given the country's openness to gathering of data from its citizens and the people's abilities to express their desires freely. The countries that center around eight and nine on the democracy scale that have democracies that are younger than 50 years will be the most interesting to consider given limitations in the existing literature that is available for these places.
 
 \subsection{Proceeding with Caution}
 
@@ -240,15 +241,24 @@ To understand the divide between rural and urban residents in different countrie
 
 In this data analysis, the key independent variables that are considered include the respondent's country and place of residence. For this analysis, place of residence is considered to be based on the categories that are established by the survey such that individuals either live in a rural village, small town, suburbs of a large city or within the large city itself. In the regression model, this variable is characterized as a category even though there are places that may be in between two of the categories that characterize place of residence. 
 
-The coding of a place of residence largely lies in the hearts and minds of the individual respondent. While the CSES works to define the circumstances that will differenciate one region from another in order to standardize the results, there are, nonetheless, both individual and country differences in codifying the definitions of each place. For example, the definition of urban in Japan is any place with more than 200,000 people whereas in Israel, an urban place of residence means that the respondent lives in Tel-Aviv, Jerusalem, or Haifa. Rural areas are often more uniformly defined as any place, once translated from the language of the survey, to be an area sparsely populated. 
+The coding of a place of residence largely lies in the hearts and minds of the individual respondent. While the CSES works to define the circumstances that will differentiate one region from another in order to standardize the results, there are, nonetheless, both individual and country differences in codifying the definitions of each place. For example, the definition of urban in Japan is any place with more than 200,000 people whereas in Israel, an urban place of residence means that the respondent lives in Tel-Aviv, Jerusalem, or Haifa. Rural areas are often more uniformly defined as any place, once translated from the language of the survey, to be an area sparsely populated. 
 
 Each individual's country of residence is also classified based on the year of the election, level of democracy during the election year,  age of the current governing regime in the country at the time of the election, and the type of electoral formula employed by the governing body to determine winners of seats in government. The level of democracy is characterized by how free the polity is at the time of the election. This measure was gathered from the generators of the Polity IV project and reflects freedom from a -10 to 10 scale with -10 being the most autocratic and 10 being the most democratic. The age of the current governing regime suggests how long the current system has been in power. The larger value suggests that the current system in government has been established for a longer period of time and is therefore more stable. Finally, the type of electoral formula describes how government official win office based on their total vote share. Contestants may win via majoritarian, proportional or mixed system. 
+
+As a way of furthering our understanding of the way democracy is defined within the context of each country and with the model proposed by \cite{diamond2004overview}, I also include the Freedom House rating and the aggregated level of perceived corruption within each country to understand the extent of individual political freedom, equality before the law and government responsiveness. These variables both serve as added independent variables and controls but do not have hypotheses attached to them. Their inclusion is to check the Polity IV rankings and to seek to understand the relationship between the factors relating to the state of democracy in each regime.
 
 %Add controls for Gender (D2002) , Age (2018-D2001_Y) and Socioeconomic status (D2012)
 
 \subsection{Key Dependent Variables and Measures}
 
 To understand where individuals see their own political values, the dependent variable reflects their self-identified ideology, a variable coded by the CSES that ranges from 0 to 10 with 0 being the most left leaning and 10 as the most right leaning ideological stance.. Since this can be rather subjective, I also created a liberalism scale that reflects individual values on government spending with a more liberal vision being those who value spending for social benefits and a more conservative view for those who do not with for such spending or for those who wish to spend more to boost defense as a means to secure their country's identity and values. (See Appendix \ref{AppendixB} for a more detailed description of this scale creation) This 9-point scale was generated from questions relating to public expenditure used in the survey. Topics for these questions include health, education, unemployment benefits, defense, old age pensions, business and industry investments, police and law enforcement and welfare benefits. Additionally, I add a value of economic equality to the measure as a means of understanding how each person values equality as part of their ideological outlook. This scale ranges from 0 to 9, with 0 being the most conservative and 9 being the most liberal. In the broadest context, respondents who score at the extreme ends of the scale are seen to be most conservative or liberal in terms of their outlook on spending, which can speak to their views on social values given their willingness to allocate government money to these groups.
+
+\begin{figure}[ht!]    \centering
+	{	 \includegraphics[width=\textwidth]{AvgLibPF}}
+	\caption{\tb{Relationship between Self-Identified Ideology and Issue Stances}}\label{AvgLib}
+\end{figure}
+
+In Figure \ref{AvgLib}, the data suggests the relationship between the two variables. The graph suggests that there is a generally positive relationship between the variables and it tapers off followed by a fall at point 7 on the self-placement scale. Based on this general overview, it suggests that the people who see themselves as most right leaning are actually not as conservative on government spending as they might see themselves.
 
 \subsection{Key Control Variables}
 
@@ -843,7 +853,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Central/Latin America}}
 		\begin{tabulary}{\linewidth}{l c c c}
-			\\
+			
 			\hline
 			\tb{Place of Residence}&\tb{Mexico (2012)}&\tb{Mexico (2015)} &\tb{Peru}\\
 			\hline
@@ -882,13 +892,15 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	\label{AmericaLibCoef}
 \end{figure}
 
+In Central and Latin America, the results for the \e{Issue Stances} hypothesis for this region does not suggest a similar pattern as the \e{Self-Identified Ideology} results since none of the countries in this region show statistical significance when place of residence is regressed with the Issue Stances/Liberalism variable. For these results, it suggests that place of residence does not influence the ways the people view issues relating to government spending.
+
 \begin{singlespace}
 	\begin{table}[H]
 		\centering
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Western Europe}}
 		\begin{tabulary}{\linewidth}{l c c }
-			\\
+		
 			\hline
 			\tb{Place of Residence}&\tb{Germany}&\tb{France} \\
 			\hline
@@ -927,6 +939,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	\label{WestEuroLib}
 \end{figure}
 
+When we turn to Western Europe, we see a similar trend that Central and Latin America has with the results between the two dependent variables. Under the \e{Self-Identified Ideology} hypothesis model, France's citizens showed that living in a more urban place led to greater feelings of left-leaning sentiment, but the general trends under the |e{Issue Stances} hypothesis model does not show this. Rather, there is a movement towards the right, albeit not as significant. These patterns are also seen in Central Europe. with the exception of Czech Republic. While the country moved towards the right in the previous model, there was no indication of a real difference between places of residence and political attitudes. However, their shift under the present model suggests that when it comes to objective issue stances, there is a difference between urban and rural residents. The suburban residents of Poland also show that place matters between rural villages and suburbia when is comes to attitudes towards government spending such that suburban residents are more liberal, but this effect is not seen in the urban centers.
 
 \begin{singlespace}
 	\begin{table}[H]
@@ -934,7 +947,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Central Europe}}
 		\begin{tabulary}{\linewidth}{l c c c }
-			\\
+			
 			\hline
 			\tb{Place of Residence} &\tb{Austria}&\tb{Czech Republic}& \tb{Poland} \\
 			\hline
@@ -984,7 +997,6 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Scandinavia}}
 		\begin{tabulary}{\linewidth}{l c c c}
-			\\
 			\hline
 			\tb{Place of Residence}&\tb{Finland}&\tb{Iceland}&\tb{Sweden} \\
 			\hline
@@ -1027,14 +1039,15 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	{\tb {Coefficient Plots for Issue Stances in Scandinavia} }
 	\label{ScandinaviaLib}
 \end{figure}
-			
+
+Unlike the Self-Placement Ideology model, the results for the Issue Stances suggests that individuals in all of the Scandinavian countries do not differ drastically based on their attitudes towards government spending given place of residence differences. 
+
 \begin{landscape}
 	\begin{table}
 		\centering
 		\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Southwestern Europe}}
 		\begin{tabulary}{\linewidth}{l c c c c c c}
-			\\
 			\hline
 			\tb{Residence}& \tb{Bulgaria}& \tb{Greece ('12)}& \tb{Greece ('15)} & \tb{Montenegro} & \tb{Romania ('12)} & \tb {Romania ('14)}\\
 			\hline
@@ -1083,13 +1096,15 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	\label{SWEuro}
 \end{figure}
 
+In Southwestern Europe, Greece confirms the \e{Issue Stances} hypothesis such that the urban residents are more likely than chance to say that they are more open to government spending than rural residents. This pattern is observed in the oppesite direction for Montenegro and Romania in 2012. Yet, the same cannot be said for Latvia, the sole case here from Eastern Europe. 
+
 \begin{singlespace}
 	\begin{table}[H]
 		\centering
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Eastern Europe}}
 		\begin{tabulary}{\linewidth}{l c }
-			\\
+
 			\hline
 			\tb{Place of Residence} & \tb{Latvia (2014)}  \\
 			\hline
@@ -1120,13 +1135,16 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	\label{EastEuroLibCoef}
 \end{figure}
 
+
+In the non-European parts of the world, no country shows statistically significant differences between place of residence and issue attitude differences except for Thailand and the Philippines. For Thailand, the data for self-identified ideology was unavailable, so there does not exist a base for comparison in our model. However, the results here suggest that urban residents are more likely to lean close to a full point to the right when it comes to issue stances regarding government spending. In the Philippines, the opposite is true as urban residents are more likely to favor government spending given that they lean over a half a point to the left on average. These results can be seen in Table \ref{AsiaLib} and Table \ref{PacificLib}.
+
 \begin{singlespace}
 	\begin{table}[H]
 		\centering
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Middle East}}
 		\begin{tabulary}{\linewidth}{l c c}
-			\\
+
 			\hline
 			\tb{Place of Residence}&\tb{Israel} & \tb{Turkey} \\
 			\hline
@@ -1171,7 +1189,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Africa}}
 		\begin{tabulary}{\linewidth}{l c}
-			\\
+
 			\hline
 			\tb{Place of Residence}& \tb{South Africa} \\
 			\hline
@@ -1203,7 +1221,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Asia}}
 		\begin{tabulary}{\linewidth}{l c c c}
-			\\
+
 			\hline
 			\tb{Place of Residence} & \tb{Japan} & \tb{South Korea}&\tb{Thailand}\\
 			\hline
@@ -1249,7 +1267,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 		%\def\arraystretch{1.5}
 		\caption{\tb{Issue Stances - Pacific Islands}}
 		\begin{tabulary}{\linewidth}{l c c }
-			\\
+
 			\hline
 			\tb{Place of Residence}&\tb{New Zealand (2011)}&\tb{Philippines}\\
 			\hline
@@ -1288,6 +1306,7 @@ Now, we proceed to break down this general analysis by the same regions used to 
 	\label{PacificLibCoef}
 \end{figure}
 
+As we can see from these analyses relating to issue stances, place of residence matters but, like the results of the \e{Self-Identified Ideology} hypothesis results, these vary widely across differences in level of democracy, regime age and electoral formula.
 
 \subsection{Considerations of Regime Age, Level of Democracy, and Electoral Formula}
 
@@ -1422,10 +1441,10 @@ Nonetheless, future research can be dedicated to looking at specifications that 
 \clearpage
 
 
-\let\svaddcontentsline\addcontentsline
-\renewcommand\addcontentsline[3]{%
-	\ifthenelse{\equal{#1}{lof}}{}%
-	{\ifthenelse{\equal{#1}{lot}}{}{\svaddcontentsline{#1}{#2}{#3}}}}
+%\let\svaddcontentsline\addcontentsline
+%\renewcommand\addcontentsline[3]{%
+%	\ifthenelse{\equal{#1}{lof}}{}%
+%	{\ifthenelse{\equal{#1}{lot}}{}{\svaddcontentsline{#1}{#2}{#3}}}}
 
 
 \appendixtitleon
@@ -1444,53 +1463,6 @@ Figure \ref{figure3} shows the distribution of voters for Donald Trump and Hilla
 \end{figure}	
 
 \clearpage
-
-%\section{Average Self-Placement Ideology by Country}
-%\label{AppendixF}
-
-%\begin{figure}[H]
-%	\centering
-%	\begin{subfigure}[b]{0.475\textwidth}
-%		\centering
-%	\includegraphics[width=\textwidth]{Ideology/Germany}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}[b]{0.475\textwidth}  
-%		\centering 
-%		\includegraphics[width=\textwidth]{Ideology/France}
-%	\end{subfigure}
-%	\caption[ Western Europe]
-%	{\tb{ Average Self-Placement Ideology by Place of Residence for Western Europe} }
-%	\label{fig:mean and std of nets}
-%\end{figure}
-
-%\begin{figure}[H]
-%	\centering
-%	\begin{subfigure}[b]{0.475\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{Ideology/Austria}
-%	\end{subfigure}
-%	\hfill
-%	\begin{subfigure}[b]{0.475\textwidth}  
-%	\centering 
-%		\includegraphics[width=\textwidth]{Ideology/Czech}
-%	\end{subfigure}
-%	\vskip\baselineskip
-%	\begin{subfigure}[b]{0.475\textwidth}   
-%		\centering 
-%		\includegraphics[width=\textwidth]{Ideology/Poland}
-%	\end{subfigure}
-%	\quad
-%	\begin{subfigure}[b]{0.475\textwidth}   
-%		\centering 
-%		\includegraphics[width=\textwidth]{Ideology/Slovakia}
-%	\end{subfigure}
-%	\caption[ Central Europe ]
-%	{\tb {Average Self Placement Ideology by Place of Residence for Central Europe} }
-%	\label{figureF3}
-%\end{figure}
-
-%\clearpage 
 
 \section{Regimes Broken Down by Macro Variables}
 \label{AppendixC}
@@ -1549,7 +1521,7 @@ Figure \ref{figure3} shows the distribution of voters for Donald Trump and Hilla
 \section{Descriptions of Variables }
 \label{AppendixA}
 
-~~~\\\\
+~~~\\
 
 \begin{table}[h!]
 	\centering
@@ -1573,6 +1545,8 @@ Figure \ref{figure3} shows the distribution of voters for Donald Trump and Hilla
 		Level of Democracy&D5051\_1&Democracy-Autocracy at Election&Polity IV Project\\
 		Age of Current Regime&D5052&Age of Regime in Years& Polity IV Project\\
 		Electoral Formula&D5058&Method of Election&CSES Macro Report\\
+		Freedom House Rating&D5050\_1&Political Freedom/Civil Liberties&Freedom House \\
+		Corruption&D5086&Corruption Perception Index&Transparency International \\
 		\hline
 	\end{tabulary}\\
 	\e{Source:} Comparative Study of Electoral Systems Module IV Codebook available at \url{http://www.cses.org/datacenter/module4/data/cses4_codebook_part2_variables.txt}
@@ -1666,7 +1640,7 @@ The tables depicting general trends are reproduced below for an easier side-by-s
 	\begin{table}[H]
 		\centering
 		%\def\arraystretch{1.5}
-		\caption{\tb{Self-Placement Ideology - Worldwide}}
+		\caption{\tb{Worldwide Political Issue Attitudes - Two Measures}}
 		\begin{tabulary}{\linewidth}{l c c}
 			\\
 			\hline
