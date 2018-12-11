@@ -1,6 +1,15 @@
 # Results Printouts
 
 Contents of Folder
+
+## Controls Model
+
+1. Sort Elections - Regressions for both models sorted by polity
+2. With Controls General - Results for overall regressions
+3. Freedom House - Addition of Freedom House Ratings and Corruption Perception Index as macro level controls
+
+## Without Controls
+
 1. Place Results: Results of the regression of place on ideology without considering the polity
 2. Summary Data: Summarize place, ideology and levels of democracy variables
 3. Electoral Formula: Regression of place on ideology sorted by electoral formula

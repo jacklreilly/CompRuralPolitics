@@ -20,6 +20,8 @@
 
 11/28/2018 - Pre-Registration II due
 
+12/13/2018 - Final Paper Due
+
 ## Description of Repository Contents
 
 ### *Prospectus*
@@ -34,9 +36,10 @@ The RuralAB.bib contains the annotations for the AB and is complied via the Rese
 
 ### *Data Analysis*
 
-This is the file for the materials used in the data analysis.
-* Analysis DO Files - Folder contains all the DO files used to generate the data analysis in Stata
-* Results - Folder contains text files for the printout of results in Stata
+This is the file for the materials used in the data analysis.  
+
+* Analysis DO Files - Folder contains all the DO files used to generate the data analysis in Stata. 
+* Results - Folder contains text files for the printout of results in Stata. 
 * Graphs - Folder contains PDF versions of the graphs that are generated from Stata using the code available in the Analysis.do file.
 
 ### *Outline*
@@ -46,3 +49,7 @@ This folder contains the materials used to create the Point-Based Outline due on
 ### *Final Paper*
 
 This folder includes the PDF of the final paper along with the LATEX code that is used to generate the submitted final paper.
+
+### ***Presentation***
+
+This folder contains the documents used to build the presentation.
