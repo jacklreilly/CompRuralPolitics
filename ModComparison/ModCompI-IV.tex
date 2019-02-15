@@ -13,6 +13,9 @@
 \usepackage{tabulary}
 \usepackage{float}
 \usepackage{caption}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{array,booktabs,enumitem}
 
 \title{\tb{Urban-Rural Divides, Democratic Satisfaction, and Citizen Attitudes Across Political Contexts \\ {\large CSES Inter-Module Comparisons} }}
 
@@ -111,5 +114,74 @@
 		\hline
 \end{longtable}
 \end{center}
+
+\section{Demographic Variables}
+
+\begin{center}
+	\begin{longtable}{lcl}
+		\caption{\tb{Variables of Interest and Missing Countries}\label{Variables} }\\
+		\hline
+		\tb{Variable}&\tb{Variable Number}&\tb{Missing Countries} \\
+		\hline
+		\endfirsthead
+		\multicolumn{3}{c}%
+		{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+		\hline
+		\tb{Variable}&\tb{Variable Number}&\tb{Missing Countries} \\
+		\hline
+		\endhead
+		\hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+		\endfoot
+		\hline
+		\endlastfoot
+		
+		Rural-Urban Residence&IMD2007&BELIGUM-FLANDERS (1999) \\
+		&&BELGIUM-WALLONIA (1999)\\
+		&&BRAZIL (2014)\\
+		&&CANADA (2008, 2011, 2015)\\
+		&&CHILE (1999, 2005, 2009)\\
+		&&GERMANY (2002 Mail-Back)\\
+		&&GREAT BRITAIN (1997)\\
+		&&HONG KONG (1998,\\
+		&& 2000, 2004, 2008, 2012)\\
+		&&JAPAN (1996)\\
+		&&KYRGYZSTAN (2005)\\
+		&&TAIWAN (2004, 2008, 2012)\\
+		&&THAILAND (2001)\\
+		&&UNITED STATES (2008, 2012)\\
+	\hline
+		Age&IMD2001\_1&KYRGYZSTAN (2005)\\
+		&&PERU (2000,2001)\\
+	\hline
+	Gender&IMD2002&N/A\\
+	\hline
+	Education&IMD2003&N/A - Check Codebook for \\
+	&& variations in code\\
+	\hline
+	Religion&IMD2005&DENMARK (1998, 2001, 2007)\\
+	&&ICELAND (1999, 2003, 2007, 2009)\\
+	&&IRELAND (2011)\\
+	&&JAPAN (1996)\\
+	&&LITHUANIA (1997)\\
+	&&NORWAY (1997, 2001, 2005, 2009)\\
+	&&PERU (2000, 2001, 2006, 2011)\\
+	&&SWEDEN (1998, 2002, 2006, 2014)\\
+	\hline
+	Income&IMD2006&BELGIUM (2003)\\
+	&& KYRGYZSTAN (2005)\\
+	&&LATVIA (2010)\\
+	&&SOUTH AFRICA (2009)\\ 
+	&&SOUTH KOREA (2012)\\
+	\hline
+	Left-Right SELF&IMD3006&JAPAN (1996, 2004)\\ 
+	&&TAIWAN (2012)\\
+	&&THAILAND (2001, 2011)\\
+	\hline
+\end{longtable}
+\end{center}
+
+\section{Polity Variables}
+
+
 
 \end{document}
