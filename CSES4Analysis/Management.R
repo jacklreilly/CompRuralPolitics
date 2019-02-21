@@ -69,5 +69,5 @@ data$welfare <- car::recode(data$D3001_8, "7:9 = '.'")
 data$incomeineq <- car::recode(data$D3004, "7:9 = '.'")
 
 #Coding of the Issue Stances Scale 9 (min) to 45 (max)
-data$liberalism <- data$health + data$isveduc + data$pensions + data$benefits + data$defense + data$industry + data$police + data$welfare + data$incomeineq
+data$liberalism <- (data$health + data$isveduc + data$pensions + data$benefits + data$defense + data$industry + data$police + data$welfare + data$incomeineq)
 
