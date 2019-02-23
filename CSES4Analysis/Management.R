@@ -18,6 +18,9 @@ library(ggpubr)
 
 library(corrplot)
 
+#Check the structure
+str(data)
+
 #Recode data using the car package and CrossTab to make sure the variable was recoded correctly
 #D2031 - Rural-Urban Divide
 data$rural<-car::recode(data$D2031, "7:9 = 'NA'")
