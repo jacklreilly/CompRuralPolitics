@@ -81,7 +81,7 @@ data$welfare <- car::recode(data$D3001_8, "7:9 = 'NA'")
 #D3004 - Government action on income levels
 data$incomeineq <- car::recode(data$D3004, "7:9 = 'NA'")
 
-#Coding of the Issue Stances Scale 6 (min) to 36 (max)
+#Coding of the Issue Stances Scale 9 (min) to 45 (max)
 
 #destring all variables and ignore the missing variables (NA) in the computations
 data$health <- as.numeric(as.character(data$health), na.rm=TRUE)
@@ -89,6 +89,8 @@ data$isveduc <- as.numeric(as.character(data$isveduc), na.rm=TRUE)
 data$unemploy <- as.numeric(as.character(data$unemploy), na.rm=TRUE)
 data$defense <- as.numeric(as.character(data$defense), na.rm=TRUE)
 data$pensions <- as.numeric(as.character(data$pensions), na.rm=TRUE)
+
+
 data$industry <- as.numeric(as.character(data$industry), na.rm=TRUE)
 data$police <- as.numeric(as.character(data$police), na.rm=TRUE)
 data$welfare <- as.numeric(as.character(data$welfare), na.rm=TRUE)
@@ -97,29 +99,36 @@ data$incomeineq <- as.numeric(as.character(data$incomeineq), na.rm=TRUE)
 #View All data in Liberalism series
 data$health 
 data$isveduc
-data$unemploy #Rid 495
-data$defense #rid 496
+data$unemploy
+data$defense 
 data$pensions
-data$industry #rid 498
+data$industry 
 data$police 
 data$welfare 
 data$incomeineq
-#NOTE: For some reason not noticed before, the Unemployment, defense, and Industry spending variables are all missing and thus obmitted from Liberalism scale here
 
 #Find Colnames
 which( colnames(data)=="health" ) #493
 
 #Add the Columns
-data$liberalism <- data[,493]+data[,494]+data[,497]+data[,499]+data[,500]+data[,501]
+data$liberalism <- data[,493]+data[,494]+data[,495]+data[,496]+data[,497]+data[,498]+data[,499]+data[,500]+data[,501]
 data$liberalism
-hist(data[,502])
+summary(data$liberalism)
+hist(data$liberalism)
+
+#describe the liberalism variable
+library(pastecs)
+stat.desc(data$liberalism)
 
 #Create a subset liberalism frame
-libvars <- data[, c(493, 494, 497, 499, 500, 501)]
-
+libvars <- data[, c(493, 494, 495, 496, 497, 498, 499, 500, 501)]
+na.omit(libvars)
+stat.desc(libvars)
+summary(libvars)
+libvars$issue <- libvars[,1] + libvars[,2] + libvars[,3] + libvars[,4] + libvars[,5] + libvars[,6] + libvars[,7] + libvars[,8] + libvars[,9]
+summary(libvars$issue)
+hist(libvars$issue)
 #Correlation between liberalism variables
 
 cor(libvars,  method = "pearson", use = "complete.obs")
 
-pairs(libvars, jiggle=TRUE,factor=2)
-pairs(libvars, method="pearson", pch = 20, lm=TRUE, cor=TRUE, jiggle=TRUE,factor=2, smoother=FALSE, stars=FALSE, ci=FALSE, alpha=.05)
