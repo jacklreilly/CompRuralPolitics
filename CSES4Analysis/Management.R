@@ -89,8 +89,6 @@ data$isveduc <- as.numeric(as.character(data$isveduc), na.rm=TRUE)
 data$unemploy <- as.numeric(as.character(data$unemploy), na.rm=TRUE)
 data$defense <- as.numeric(as.character(data$defense), na.rm=TRUE)
 data$pensions <- as.numeric(as.character(data$pensions), na.rm=TRUE)
-
-
 data$industry <- as.numeric(as.character(data$industry), na.rm=TRUE)
 data$police <- as.numeric(as.character(data$police), na.rm=TRUE)
 data$welfare <- as.numeric(as.character(data$welfare), na.rm=TRUE)
@@ -132,3 +130,9 @@ hist(libvars$issue)
 
 cor(libvars,  method = "pearson", use = "complete.obs")
 
+#Clean a country variable
+data$D1004
+str(data$D1004)
+data$election <- data$D1004
+data$election
+str(data$election)
