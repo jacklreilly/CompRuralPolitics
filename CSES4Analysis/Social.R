@@ -13,3 +13,4 @@ libvars$social <- libvars[,1] + libvars[,2] + libvars[,3] + libvars[,5] + libvar
 summary(libvars$social)
 na.omit(libvars)
 stat.desc(libvars)
+hist(libvars$social)
