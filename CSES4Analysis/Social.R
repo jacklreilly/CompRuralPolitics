@@ -14,3 +14,5 @@ summary(libvars$social)
 na.omit(libvars)
 stat.desc(libvars)
 hist(libvars$social)
+
+

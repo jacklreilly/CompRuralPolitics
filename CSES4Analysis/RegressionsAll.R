@@ -43,6 +43,10 @@ issuecountry$model
 issue <- lm(liberalism ~ rural + election, data = data)
 summary(issue)
 
+#Export Regression Tables
+stargazer(issue, ideo, align=TRUE)
+stargazer(issuestance, ideology, align = TRUE)
+
 #Use Rural as Factor to determine average self-ideo for each country
 data$rurality <- factor(data$rural, 
                              levels = c(1, 2, 3, 4),

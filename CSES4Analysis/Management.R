@@ -128,7 +128,10 @@ summary(libvars$issue)
 hist(libvars$issue)
 #Correlation between liberalism variables
 
-cor(libvars,  method = "pearson", use = "complete.obs")
+spendingcor <- cor(libvars,  method = "pearson", use = "complete.obs")
+
+library(stargazer)
+stargazer(spendingcor)
 
 #Clean a country variable
 data$D1004
