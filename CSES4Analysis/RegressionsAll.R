@@ -10,6 +10,7 @@ library(dotwhisker)
 library(broom)
 library(coefplot)
 library(car)
+library(stargazer)
 
 #View Data
 str(data$rural)
@@ -29,7 +30,7 @@ ideocountry <- data %>% group_by(data$election) %>% do(model = lm(selfideo ~ rur
 ideocountry$model
 
 ideo <- lm(selfideo ~ rural + election, data = data)
-summary(issue)
+summary(ideo)
 
 #Regression for Liberalism - ALL Issues
 issuestance <- lm(liberalism ~ factor(rural), data = data)
@@ -60,3 +61,9 @@ descrip.ideo <- summarise(groups,
                           ci = qt(0.975,df=n-1)*se)
 
 descrip.ideo
+
+#Export Country Descriptive stats into Latex
+library(xtable)
+descrip.export<-xtable(descrip.ideo)
+print.xtable(descrip.export, type="latex", file="ideodescrip.tex")
+
