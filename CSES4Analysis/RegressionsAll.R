@@ -22,7 +22,7 @@ str(data$selfideo)
 #Use Rural as Factor to determine average self-ideo for each country
 data$rurality <- factor(data$rural, 
                         levels = c(1, 2, 3, 4),
-                        labels = c("Rural", "Twon", "Suburban", "City"))
+                        labels = c("Rural", "Town", "Suburban", "City"))
 data$rurality
 library(forcats)
 data$rurality.complete <- fct_explicit_na(data$rurality, na_level = "(Missing)")
