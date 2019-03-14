@@ -5,6 +5,8 @@
 #USe cleanred data from Management File
 source("Management.R")
 
+library(pastecs)
+
 #View Libvars Data
 libvars
 

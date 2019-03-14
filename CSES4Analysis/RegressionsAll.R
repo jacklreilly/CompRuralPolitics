@@ -19,6 +19,14 @@ data$rural <- as.numeric(as.character(data$rural), na.rm=TRUE)
 data$selfideo <- as.numeric(as.character(data$selfideo), na.rm=TRUE)
 str(data$selfideo)
 
+#Use Rural as Factor to determine average self-ideo for each country
+data$rurality <- factor(data$rural, 
+                        levels = c(1, 2, 3, 4),
+                        labels = c("Rural", "Twon", "Suburban", "City"))
+data$rurality
+library(forcats)
+data$rurality.complete <- fct_explicit_na(data$rurality, na_level = "(Missing)")
+
 
 #Regression for self-placement ideology
 ideology <- lm(selfideo ~ factor(rural), data = data)
@@ -47,16 +55,8 @@ summary(issue)
 stargazer(issue, ideo, align=TRUE)
 stargazer(issuestance, ideology, align = TRUE)
 
-#Use Rural as Factor to determine average self-ideo for each country
-data$rurality <- factor(data$rural, 
-                             levels = c(1, 2, 3, 4),
-                             labels = c("Rural", "Twon", "Suburban", "City"))
-data$rurality
+#Descriptive statistics for each level of rural by country
 groups <- group_by(data, election, rurality)
-
-library(forcats)
-data$rurality.complete <- fct_explicit_na(data$rurality, na_level = "(Missing)")
-
 descrip.ideo <- summarise(groups,
                           mean = mean(selfideo, na.rm=TRUE),
                           sd = sd(selfideo, na.rm=TRUE),
